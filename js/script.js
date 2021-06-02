@@ -11,5 +11,5 @@ xmlhttp.open("GET", url, true);
 xmlhttp.send();
 
 function generateProducts(a) {
-   console.log(a)
+   console.log(a[1].productName)
 }
