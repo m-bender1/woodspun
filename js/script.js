@@ -21,7 +21,7 @@ function generateProducts(a) {
       let prodPrice = createElement("p");
       let prodName = createElement("p");
 
-      prodDiv.classList.add(".productDiv");
+      prodDiv.classList.add("productDiv");
       prodImg.src = a.products[i].imageUrl;
       prodPrice.innerHTML = a.products[i].productPrice
       prodName.innerHTML = a.products[i].productName;
