@@ -1,2 +1,3 @@
 # woodspun
-WoodSpun.ca ecommerca page 
+WoodSpun.ca E-Commerce Site
+Built By Matt Bender
