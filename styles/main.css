@@ -1,0 +1,68 @@
+/* main styles - woodspun.ca */
+
+/* import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+:root {
+   --clr-main: #285319;
+   --text-nav: #e7e4e4;
+   --text-content: #575757;
+   --font-main-text: 'Nanum Gothic', sans-serif;
+   --font-logo: "Josefin Slab", serif;
+}
+
+body {
+   font-family: var(--font-main-text);
+   font-size: 16px;
+   overflow-x: none;
+}
+
+/* NAV STYLING */
+.navBar {
+   min-height: 10vh;
+   min-width: 100%;
+   background: var(--clr-main);
+}
+
+nav span {
+   /* 'button' styling for nav */
+   border: 1px solid var(--text-nav);
+   padding: 0.5em;
+   margin: 0.5em;
+}
+
+nav a {
+   text-decoration: none;
+   color: var(--text-nav);
+}
+
+.logo {
+   font-family: var(--font-logo);
+   color: var(--text-nav);
+   font-weight: 700;
+}
+
+/* HERO AND TITLE */
+.title {
+   color: var(--text-content);
+}
+
+.title, .subtitle {
+   color: var(--text-nav);
+}
+
+button {
+   background: var(--clr-main);
+   display: inline-block;
+   border: none;
+   text-decoration: none;
+   color: var(--text-nav);
+   cursor: pointer;
+   text-align: center;
+}

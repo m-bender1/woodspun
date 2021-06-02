@@ -1,0 +1,17 @@
+{
+   "products": [
+      {
+         "productType": "pen",
+         "productName": "Hard Maple Streamline",
+         "kitType": "Streamline Twist Chrome",
+         "woodType": "Hard Maple",
+         "productPrice": "25.00"
+      },
+      {
+         "productType": "wineStop",
+         "productName": "Hard Maple Wine Stop",
+         "woodType": "Hard Maple",
+         "productPrice": "20.00"
+      }
+   ]
+}

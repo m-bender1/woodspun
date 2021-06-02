@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/main.css" />
+	<link rel="stylesheet" href="styles/desktop.css" media="screen and (min-width: 1025px) and (max-width: 1768px)">
+	<title>WoodSpun.ca</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="navBar">
+			<div class="logoWrap">
+				<h3 class="logo">WoodSpun</h3>
+			</div>
+			<nav>
+				<!-- spans for border around the links -->
+				<span><a href="index.html">Home</a></span>
+				<span><a href="products.html">Products</a></span>
+				<span><a href="about.html">About</a></span>
+				<span><a href="contact.html">Contact</a></span>
+			</nav>
+		</div> <!-- End nav -->
+		<div class="heroImageDiv">
+			<img src="resources/hero_placeholder.png" alt="header image" class="heroImage">
+			<h1 class="title">WoodSpun</h1>
+			<p class="subtitle">Handmade in Port Stanley, Ontario.</p>
+		</div>
+		<div class="quickLinks">
+			<div class="allProds" onclick="toGallery()">
+				<a href="products.html"><button class="allProdsBtn">All Products</button></a>
+			</div>
+			<div class="pens" onclick="showPens()">
+				<img src="resources/pen.png" alt="pen gallery link" class="penImg">
+				<p>Pens</p>
+			</div>
+			<div class="stoppers" onclick="showToppers();">
+				<img src="resources/topper.png" alt="wine stop gallery link" class="topperImg">
+				<p>Wine Stops</p>
+			</div>
+		</div>
+	</div> <!-- End wrapper -->
+	<script src="js/script.js"></script>
+</body>
+
+</html>
