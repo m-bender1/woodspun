@@ -23,8 +23,8 @@ function generateProducts(a) {
 
       prodDiv.classList.add(".productDiv");
       prodImg.src = a.products[i].imageUrl;
-      prodPrice = a.products[i].productPrice
-      prodName = a.products[i].productName;
+      prodPrice.innerHTML = a.products[i].productPrice
+      prodName.innerHTML = a.products[i].productName;
       prodDiv.appendChild(prodImg);
       prodDiv.appendChild(prodName);
       prodDiv.appendChild(prodPrice);
