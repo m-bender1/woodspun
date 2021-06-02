@@ -13,6 +13,7 @@ xmlhttp.send();
 function generateProducts(a) {
    // get the wrapper div
    let wrapper = document.getElementsByClassName("grid-wrapper");
+   console.log(wrapper)
    for (let i = 0; i < a.length; i++) {
       // create the elements to append
       let prodDiv = document.createElement("div");
@@ -27,6 +28,6 @@ function generateProducts(a) {
       prodDiv.appendChild(prodImg);
       prodDiv.appendChild(prodName);
       prodDiv.appendChild(prodPrice);
-      wrapper[0].appendChild(prodDiv);
+      wrapper.appendChild(prodDiv);
    }
 }
