@@ -27,6 +27,6 @@ function generateProducts(a) {
       prodDiv.appendChild(prodImg);
       prodDiv.appendChild(prodName);
       prodDiv.appendChild(prodPrice);
-      wrapper.appendChild(prodDiv);
+      wrapper[0].appendChild(prodDiv);
    }
 }
