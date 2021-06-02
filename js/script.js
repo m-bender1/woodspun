@@ -11,5 +11,22 @@ xmlhttp.open("GET", url, true);
 xmlhttp.send();
 
 function generateProducts(a) {
-   console.log(a.products[1].productName)
+   // get the wrapper div
+   let wrapper = document.getElementsByClassName("grid-container");
+   for (let i = 0; i < a.length; i++) {
+      // create the elements to append
+      let prodDiv = document.createElement("div");
+      let prodImg = document.createElement("img");
+      let prodPrice = createElement("p");
+      let prodName = createElement("p");
+
+      prodDiv.classList.add(".productDiv");
+      prodImg.src = a.products[i].imageUrl;
+      prodPrice = a.products[i].productPrice
+      prodName = a.products[i].productName;
+      prodDiv.appendChild(prodImg);
+      prodDiv.appendChild(prodName);
+      prodDiv.appendChild(prodPrice);
+      wrapper.appendChild(prodDiv);
+   }
 }
