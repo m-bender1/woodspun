@@ -37,5 +37,6 @@ function generateProducts(a) {
 
 // onchange of the select
 function filterProducts() {
-   console.log(document.getElementsByTagName("select")[0].value)
+   console.log(document.getElementsByTagName("select")[0].value);
+   // check if the select value == the productType in json
 }
