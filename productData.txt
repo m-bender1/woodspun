@@ -6,7 +6,7 @@
          "kitType": "Streamline Twist Chrome",
          "woodType": "Hard Maple",
          "productPrice": "25.00",
-         "imageUrl": "placeholder_product.png"
+         "imageUrl": "resources/placeholder_product.png"
       },
       {
          "productType": "wine stop",
@@ -14,7 +14,7 @@
          "kitType": "Chrome",
          "woodType": "Hard Maple",
          "productPrice": "20.00",
-         "imageUrl": "placeholder_product.png"
+         "imageUrl": "resources/placeholder_product.png"
       },
       {
          "productType": "memory pendant",
@@ -22,7 +22,7 @@
          "kitType": "Gunmetal Memory Pendant",
          "woodType": "Hard Maple",
          "productPrice": "15.00",
-         "imageUrl": "placeholder_product.png"
+         "imageUrl": "resources/placeholder_product.png"
       }
    ]
 }
