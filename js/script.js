@@ -34,3 +34,5 @@ function generateProducts(a) {
       wrapper[0].append(prodDiv);
    }
 }
+
+// onchange of the 
