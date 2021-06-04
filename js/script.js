@@ -35,4 +35,7 @@ function generateProducts(a) {
    }
 }
 
-// onchange of the 
+// onchange of the select
+function filterProducts() {
+   console.log(document.getElementsByTagName("select")[0].value)
+}
