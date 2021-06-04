@@ -29,5 +29,6 @@ function generateProducts(a) {
       prodDiv.appendChild(prodName);
       prodDiv.appendChild(prodPrice);
       wrapper[0].append(prodDiv);
+      console.log(prodDiv, prodImg, prodPrice, prodName);
    }
 }
