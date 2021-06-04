@@ -16,11 +16,13 @@
          "productPrice": "20.00",
          "imageUrl": "placeholder_product.png"
       },
+      {
          "productType": "memory pendant",
          "productName": "Hard Maple Memory Pendant",
          "kitType": "Gunmetal Memory Pendant",
          "woodType": "Hard Maple",
          "productPrice": "15.00",
          "imageUrl": "placeholder_product.png"
+      }
    ]
 }
