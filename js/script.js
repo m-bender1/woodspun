@@ -13,8 +13,7 @@ xmlhttp.send();
 function generateProducts(a) {
    // get the wrapper div
    let wrapper = document.getElementsByClassName("grid-wrapper");
-   console.log(a, a.length)
-   for (let i = 0; i < a.length; i++) {
+   for (let i = 0; i < a.products.length; i++) {
       // create the elements to append
       let prodDiv = document.createElement("div");
       let prodImg = document.createElement("img");
