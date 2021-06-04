@@ -19,15 +19,18 @@ function generateProducts(a) {
       let prodImg = document.createElement("img");
       let prodPrice = document.createElement("p");
       let prodName = document.createElement("p");
-
+      
+      // add classes, src to image and proddiv
+      // add innerhtml to p tags
+      // append the img and p tags to proddiv and then proddiv to grid wrapper
       prodDiv.classList.add("productDiv");
       prodImg.src = a.products[i].imageUrl;
+      prodImg.classList.add("productImg");
       prodPrice.innerHTML = a.products[i].productPrice
       prodName.innerHTML = a.products[i].productName;
       prodDiv.appendChild(prodImg);
       prodDiv.appendChild(prodName);
       prodDiv.appendChild(prodPrice);
       wrapper[0].append(prodDiv);
-      console.log(prodDiv, prodImg, prodPrice, prodName);
    }
 }
