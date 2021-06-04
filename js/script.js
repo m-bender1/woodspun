@@ -17,8 +17,8 @@ function generateProducts(a) {
       // create the elements to append
       let prodDiv = document.createElement("div");
       let prodImg = document.createElement("img");
-      let prodPrice = createElement("p");
-      let prodName = createElement("p");
+      let prodPrice = document.createElement("p");
+      let prodName = document.createElement("p");
 
       prodDiv.classList.add("productDiv");
       prodImg.src = a.products[i].imageUrl;
