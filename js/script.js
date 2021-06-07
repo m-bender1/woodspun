@@ -41,8 +41,3 @@ function generateProducts(a) {
       }
    }
 }
-
-// onchange of the select
-function filterProducts() {
-   generateProducts(myArr);
-}
