@@ -1,7 +1,8 @@
 {
    "products": [
       {
-         "productType": "pen",
+         "productType": "Pens",
+         "_comment1": "Note, productType must match the select dropdown on page (ie Pens, Pendants...)",
          "productName": "Hard Maple Streamline",
          "kitType": "Streamline Twist Chrome",
          "woodType": "Hard Maple",
@@ -9,7 +10,7 @@
          "imageUrl": "resources/placeholder_product.png"
       },
       {
-         "productType": "wine stop",
+         "productType": "Wine Stops",
          "productName": "Hard Maple Bottle Stopper",
          "kitType": "Chrome",
          "woodType": "Hard Maple",
@@ -17,7 +18,7 @@
          "imageUrl": "resources/placeholder_product.png"
       },
       {
-         "productType": "memory pendant",
+         "productType": "Pendants",
          "productName": "Hard Maple Memory Pendant",
          "kitType": "Gunmetal Memory Pendant",
          "woodType": "Hard Maple",
