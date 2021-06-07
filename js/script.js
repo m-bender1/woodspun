@@ -2,6 +2,10 @@ var xmlhttp = new XMLHttpRequest();
 var url = "productData.txt";
 var myArr = [];
 
+
+// this needs to change to just generating the array of products. then, using the filtering func
+// and another func for the home page buttons changing the dd
+// will generate only the filtered products
 xmlhttp.onreadystatechange = function () {
    if (this.readyState == 4 && this.status == 200) {
       myArr = JSON.parse(this.responseText);
@@ -12,14 +16,9 @@ xmlhttp.open("GET", url, true);
 xmlhttp.send();
 
 function generateProducts(a) {
-   // filtering, checks product type <select>
-   // filters based on the selected option
-   // first, get selects value by the id
-   let prodSelect = document.getElementById("productSelect").value;
    // get the wrapper div
    let wrapper = document.getElementsByClassName("grid-wrapper");
    for (let i = 0; i < a.products.length; i++) {
-      if (prodSelect == "All" || prodSelect == a.products[i].productType) {
          // create the elements to append
          let prodDiv = document.createElement("div");
          let prodImg = document.createElement("img");
@@ -38,6 +37,5 @@ function generateProducts(a) {
          prodDiv.appendChild(prodName);
          prodDiv.appendChild(prodPrice);
          wrapper[0].append(prodDiv);
-      }
    }
 }
