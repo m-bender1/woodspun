@@ -2,9 +2,6 @@ var xmlhttp = new XMLHttpRequest();
 var url = "productData.txt";
 var myArr = [];
 
-// this needs to change to just generating the array of products. then, using the filtering func
-// and another func for the home page buttons changing the dd
-// will generate only the filtered products
 xmlhttp.onreadystatechange = function () {
    if (this.readyState == 4 && this.status == 200) {
       myArr = JSON.parse(this.responseText);
@@ -49,8 +46,8 @@ function filterProducts() {
    var prodDivs = document.getElementsByClassName("productDiv");
    // add a display=none class to products not matching filter
    for (let i = 0; i < prodDivs.length; i++) {
-      if (prodDivs[i].getAttribute("name").trim() !== selectedProd.trim() && selectedProd !== "All") {
-         $('.productDiv').hide();
+      if (prodDivs[i].getAttribute("name") == selectedProd) {
+         console.log(prodDivs[i].getAttribute("name"));
       }
    }
 }
