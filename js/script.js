@@ -59,6 +59,7 @@ function filterProducts() {
       if (selectedProd == "All") {
          if (prodDivs[i].classList.contains("disabled")) {
             prodDivs[i].classList.remove("disabled");
+            prodDivs[i].classList.add("productDiv");
          }
       }
    } 
