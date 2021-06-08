@@ -25,11 +25,7 @@ function generateProducts(a) {
       // add innerhtml to p tags
       // append the img and p tags to proddiv and then proddiv to grid wrapper
       prodDiv.classList.add("productDiv");
-      prodDiv.classList.add("disabled");
-      prodDiv.id = "product_" + (i);
-      // set name to check products against select value
-      // the productDiv class makes this easier done with names instead of adding another class
-      prodDiv.setAttribute("name", a.products[i].productType.trim());
+      prodDiv.classList.add(a.products[i].productType.trim());
       prodImg.src = a.products[i].imageUrl;
       prodImg.classList.add("productImg");
       prodPrice.innerHTML = "$" + a.products[i].productPrice
@@ -65,6 +61,6 @@ function generateProducts(a) {
 $(function () {
    $('#productSelect').change(function () {
       $('.productDiv').hide();
-      $('#' + $(this).val()).show();
+      $('.' + $(this).val().trim()).show();
    })
 })
