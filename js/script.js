@@ -49,7 +49,7 @@ function filterProducts() {
    // add a display=none class to products not matching filter
    for (let i = 0; i < prodDivs.length; i++) {
       // removes non-selected products
-      if (prodDivs[i].getAttribute("name") !== selectedProd && selectedProd !== "All") {
+      if (prodDivs[i].getAttribute("name").trim() !== selectedProd.trim() && selectedProd !== "All") {
          prodDivs[i].classList.add("disabled");
          prodDivs[i].classList.remove("productDiv");
       }
