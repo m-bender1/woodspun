@@ -28,6 +28,7 @@ function generateProducts(a) {
       // add innerhtml to p tags
       // append the img and p tags to proddiv and then proddiv to grid wrapper
       prodDiv.classList.add("productDiv");
+      prodDiv.classList.add("disabled");
       // set name to check products against select value
       // the productDiv class makes this easier done with names instead of adding another class
       prodDiv.setAttribute("name", a.products[i].productType);
@@ -48,15 +49,10 @@ function filterProducts() {
    var prodDivs = document.getElementsByClassName("productDiv");
    // add a display=none class to products not matching filter
    for (let i = 0; i < prodDivs.length; i++) {
-      // removes non-selected products
-      if (prodDivs[i].getAttribute("name").trim() !== selectedProd && selectedProd !== "All") {
-         prodDivs[i].classList.add("disabled");
-         prodDivs[i].classList.remove("productDiv");
+      if (prodDivs[i].getAttribute("name").trim() == selectedProd && selectedProd !== "All") {
+         prodDivs[i].classList.remove("disabled");
+         // prodDivs[i].classList.add("productDiv");
       }
-      // if (prodDivs[i].getAttribute("name") == selectedProd && selectedProd !== "All") {
-      //    prodDivs[i].classList.remove("disabled");
-      //    prodDivs[i].classList.add("productDiv");
-      // }
       // if (selectedProd == "All") {
       //    if (prodDivs[i].classList.contains("disabled")) {
       //       prodDivs[i].classList.remove("disabled");
