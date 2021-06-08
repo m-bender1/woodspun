@@ -46,8 +46,14 @@ function filterProducts() {
    var prodDivs = document.getElementsByClassName("productDiv");
    // add a display=none class to products not matching filter
    for (let i = 0; i < prodDivs.length; i++) {
-      if (prodDivs[i].getAttribute("name") == selectedProd) {
-         console.log(prodDivs[i].getAttribute("name"));
+      if (prodDivs[i].getAttribute("name") == selectedProd && selectedProd !== 'All') {
+         $("input[name=" + selectedProd + "]").show();
+      }
+      else if (prodDivs[i].getAttribute("name") !== selectedProd && selectedProd !== 'All') {
+         $("input[name=" + selectedProd + "]").hide();
+      }
+      else if (selectedProd == 'All') {
+         $("input[name=" + selectedProd + "]").show();
       }
    }
 }
