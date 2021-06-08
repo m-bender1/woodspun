@@ -48,8 +48,8 @@ function filterProducts() {
    var prodDivs = document.getElementsByClassName("productDiv");
    // add a display=none class to products not matching filter
    for (let i = 0; i < prodDivs.length; i++) {
-      if (prodDivs.getAttrribute("name") == selectedProd) {
-         console.log(prodDivs.getAttrribute("name"))
+      if (prodDivs[i].getAttrribute("name") == selectedProd) {
+         console.log(prodDivs[i].getAttrribute("name"))
       }
       // if(selectedProd.trim() == myArr[i].class)
       // if the select = pens, only show pens. (need to ignore 'all' option in this case)
