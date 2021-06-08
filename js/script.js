@@ -4,8 +4,12 @@ var myArr = [];
 // this variable is used to check if a quicklink was used, then display accordingly. 
 // if quicklink, will be set to either pen or topper, else will be set to false
 var filterCheck = false;
+// func to set filtercheck based on clicklink clicked
 function quickLink(cl) {
-   console.log(cl);
+   if (cl == "pens" || cl == "toppers") {
+      filterCheck = cl;
+      console.log(cl)
+   }
 }
 
 // this needs to change to just generating the array of products. then, using the filtering func
