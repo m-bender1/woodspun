@@ -27,8 +27,10 @@ function generateProducts(a) {
       // add classes, src to image and proddiv
       // add innerhtml to p tags
       // append the img and p tags to proddiv and then proddiv to grid wrapper
-      prodDiv.id = "productDiv";
-      prodDiv.classList.add(a.products[i].productType);
+      prodDiv.classList.add("productDiv");
+      // set name to check products against select value
+      // the productDiv class makes this easier done with names instead of adding another class
+      prodDiv.setAttribute("name", "prod");
       prodImg.src = a.products[i].imageUrl;
       prodImg.classList.add("productImg");
       prodPrice.innerHTML = "$" + a.products[i].productPrice
@@ -43,9 +45,10 @@ function generateProducts(a) {
 function filterProducts() {
    // get the select dropd. value
    var selectedProd = document.getElementById("productSelect").value;
-   console.log(myArr)
+   var prodDivs = document.getElementsByName("prod");
    // add a display=none class to products not matching filter
-   for (let i = 0; i < myArr.length; i++) {
+   for (let i = 0; i < prodDivs.length; i++) {
+      console.log(prodDivs)
       // if(selectedProd.trim() == myArr[i].class)
       // if the select = pens, only show pens. (need to ignore 'all' option in this case)
       // if (selectedProd !== prodDivs[i].className && selectedProd !== "All") {
