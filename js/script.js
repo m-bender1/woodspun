@@ -26,9 +26,8 @@ function generateProducts(a) {
       // add innerhtml to p tags
       // append the img and p tags to proddiv and then proddiv to grid wrapper
       prodDiv.classList.add("productDiv");
-      prodDiv.classList.add(prodType);
       prodImg.src = a.products[i].imageUrl;
-      prodImg.classList.add("productImg");
+      prodImg.classList.add("productImg_" + prodType);
       prodPrice.innerHTML = "$" + a.products[i].productPrice
       prodName.innerHTML = "<b>" + a.products[i].productName + "</b>";
       prodDiv.appendChild(prodImg);
@@ -45,25 +44,9 @@ select.addEventListener("change", function () {
    let productSelect = document.getElementById("productSelect").value;
    console.log(productSelect.trim())
    for (let i = 0; i < prodDivs.length; i++) {
-      // give all elements a disabled class
-      prodDivs[i].classList.add("disabled");
-      if (productSelect.trim() == "All") {
-         // remove from all for all btn
-         prodDivs[i].classList.remove("disabled");
+      if (prodDivs[i].getElementsByClassName("productImg_" + a.products[i].productType) == productSelect.trim()) {
+         console.log("hello")
       }
-      // if prod matches select remove class
-      if (prodDivs[i].classList.contains(productSelect.trim())) {
-         prodDivs[i].classList.remove("disabled");
-         if (!(prodDivs[i].classList.contains("productDiv"))) {
-            prodDivs[i].classList.add("productDiv");
-         }
-      }
-      // if prod doesn't match, add disabled class
-      else if (!(prodDivs[i].classList.contains(productSelect.trim()))) {
-         prodDivs[i].classList.add("disabled");
-         if (prodDivs[i].classList.contains("productDiv")) {
-            prodDivs[i].classList.remove("productDiv");
-         }
-      }
+   
    }
 })
