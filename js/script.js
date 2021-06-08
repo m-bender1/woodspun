@@ -1,15 +1,6 @@
 var xmlhttp = new XMLHttpRequest();
 var url = "productData.txt";
 var myArr = [];
-// this variable is used to check if a quicklink was used, then display accordingly. 
-// if quicklink, will be set to either pen or topper, else will be set to false
-var filterCheck;
-// func to set filtercheck based on clicklink clicked
-function quickLink(cl) {
-   if (cl == "pens" || cl == "stoppers") {
-      filterCheck = cl;
-   }
-}
 
 // this needs to change to just generating the array of products. then, using the filtering func
 // and another func for the home page buttons changing the dd
