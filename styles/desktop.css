@@ -86,17 +86,6 @@ nav > span:hover {
    flex-direction: row;
    align-items: center;
    justify-content: center;
-   margin-left: 3rem;
-}
-
-/* flex to center text under imagess */
-.quickLinks div {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-direction: column;
-   margin: 3rem;
-   padding: 5rem;
 }
 
 .quickLinks button {
