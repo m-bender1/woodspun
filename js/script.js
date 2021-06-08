@@ -6,7 +6,7 @@ var myArr = [];
 var filterCheck = false;
 // func to set filtercheck based on clicklink clicked
 function quickLink(cl) {
-   if (cl == "pens" || cl == "toppers") {
+   if (cl == "pens" || cl == "stops") {
       filterCheck = cl;
       console.log(cl)
    }
