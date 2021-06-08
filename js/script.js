@@ -50,6 +50,11 @@ function filterProducts() {
    for (let i = 0; i < prodDivs.length; i++) {
       if (prodDivs[i].getAttribute("name") !== selectedProd && selectedProd !== "All") {
          prodDivs[i].classList.add("disabled");
+         prodDivs[i].classList.remove("productDiv")
+         // now remove disabled from the rest
+         if (prodDivs[i].getAttribute("name") == selectedProd && selectedProd !== "All") {
+            prodDivs[i].classList.remove("disabled");
+         }
       }
       if (selectedProd == "All") {
          if (prodDivs[i].classList.contains("disabled")) {
