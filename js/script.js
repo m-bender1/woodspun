@@ -27,7 +27,7 @@ function generateProducts(a) {
       // add classes, src to image and proddiv
       // add innerhtml to p tags
       // append the img and p tags to proddiv and then proddiv to grid wrapper
-      prodDiv.classList.add("productDiv");
+      prodDiv.id = "productDiv";
       prodDiv.classList.add(a.products[i].productType);
       prodImg.src = a.products[i].imageUrl;
       prodImg.classList.add("productImg");
@@ -43,11 +43,10 @@ function generateProducts(a) {
 function filterProducts() {
    // get the select dropd. value
    var selectedProd = document.getElementById("productSelect").value;
-   var prodDivs = document.getElementsByClassName("productDiv");
-   
+   console.log(myArr)
    // add a display=none class to products not matching filter
-   for (let i = 0; i < prodDivs.length; i++) {
-         console.log(prodDivs[i].className)
+   for (let i = 0; i < myArr.length; i++) {
+      // if(selectedProd.trim() == myArr[i].class)
       // if the select = pens, only show pens. (need to ignore 'all' option in this case)
       // if (selectedProd !== prodDivs[i].className && selectedProd !== "All") {
       //    prodDivs[i].classList.add("disabled");
