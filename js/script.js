@@ -48,15 +48,15 @@ function filterProducts() {
    for (let i = 0; i < prodDivs.length; i++) {
       if (prodDivs[i].getAttribute("name") == selectedProd.trim() && selectedProd !== 'All') {
          $("input[name='" + selectedProd.trim() + "']").show();
-         console.log($("input[name='" + selectedProd.trim() + "']"))
+         console.log($("input[name='" + selectedProd.trim() + "']") + 1)
       }
-      else if (prodDivs[i].getAttribute("name") !== selectedProd.trim() && selectedProd !== 'All') {
+      if (prodDivs[i].getAttribute("name") !== selectedProd.trim() && selectedProd !== 'All') {
          $("input[name='" + selectedProd.trim() + "']").hide();
-         console.log("2")
+         console.log($("input[name='" + selectedProd.trim() + "']") + 2)
       }
-      else if (selectedProd == 'All') {
+      if (selectedProd == 'All') {
          $("input[name='" + selectedProd + "']").show();
-         console.log("3")
+         console.log($("input[name='" + selectedProd.trim() + "']") + 3)
       }
    }
 }
