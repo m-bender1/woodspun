@@ -1,7 +1,12 @@
 var xmlhttp = new XMLHttpRequest();
 var url = "productData.txt";
 var myArr = [];
-
+// this variable is used to check if a quicklink was used, then display accordingly. 
+// if quicklink, will be set to either pen or topper, else will be set to false
+var filterCheck = false;
+function quicklink(cl) {
+   console.log(cl);
+}
 
 // this needs to change to just generating the array of products. then, using the filtering func
 // and another func for the home page buttons changing the dd
@@ -9,7 +14,7 @@ var myArr = [];
 xmlhttp.onreadystatechange = function () {
    if (this.readyState == 4 && this.status == 200) {
       myArr = JSON.parse(this.responseText);
-      generateProducts(myArr)
+      generateProducts(myArr);
    }
 };
 xmlhttp.open("GET", url, true);
