@@ -42,9 +42,9 @@ function generateProducts(a) {
 
 function filterProducts() {
    // get the select dropd. value
-   var selectedProd = document.getElementById("productSelect").value;
+   var selectedProd = document.getElementById("productSelect");
    var prodDivs = document.getElementsByClassName("productDiv");
-   console.log(selectedProd.trim())
+   console.log(selectedProd.value.trim())
    // add a display=none class to products not matching filter
    for (let i = 0; i < prodDivs.length; i++) {
       if (prodDivs[i].className == selectedProd.trim()) {
