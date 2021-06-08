@@ -11,6 +11,7 @@ body {
    align-items: center;
    justify-content: flex-end;
    height: 10vh;
+   min-height: 10vh;
 }
 
 nav {
@@ -37,6 +38,7 @@ nav {
 .heroImage {
    width: 100vw;
    height: 45vh;
+   min-height: 45vh;
    object-fit: cover;
 }
 .title,
