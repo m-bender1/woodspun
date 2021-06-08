@@ -45,9 +45,19 @@ select.addEventListener("change", function () {
    let productSelect = document.getElementById("productSelect").value;
    console.log(productSelect.trim())
    for (let i = 0; i < prodDivs.length; i++) {
-      if (prodDivs[i].className == "productDiv " + (productSelect.trim())) {
-         console.log(prodDivs[i].className);
-         
+      // give all elements a disabled class
+      prodDivs[i].classList.add("disabled");
+      if (productSelect.trim() == "All") {
+         // remove from all for all btn
+         prodDivs[i].classList.remove("disabled");
+      }
+      // if prod matches select remove class
+      if (prodDivs[i].classList.contains(productSelect.trim())) {
+         prodDivs[i].classList.remove("disabled")
+      }
+      // if prod doesn't match, add disabled class
+      else if (!(prodDivs[i].classList.contains(productSelect.trim()))) {
+         prodDivs.classList.add("disabled")
       }
    }
 })
