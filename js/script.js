@@ -38,9 +38,14 @@ function generateProducts(a) {
    }
 }
 
-$(function () {
-   $('#productSelect').change(function () {
-      $('.prodDiv').hide();
-      $('.' + $(this).val().trim()).show();
-   });
-});
+// onchange event for the select dropdown
+var select = document.getElementById("productSelect");
+select.addEventListener("change", function () {
+   let prodDivs = document.getElementsByClassName("productDiv");
+   let productSelect = document.getElementById("productSelect");
+   for (let i = 0; i < prodDivs.length; i++) {
+      if (prodDivs[i].className == "productDiv " + productSelect.trim()) {
+         console.log(prodDivs[i].className);
+      }
+   }
+})
