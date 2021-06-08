@@ -8,6 +8,9 @@
    <title>Products</title>
    <link rel="stylesheet" href="styles/main.css" />
    <link rel="stylesheet" href="styles/desktop.css" media="screen and (min-width: 1025px) and (max-width: 1768px)">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
@@ -30,7 +33,7 @@
          <div class="product-header">
             <h1>Products</h1>
             <p>Filter: </p>
-            <select id ="productSelect" onchange="filterProducts();">
+            <select id="productSelect" onchange="filterProducts();">
                <option>All</option>
                <option>Pens</option>
                <option>Wine Stoppers</option>
@@ -41,6 +44,7 @@
             <div class="grid-wrapper"></div>
          </div>
       </div>
+
       <script src="js/script.js"></script>
    </div>
 </body>

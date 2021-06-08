@@ -50,13 +50,7 @@ function filterProducts() {
    // add a display=none class to products not matching filter
    for (let i = 0; i < prodDivs.length; i++) {
       if (prodDivs[i].getAttribute("name").trim() !== selectedProd.trim() && selectedProd !== "All") {
-         console.log("hello")
-         // prodDivs[i].classList.remove("disabled");
-         prodDivs[i].classList.remove("productDiv");
+         $('.productDiv').hide();
       }
-      if (selectedProd == "All") {
-         prodDiv.classList.add("productDiv");
-         prodDiv.classList.remove("disabled");
-      }
-   } 
+   }
 }
