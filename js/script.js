@@ -26,6 +26,7 @@ function generateProducts(a) {
       // append the img and p tags to proddiv and then proddiv to grid wrapper
       prodDiv.classList.add("productDiv");
       prodDiv.classList.add("disabled");
+      prodDiv.id = "product_" + (i);
       // set name to check products against select value
       // the productDiv class makes this easier done with names instead of adding another class
       prodDiv.setAttribute("name", a.products[i].productType.trim());
@@ -40,23 +41,30 @@ function generateProducts(a) {
    }
 }
 
-function filterProducts() {
-   // get the select dropd. value
-   var selectedProd = document.getElementById("productSelect").value;
-   var prodDivs = document.getElementsByClassName("productDiv");
-   // add a display=none class to products not matching filter
-   for (let i = 0; i < prodDivs.length; i++) {
-      if (prodDivs[i].getAttribute("name") == selectedProd.trim() && selectedProd !== 'All') {
-         $("input[name='" + selectedProd.trim() + "']").show();
-         console.log($("input[name='" + selectedProd.trim() + "']") + 1)
-      }
-      if (prodDivs[i].getAttribute("name") !== selectedProd.trim() && selectedProd !== 'All') {
-         $("input[name='" + selectedProd.trim() + "']").hide();
-         console.log($("input[name='" + selectedProd.trim() + "']") + 2)
-      }
-      if (selectedProd == 'All') {
-         $("input[name='" + selectedProd + "']").show();
-         console.log($("input[name='" + selectedProd.trim() + "']") + 3)
-      }
-   }
-}
+// function filterProducts() {
+//    // get the select dropd. value
+//    var selectedProd = document.getElementById("productSelect").value;
+//    var prodDivs = document.getElementsByClassName("productDiv");
+//    // add a display=none class to products not matching filter
+//    for (let i = 0; i < prodDivs.length; i++) {
+//       if (prodDivs[i].getAttribute("name") == selectedProd.trim() && selectedProd !== 'All') {
+//          $("input[name='" + selectedProd.trim() + "']").show();
+//          console.log($("input[name='" + selectedProd.trim() + "']") + 1)
+//       }
+//       if (prodDivs[i].getAttribute("name") !== selectedProd.trim() && selectedProd !== 'All') {
+//          $("input[name='" + selectedProd.trim() + "']").hide();
+//          console.log($("input[name='" + selectedProd.trim() + "']") + 2)
+//       }
+//       if (selectedProd == 'All') {
+//          $("input[name='" + selectedProd + "']").show();
+//          console.log($("input[name='" + selectedProd.trim() + "']") + 3)
+//       }
+//    }
+// }
+
+$(function () {
+   $('#productSelect').change(function () {
+      $('.productDiv').hide();
+      $('#' + $(this).val()).show();
+   })
+})
