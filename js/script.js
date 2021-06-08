@@ -3,12 +3,11 @@ var url = "productData.txt";
 var myArr = [];
 // this variable is used to check if a quicklink was used, then display accordingly. 
 // if quicklink, will be set to either pen or topper, else will be set to false
-var filterCheck = false;
+var filterCheck;
 // func to set filtercheck based on clicklink clicked
 function quickLink(cl) {
    if (cl == "pens" || cl == "stoppers") {
       filterCheck = cl;
-      console.log(filterCheck);
    }
 }
 

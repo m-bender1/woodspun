@@ -90,7 +90,7 @@ nav > span:hover {
 }
 
 /* flex to center text under imagess */
-.quickLinks div, .quickLinks a {
+.quickLinks div {
    display: flex;
    align-items: center;
    justify-content: center;
