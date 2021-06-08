@@ -27,7 +27,7 @@ function generateProducts(a) {
       // add classes, src to image and proddiv
       // add innerhtml to p tags
       // append the img and p tags to proddiv and then proddiv to grid wrapper
-      prodDiv.classList.add("productDiv");
+      // prodDiv.classList.add("productDiv");
       prodDiv.classList.add("disabled");
       // set name to check products against select value
       // the productDiv class makes this easier done with names instead of adding another class
@@ -51,14 +51,11 @@ function filterProducts() {
    for (let i = 0; i < prodDivs.length; i++) {
       if (prodDivs[i].getAttribute("name").trim() == selectedProd && selectedProd !== "All") {
          prodDivs[i].classList.remove("disabled");
-         // prodDivs[i].classList.add("productDiv");
+         prodDivs[i].classList.add("productDiv");
       }
-      // if (selectedProd == "All") {
-      //    if (prodDivs[i].classList.contains("disabled")) {
-      //       prodDivs[i].classList.remove("disabled");
-      //       // ensure it still has productDiv class
-      //       prodDivs[i].classList.add("productDiv");
-      //    }
-      // }
+      if (selectedProd == "All") {
+         prodDiv.classList.add("productDiv");
+         prodDiv.classList.remove("disabled");
+      }
    } 
 }
