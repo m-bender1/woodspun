@@ -53,16 +53,16 @@ function filterProducts() {
          prodDivs[i].classList.add("disabled");
          prodDivs[i].classList.remove("productDiv");
       }
-      if (prodDivs[i].getAttribute("name") == selectedProd && selectedProd !== "All") {
-         prodDivs[i].classList.remove("disabled");
-         prodDivs[i].classList.add("productDiv");
-      }
-      if (selectedProd == "All") {
-         if (prodDivs[i].classList.contains("disabled")) {
-            prodDivs[i].classList.remove("disabled");
-            // ensure it still has productDiv class
-            prodDivs[i].classList.add("productDiv");
-         }
-      }
+      // if (prodDivs[i].getAttribute("name") == selectedProd && selectedProd !== "All") {
+      //    prodDivs[i].classList.remove("disabled");
+      //    prodDivs[i].classList.add("productDiv");
+      // }
+      // if (selectedProd == "All") {
+      //    if (prodDivs[i].classList.contains("disabled")) {
+      //       prodDivs[i].classList.remove("disabled");
+      //       // ensure it still has productDiv class
+      //       prodDivs[i].classList.add("productDiv");
+      //    }
+      // }
    } 
 }
