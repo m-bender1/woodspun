@@ -4,7 +4,7 @@ var myArr = [];
 // this variable is used to check if a quicklink was used, then display accordingly. 
 // if quicklink, will be set to either pen or topper, else will be set to false
 var filterCheck = false;
-function quicklink(cl) {
+function quickLink(cl) {
    console.log(cl);
 }
 
