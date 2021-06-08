@@ -26,7 +26,7 @@ function generateProducts(a) {
       // add innerhtml to p tags
       // append the img and p tags to proddiv and then proddiv to grid wrapper
       prodDiv.classList.add("productDiv");
-      prodDiv.classList.add(prodType.trim());
+      prodDiv.classList.add(prodType);
       prodImg.src = a.products[i].imageUrl;
       prodImg.classList.add("productImg");
       prodPrice.innerHTML = "$" + a.products[i].productPrice
