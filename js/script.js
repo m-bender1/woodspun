@@ -28,7 +28,7 @@ function generateProducts(a) {
       prodDiv.classList.add("disabled");
       // set name to check products against select value
       // the productDiv class makes this easier done with names instead of adding another class
-      prodDiv.setAttribute("name", a.products[i].productType);
+      prodDiv.setAttribute("name", a.products[i].productType.trim());
       prodImg.src = a.products[i].imageUrl;
       prodImg.classList.add("productImg");
       prodPrice.innerHTML = "$" + a.products[i].productPrice
@@ -46,14 +46,14 @@ function filterProducts() {
    var prodDivs = document.getElementsByClassName("productDiv");
    // add a display=none class to products not matching filter
    for (let i = 0; i < prodDivs.length; i++) {
-      if (prodDivs[i].getAttribute("name") == selectedProd && selectedProd !== 'All') {
-         $("input[name=" + selectedProd + "]").show();
+      if (prodDivs[i].getAttribute("name") == selectedProd.trim() && selectedProd !== 'All') {
+         $("input[name='" + selectedProd.trim() + "']").show();
       }
-      else if (prodDivs[i].getAttribute("name") !== selectedProd && selectedProd !== 'All') {
-         $("input[name=" + selectedProd + "]").hide();
+      else if (prodDivs[i].getAttribute("name") !== selectedProd.trim() && selectedProd !== 'All') {
+         $("input[name='" + selectedProd.trim() + "']").hide();
       }
       else if (selectedProd == 'All') {
-         $("input[name=" + selectedProd + "]").show();
+         $("input[name='" + selectedProd + "']").show();
       }
    }
 }
