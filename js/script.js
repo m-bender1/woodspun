@@ -47,9 +47,7 @@ function filterProducts() {
    
    // add a display=none class to products not matching filter
    for (let i = 0; i < prodDivs.length; i++) {
-      if (prodDivs[i].className == selectedProd.trim()) {
          console.log(prodDivs[i].className)
-      }
       // if the select = pens, only show pens. (need to ignore 'all' option in this case)
       // if (selectedProd !== prodDivs[i].className && selectedProd !== "All") {
       //    prodDivs[i].classList.add("disabled");
