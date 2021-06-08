@@ -27,7 +27,8 @@ function generateProducts(a) {
       // append the img and p tags to proddiv and then proddiv to grid wrapper
       prodDiv.classList.add("productDiv");
       prodImg.src = a.products[i].imageUrl;
-      prodImg.classList.add("productImg_" + prodType);
+      prodImg.classList.add("productImg")
+      prodImg.classList.add(prodType);
       prodPrice.innerHTML = "$" + a.products[i].productPrice
       prodName.innerHTML = "<b>" + a.products[i].productName + "</b>";
       prodDiv.appendChild(prodImg);
@@ -44,7 +45,7 @@ select.addEventListener("change", function () {
    let productSelect = document.getElementById("productSelect").value;
    console.log(productSelect.trim())
    for (let i = 0; i < prodDivs.length; i++) {
-      if (prodDivs[i].getElementsByClassName("productImg_" + a.products[i].productType) == productSelect.trim()) {
+      if (prodDivs[i].getElementsByClassName("productImg " + a.products[i].productType) == productSelect.trim()) {
          console.log("hello")
       }
    
