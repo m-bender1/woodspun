@@ -2,7 +2,7 @@
    "products": [
       {
          "productType": "Pens",
-         "_comment1": "Note, productType must match the select dropdown on page (ie Pens, Pendants...)",
+         "_comment1": "Note, productType must match the select dropdown on page (ie Pens, Pendants...) and use NO spaces",
          "productName": "Hard Maple Streamline",
          "kitType": "Streamline Twist Chrome",
          "woodType": "Hard Maple",
@@ -10,7 +10,7 @@
          "imageUrl": "resources/placeholder_product.png"
       },
       {
-         "productType": "Wine Stops",
+         "productType": "WineStops",
          "productName": "Hard Maple Bottle Stopper",
          "kitType": "Chrome",
          "woodType": "Hard Maple",
