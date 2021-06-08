@@ -24,6 +24,30 @@
          "woodType": "Hard Maple",
          "productPrice": "15.00",
          "imageUrl": "resources/placeholder_product.png"
+      },
+      {
+         "productType": "Pens",
+         "productName": "Purpleheart Chrome Pen",
+         "kitType": "Streamline Twist Chrome",
+         "woodType": "Purpleheart",
+         "productPrice": "30.00",
+         "imageUrl": "resources/placeholder_product.png"
+      },
+      {
+         "productType": "Pendants",
+         "productName": "Purpleheart Chrome Pendant",
+         "kitType": "Chrome Pill Holder",
+         "woodType": "Purpleheart",
+         "productPrice": "23.00",
+         "imageUrl": "resources/placeholder_product.png"
+      },
+      {
+         "productType": "Wine Stopper",
+         "productName": "Purpleheart Chrome Wine Stopper",
+         "kitType": "Chrome Wine Stopper",
+         "woodType": "Purpleheart",
+         "productPrice": "25.00",
+         "imageUrl": "resources/placeholder_product.png"
       }
    ]
 }
