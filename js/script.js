@@ -44,15 +44,17 @@ function filterProducts() {
    // get the select dropd. value
    var selectedProd = document.getElementById("productSelect").value;
    var prodDivs = document.getElementsByClassName("productDiv");
+
    // add a display=none class to products not matching filter
    for (let i = 0; i < prodDivs.length; i++) {
+      console.log(prodDivs[i].className)
       // if the select = pens, only show pens. (need to ignore 'all' option in this case)
-      if (selectedProd !== prodDivs[i].className && selectedProd !== "All") {
-         prodDivs[i].classList.add("disabled");
-      }
-      // if all is selected, remove any prods with class "disabled"
-      if (selectedProd == "All") {
-         prodDivs[i].classList.remove("disabled");
-      }
-   }
+      // if (selectedProd !== prodDivs[i].className && selectedProd !== "All") {
+      //    prodDivs[i].classList.add("disabled");
+      // }
+      // // if all is selected, remove any prods with class "disabled"
+      // if (selectedProd == "All") {
+      //    prodDivs[i].classList.remove("disabled");
+      // }
+   } 
 }
