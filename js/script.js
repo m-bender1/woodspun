@@ -44,10 +44,10 @@ function filterProducts() {
    // get the select dropd. value
    var selectedProd = document.getElementById("productSelect").value;
    var prodDivs = document.getElementsByClassName("productDiv");
-   console.log(selectedProd.trim());
+
    // add a display=none class to products not matching filter
    for (let i = 0; i < prodDivs.length; i++) {
-      if (prodDivs[i].className == selectedProd.trim) {
+      if (prodDivs[i].className == selectedProd.trim()) {
          console.log(prodDivs[i].className)
       }
       // if the select = pens, only show pens. (need to ignore 'all' option in this case)
