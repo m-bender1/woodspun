@@ -37,3 +37,10 @@ function generateProducts(a) {
       wrapper[0].append(prodDiv);
    }
 }
+
+$(function () {
+   $('#productSelect').change(function () {
+      $('.prodDiv').hide();
+      $('.' + $(this).val().trim()).show();
+   });
+});
