@@ -3,7 +3,7 @@
       {
          "productType": "Pens",
          "_comment1": "Note, productType must match the select dropdown on page (ie Pens, Pendants...) and NO spaces",
-         "productName": "Hard Maple Streamline",
+         "productName": "Hard Maple Streamline Pen",
          "kitType": "Streamline Twist Chrome",
          "woodType": "Hard Maple",
          "productPrice": "25.00",
