@@ -8,7 +8,6 @@ var filterCheck = false;
 function quickLink(cl) {
    if (cl == "pens" || cl == "stoppers") {
       filterCheck = cl;
-      window.open("products.html");
       console.log(filterCheck);
    }
 }
