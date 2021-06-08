@@ -53,11 +53,17 @@ select.addEventListener("change", function () {
       }
       // if prod matches select remove class
       if (prodDivs[i].classList.contains(productSelect.trim())) {
-         prodDivs[i].classList.remove("disabled")
+         prodDivs[i].classList.remove("disabled");
+         if (!(prodDivs[i].classList.contains("productDiv"))) {
+            prodDivs[i].classList.add("productDiv");
+         }
       }
       // if prod doesn't match, add disabled class
       else if (!(prodDivs[i].classList.contains(productSelect.trim()))) {
-         prodDivs[i].classList.add("disabled")
+         prodDivs[i].classList.add("disabled");
+         if (prodDivs[i].classList.contains("productDiv")) {
+            prodDivs[i].classList.remove("productDiv");
+         }
       }
    }
 })
