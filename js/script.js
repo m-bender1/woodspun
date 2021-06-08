@@ -60,7 +60,15 @@ function generateProducts(a) {
 
 $(function () {
    $('#productSelect').change(function () {
-      $('.productDiv').hide();
-      $('.' + $(this).val().trim()).show();
+      var selectedProd = document.getElementById("productSelect").value;
+      if ($('.' + selectedProd.trim()) !== selectedProd.trim()) {
+         $('.' + selectedProd.trim()).hide();
+      }
+      if ($('.' + selectedProd.trim()) == selectedProd.trim()) {
+         $('.' + selectedProd.trim()).show();
+      }
+      if (selectedProd == "All") {
+         $('.productDiv').show();
+      }
    })
 })
