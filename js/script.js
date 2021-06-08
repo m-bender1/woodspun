@@ -8,7 +8,7 @@ var filterCheck = false;
 function quickLink(cl) {
    if (cl == "pens" || cl == "stoppers") {
       filterCheck = cl;
-      console.log(cl)
+      console.log(filterCheck);
    }
 }
 
