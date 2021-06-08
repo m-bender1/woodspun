@@ -48,17 +48,13 @@ function filterProducts() {
    var prodDivs = document.getElementsByClassName("productDiv");
    // add a display=none class to products not matching filter
    for (let i = 0; i < prodDivs.length; i++) {
-      if (prodDivs[i].getAttribute("name") == selectedProd) {
-         console.log(prodDivs[i].getAttribute("name"))
+      if (prodDivs[i].getAttribute("name") !== selectedProd && selectedProd !== "All") {
+         prodDivs[i].classList.add("disabled");
       }
-      // if(selectedProd.trim() == myArr[i].class)
-      // if the select = pens, only show pens. (need to ignore 'all' option in this case)
-      // if (selectedProd !== prodDivs[i].className && selectedProd !== "All") {
-      //    prodDivs[i].classList.add("disabled");
-      // }
-      // // if all is selected, remove any prods with class "disabled"
-      // if (selectedProd == "All") {
-      //    prodDivs[i].classList.remove("disabled");
-      // }
+      if (selectedProd == "All") {
+         if (prodDivs[i].classList.contains("disabled")) {
+            prodDivs[i].classList.remove("disabled");
+         }
+      }
    } 
 }
