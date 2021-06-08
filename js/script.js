@@ -20,13 +20,13 @@ function generateProducts(a) {
       let prodImg = document.createElement("img");
       let prodPrice = document.createElement("p");
       let prodName = document.createElement("p");
-      let prodType = a.products[i].productType.trim();
+      let prodType = a.products[i].productType;
 
       // add classes, src to image and proddiv
       // add innerhtml to p tags
       // append the img and p tags to proddiv and then proddiv to grid wrapper
       prodDiv.classList.add("productDiv");
-      prodDiv.classList.add(prodType);
+      prodDiv.classList.add(prodType.trim());
       prodImg.src = a.products[i].imageUrl;
       prodImg.classList.add("productImg");
       prodPrice.innerHTML = "$" + a.products[i].productPrice
