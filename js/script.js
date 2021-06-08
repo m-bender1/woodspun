@@ -30,7 +30,7 @@ function generateProducts(a) {
       prodDiv.classList.add("productDiv");
       // set name to check products against select value
       // the productDiv class makes this easier done with names instead of adding another class
-      prodDiv.setAttribute("name", "prod");
+      prodDiv.setAttribute("name", a.products[i].productType);
       prodImg.src = a.products[i].imageUrl;
       prodImg.classList.add("productImg");
       prodPrice.innerHTML = "$" + a.products[i].productPrice
@@ -45,10 +45,12 @@ function generateProducts(a) {
 function filterProducts() {
    // get the select dropd. value
    var selectedProd = document.getElementById("productSelect").value;
-   var prodDivs = document.getElementsByName("prod");
+   var prodDivs = document.getElementsByClassName("productDiv");
    // add a display=none class to products not matching filter
    for (let i = 0; i < prodDivs.length; i++) {
-      console.log(prodDivs)
+      if (prodDivs.getAttrribute("name") == selectedProd) {
+         console.log(prodDivs.getAttrribute("name"))
+      }
       // if(selectedProd.trim() == myArr[i].class)
       // if the select = pens, only show pens. (need to ignore 'all' option in this case)
       // if (selectedProd !== prodDivs[i].className && selectedProd !== "All") {

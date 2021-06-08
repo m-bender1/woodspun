@@ -10,7 +10,7 @@
          "imageUrl": "resources/placeholder_product.png"
       },
       {
-         "productType": "WineStops",
+         "productType": "Wine Stops",
          "productName": "Hard Maple Bottle Stopper",
          "kitType": "Chrome",
          "woodType": "Hard Maple",
