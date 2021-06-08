@@ -57,7 +57,7 @@ select.addEventListener("change", function () {
       }
       // if prod doesn't match, add disabled class
       else if (!(prodDivs[i].classList.contains(productSelect.trim()))) {
-         prodDivs.classList.add("disabled")
+         prodDivs[i].classList.add("disabled")
       }
    }
 })
