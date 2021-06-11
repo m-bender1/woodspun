@@ -180,17 +180,19 @@ p {
 
 #image {
    margin: 8rem;
+   width: 40vw;
 }
 
 #image img {
-   height: 12rem;
-   width: 12rem;
+   height: 20rem;
+   width: 20rem;
    border: thin solid var(--text-content);
 }
 
 #description {
    display: flex;
    margin: 8rem;
+   width: 40vw;
    flex-direction: column;
    align-items: center;
    justify-content: space-evenly;
