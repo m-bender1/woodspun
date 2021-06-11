@@ -45,7 +45,7 @@ select.addEventListener("change", function () {
    let productSelect = document.getElementById("productSelect").value;
    console.log(productSelect.trim())
    for (let i = 0; i < prodDivs.length; i++) {
-      if (prodDivs[i].getElementsByClassName("productImg " + a.products[i].productType) == productSelect.trim()) {
+      if (prodDivs[i].getElementsByClassName("productImg " + myArr.products[i].productType) == productSelect.trim()) {
          console.log("hello")
       }
    
