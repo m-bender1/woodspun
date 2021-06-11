@@ -41,12 +41,11 @@ function generateProducts(a) {
 // onchange event for the select dropdown
 var select = document.getElementById("productSelect");
 select.addEventListener("change", function () {
-   let prodDivs = document.getElementsByClassName("productDiv");
+   let prodImg = document.getElementsByClassName("productImg");
    let productSelect = document.getElementById("productSelect").value;
-   for (let i = 0; i < prodDivs.length; i++) {
-      if (prodDivs[i].className == "productImg " + productSelect.trim()) {
-         console.log("hello")
+   for (let i = 0; i < prodImg.length; i++) {
+      if (prodImg[i].className == "productImg " + productSelect.trim()) {
+         console.log("selected " + prodImg[i].className)
       }
-   
    }
 })
