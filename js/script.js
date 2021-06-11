@@ -28,6 +28,8 @@ function generateProducts(a) {
       // adding type to image for filtering later
       prodDiv.classList.add("productDiv");
       prodDiv.classList.add(prodType);
+      // used for prodDetails page
+      prodDiv.id = a.products[i].uniqueID;
       prodImg.src = a.products[i].imageUrl;
       prodImg.classList.add("productImg")
       prodPrice.innerHTML = "$" + a.products[i].productPrice
@@ -45,7 +47,7 @@ function generateProducts(a) {
          // variable resets on page change, so can't do it that way
          // first remove the storage item if it exits (ie client clicked on prod and went back and clicked on another)
          sessionStorage.removeItem("clickedProd");
-         sessionStorage.setItem("clickedProd", prodDiv.childNodes);
+         sessionStorage.setItem("clickedProd", a.products[i].uniqueID);
          window.location = "prodDetails.html";
       })
    }

@@ -2,7 +2,9 @@
    "products": [
       {
          "productType": "Pens",
+         "uniqueID": "item1",
          "_comment1": "Note, productType must match the select dropdown on page (ie Pens, Pendants...) and NO spaces",
+         "_comment2": "each item must contain a uniqueID",
          "productName": "Hard Maple Streamline Pen",
          "kitType": "Streamline Twist Chrome",
          "woodType": "Hard Maple",
@@ -11,6 +13,7 @@
       },
       {
          "productType": "WineStoppers",
+         "uniqueID": "item2",
          "productName": "Hard Maple Bottle Stopper",
          "kitType": "Chrome",
          "woodType": "Hard Maple",
@@ -19,6 +22,7 @@
       },
       {
          "productType": "Pendants",
+         "uniqueID": "item3",
          "productName": "Hard Maple Memory Pendant",
          "kitType": "Gunmetal Memory Pendant",
          "woodType": "Hard Maple",
@@ -27,6 +31,7 @@
       },
       {
          "productType": "Pens",
+         "uniqueID": "item4",
          "productName": "Purpleheart Chrome Pen",
          "kitType": "Streamline Twist Chrome",
          "woodType": "Purpleheart",
@@ -35,6 +40,7 @@
       },
       {
          "productType": "Pendants",
+         "uniqueID": "item5",
          "productName": "Purpleheart Chrome Pendant",
          "kitType": "Chrome Pill Holder",
          "woodType": "Purpleheart",
@@ -43,6 +49,7 @@
       },
       {
          "productType": "WineStoppers",
+         "uniqueID": "item6",
          "productName": "Purpleheart Chrome Wine Stopper",
          "kitType": "Chrome Wine Stopper",
          "woodType": "Purpleheart",
