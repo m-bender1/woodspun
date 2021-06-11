@@ -67,9 +67,9 @@ function displayProduct() {
    let imgWrap = document.getElementById("image");
    let details = document.getElementById("description");
 
-   let img = document.createElement("img");
-   img.src = clickedProd.imageUrl;
-   imgWrap.innerHTML = img;
+   let pImg = document.createElement("img");
+   pImg.src = clickedProd.imageUrl;
+   imgWrap.innerHTML =pIimg;
 
    details.innerHTML = clickedProd.prodName + "<br>" + clickedProd.prodPrice + "<br>" + clickedProd.kitType;
 }
