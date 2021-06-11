@@ -61,6 +61,7 @@ select.addEventListener("change", function () {
 
 function displayProduct() {
    let clickedProd = sessionStorage.getItem("clickedProd");
+   JSON.parse(clickedProd);
    console.log(JSON.parse(clickedProd));
    
    // now output to page
