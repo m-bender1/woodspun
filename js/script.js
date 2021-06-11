@@ -1,7 +1,7 @@
 var xmlhttp = new XMLHttpRequest();
 var url = "productData.txt";
 var myArr = [];
-var clickedProd;
+var clickedProd = [];
 
 xmlhttp.onreadystatechange = function () {
    if (this.readyState == 4 && this.status == 200) {
@@ -42,7 +42,7 @@ function generateProducts(a) {
       // on that page, will run an onload function that uses the clicked element
       // and generates a page w blown up image and prod details
       prodImg.addEventListener("click", function () {
-         clickedProd = prodImg;
+         clickedProd.push(prodImg);
          window.location = "prodDetails.html";
       })
    }
