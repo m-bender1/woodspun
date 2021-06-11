@@ -1,7 +1,6 @@
 var xmlhttp = new XMLHttpRequest();
 var url = "productData.txt";
 var myArr = [];
-var clickedProd = [];
 
 xmlhttp.onreadystatechange = function () {
    if (this.readyState == 4 && this.status == 200) {
@@ -42,7 +41,9 @@ function generateProducts(a) {
       // on that page, will run an onload function that uses the clicked element
       // and generates a page w blown up image and prod details
       prodImg.addEventListener("click", function () {
-         clickedProd.push(prodImg);
+         // use sessionStorage to save item that was clicked
+         // variable resets on page change, so can't do it that way
+         sessionStorage.setItem("clickedProd", prodImg);
          window.location = "prodDetails.html";
       })
    }
@@ -59,5 +60,9 @@ select.addEventListener("change", function () {
 })
 
 function displayProduct() {
+   let clickedProd = sessionStorage.getItem("clickedProd");
    console.log(clickedProd);
+   // clear the session storage at this point, no need for it once
+   // navigated to display page
+   sessionStorage.removeItem("clickedProd");
 }
