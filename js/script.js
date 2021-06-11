@@ -38,8 +38,13 @@ function generateProducts(a) {
       wrapper[0].append(prodDiv);
 
       prodImg.addEventListener("click", function () {
-         // stringify the json and pass it to localstorage 
-         console.log(a.products[i])
+         // stringify the json and pass it to sessionStorage 
+         // clear any existing storage first
+         let data = JSON.stringify(a.products[i]);
+         sessionStorage.removeItem("clickedProd");
+         sessionStorage.setItem("clickedProd", data);
+         // move to productDetail page 
+         window.location = "productDetails.html";
       })
    }
 }
@@ -56,6 +61,5 @@ select.addEventListener("change", function () {
 
 function displayProduct() {
    let clickedProd = sessionStorage.getItem("clickedProd");
-   console.log(clickedProd);
-   document.getElementById("productDetail").append(clickedProd);
+   console.log(JSON.parse(clickedProd));
 }
