@@ -192,7 +192,7 @@ p {
 }
 
 #description hr {
-   margin-bottom: 4rem;
+   margin: 4rem 0 2rem 0;
    width: 10rem;
    border-top: thin solid var(--text-content);
 }
