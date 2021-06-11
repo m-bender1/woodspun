@@ -50,18 +50,17 @@ function generateProducts(a) {
 }
 
 // onchange event for the select dropdown
-var select = document.getElementById("productSelect");
-select.addEventListener("change", function () {
+function filterProducts () {
    let products = document.getElementsByClassName("productDiv");
    let productSelect = document.getElementById("productSelect").value;
-   for (let i = 0; i < products.length; i++) {
+   // for (let i = 0; i < products.length; i++) {
       
-   }
-})
+   // }
+}
 
 function displayProduct() {
    let clickedProd = sessionStorage.getItem("clickedProd");
-   JSON.parse(clickedProd);
+   let prod = JSON.parse(clickedProd);
    console.log(JSON.parse(clickedProd));
    
    // now output to page
@@ -69,8 +68,8 @@ function displayProduct() {
    let details = document.getElementById("description");
 
    let pImg = document.createElement("img");
-   pImg.src = clickedProd.imageUrl;
+   pImg.src = prod.imageUrl;
    imgWrap.append(pImg);
 
-   details.innerHTML = clickedProd.prodName + "<br>" + clickedProd.prodPrice + "<br>" + clickedProd.kitType;
+   details.innerHTML = prod.prodName + "<br>" + prod.prodPrice + "<br>" + prod.kitType;
 }
