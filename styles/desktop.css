@@ -175,12 +175,11 @@ p {
    justify-content: center;
    height: 50vh;
    width: 100vh;
-   margin: 10vh;
+   margin: 20vh;
 }
 
 #image {
    margin: 8rem;
-   width: 40vw;
 }
 
 #image img {
@@ -192,7 +191,6 @@ p {
 #description {
    display: flex;
    margin: 8rem;
-   width: 40vw;
    flex-direction: column;
    align-items: center;
    justify-content: space-evenly;
