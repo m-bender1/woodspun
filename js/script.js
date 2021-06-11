@@ -71,5 +71,5 @@ function displayProduct() {
    pImg.src = prod.imageUrl;
    imgWrap.append(pImg);
 
-   details.innerHTML = prod.productName + "<br>" + prod.productPrice + "<br>" + prod.kitType;
+   details.innerHTML = "<h3>" + prod.productName + "</h3>" + "<br><p>" + prod.productPrice + "</p><br><p>" + prod.kitType + "</p>";
 }
