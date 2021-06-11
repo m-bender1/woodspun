@@ -193,4 +193,5 @@ p {
 
 #description hr {
    margin-bottom: 4rem;
+   color: var(--text-content);
 }
