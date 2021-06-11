@@ -193,6 +193,6 @@ p {
 
 #description hr {
    margin-bottom: 4rem;
-   width: 4rem;
+   width: 10rem;
    border-top: thin solid var(--text-content);
 }
