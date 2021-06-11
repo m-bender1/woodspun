@@ -176,17 +176,21 @@ p {
    height: 50vh;
    width: 100vh;
    margin: 10vh;
-   padding: 5rem;
 }
 
-.image {
+#image {
+   margin: 8rem;
+}
+
+#image img {
    height: 12rem;
    width: 12rem;
    border: thin solid var(--text-content);
 }
 
-.description {
+#description {
    display: flex;
+   margin: 8rem;
    flex-direction: column;
    align-items: center;
    justify-content: space-evenly;
