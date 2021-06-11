@@ -168,3 +168,24 @@ p {
 
 
 /* product details page  */
+.prodDetail {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   height: 50vh;
+   width: 100vh;
+}
+
+.image {
+   height: 12rem;
+   width: 12rem;
+   border: thin solid var(--text-content);
+}
+
+.description {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
+}
