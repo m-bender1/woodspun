@@ -193,5 +193,5 @@ p {
 
 #description hr {
    margin-bottom: 4rem;
-   color: var(--text-content);
+   border-top: thin solid var(--text-content);
 }
