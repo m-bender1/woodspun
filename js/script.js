@@ -37,16 +37,9 @@ function generateProducts(a) {
       prodDiv.appendChild(prodPrice);
       wrapper[0].append(prodDiv);
 
-      // the onclick for the image will send to prodDetails page 
-      // on that page, will run an onload function that uses the clicked element
-      // and generates a page w blown up image and prod details
       prodImg.addEventListener("click", function () {
-         // use sessionStorage to save item that was clicked
-         // variable resets on page change, so can't do it that way
-         // first remove the storage item if it exits (ie client clicked on prod and went back and clicked on another)
-         sessionStorage.removeItem("clickedProd");
-         sessionStorage.setItem("clickedProd", prodDiv.innerHTML);
-         window.location = "prodDetails.html";
+         // stringify the json and pass it to localstorage 
+         console.log(a.products[i])
       })
    }
 }
