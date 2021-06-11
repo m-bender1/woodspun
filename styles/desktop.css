@@ -191,6 +191,6 @@ p {
    justify-content: center;
 }
 
-#description h3 {
-   margin-bottom: 10rem;
+#description hr {
+   margin-bottom: 4rem;
 }
