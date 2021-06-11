@@ -16,6 +16,8 @@ body {
 
 nav {
    margin-right: 1rem;
+   height: 10vh;
+   min-height: 10vh;
 }
 
 /* positioning the logo absolute on the left side of the page */
@@ -23,6 +25,7 @@ nav {
    position: absolute;
    top: 3.5vh;
    left: 2vw;
+   min-height: 10vh;
 }
 .logo {
    font-size: 1.5rem;
@@ -162,3 +165,6 @@ p {
 .product-header p {
    margin: 0.5rem 2rem 0 0;
 }
+
+
+/* product details page  */
