@@ -43,7 +43,7 @@ function generateProducts(a) {
       prodImg.addEventListener("click", function () {
          // use sessionStorage to save item that was clicked
          // variable resets on page change, so can't do it that way
-         sessionStorage.setItem("clickedProd", prodDiv);
+         sessionStorage.setItem("clickedProd", prodDiv.innerHTML);
          window.location = "prodDetails.html";
       })
    }
