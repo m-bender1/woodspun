@@ -63,5 +63,5 @@ select.addEventListener("change", function () {
 
 function displayProduct() {
    let clickedProd = sessionStorage.getItem("clickedProd");
-   console.log(clickedProd.childNodes[0]);
+   console.log(clickedProd.innerHTML);
 }
