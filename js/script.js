@@ -62,4 +62,13 @@ select.addEventListener("change", function () {
 function displayProduct() {
    let clickedProd = sessionStorage.getItem("clickedProd");
    console.log(JSON.parse(clickedProd));
+   
+   // now output to page
+   let imgWrap = document.getElementById("image");
+   let details = document.getElementById("description");
+
+   imgWrap.innerHTML = document.createElement("img");
+   imgWrap.img.src = clickedProd.imageUrl;
+
+   details.innerHTML = clickedProd.prodName + "<br>" + clickedProd.prodPrice + "<br>" + clickedProd.kitType;
 }
