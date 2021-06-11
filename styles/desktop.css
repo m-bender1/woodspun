@@ -185,7 +185,7 @@ p {
 
 #description {
    display: flex;
-   margin: 8rem;
+   margin: 7rem 5rem;
    flex-direction: column;
    align-items: center;
    justify-content: center;
