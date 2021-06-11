@@ -44,8 +44,8 @@ function generateProducts(a) {
          // use sessionStorage to save item that was clicked
          // variable resets on page change, so can't do it that way
          // first remove the storage item if it exits (ie client clicked on prod and went back and clicked on another)
-         // sessionStorage.removeItem("clickedProd");
-         sessionStorage.setItem("clickedProd", prodDiv);
+         sessionStorage.removeItem("clickedProd");
+         sessionStorage.setItem("clickedProd", prodDiv.childNodes);
          window.location = "prodDetails.html";
       })
    }
@@ -63,5 +63,5 @@ select.addEventListener("change", function () {
 
 function displayProduct() {
    let clickedProd = sessionStorage.getItem("clickedProd");
-   console.log(clickedProd.innerHTML);
+   console.log(clickedProd);
 }
