@@ -4,6 +4,7 @@ var myArr = [];
 
 xmlhttp.onreadystatechange = function () {
    if (this.readyState == 4 && this.status == 200) {
+      // sets array to data in json file
       myArr = JSON.parse(this.responseText);
       generateProducts(myArr);
    }
@@ -22,14 +23,11 @@ function generateProducts(a) {
       let prodName = document.createElement("p");
       let prodType = a.products[i].productType;
 
-      // add classes, src to image and proddiv
-      // add innerhtml to p tags
       // append the img and p tags to proddiv and then proddiv to grid wrapper
-      // adding type to image for filtering later
       prodDiv.classList.add("productDiv");
       prodDiv.classList.add(prodType);
-      // used for prodDetails page
       prodDiv.id = a.products[i].uniqueID;
+      // add img src and class
       prodImg.src = a.products[i].imageUrl;
       prodImg.classList.add("productImg")
       prodPrice.innerHTML = "$" + a.products[i].productPrice
@@ -47,7 +45,7 @@ function generateProducts(a) {
          // variable resets on page change, so can't do it that way
          // first remove the storage item if it exits (ie client clicked on prod and went back and clicked on another)
          sessionStorage.removeItem("clickedProd");
-         sessionStorage.setItem("clickedProd", a.products[i].uniqueID);
+         sessionStorage.setItem("clickedProd", prodDiv.innerHTML);
          window.location = "prodDetails.html";
       })
    }
