@@ -25,27 +25,34 @@ function generateProducts(a) {
       // add classes, src to image and proddiv
       // add innerhtml to p tags
       // append the img and p tags to proddiv and then proddiv to grid wrapper
+      // adding type to image for filtering later
       prodDiv.classList.add("productDiv");
+      prodDiv.classList.add(prodType);
       prodImg.src = a.products[i].imageUrl;
-      prodImg.classList.add("productImg")
-      prodImg.classList.add(prodType.trim());
+      prodDiv.classList.add("productImg")
       prodPrice.innerHTML = "$" + a.products[i].productPrice
       prodName.innerHTML = "<b>" + a.products[i].productName + "</b>";
       prodDiv.appendChild(prodImg);
       prodDiv.appendChild(prodName);
       prodDiv.appendChild(prodPrice);
       wrapper[0].append(prodDiv);
+
+      // the onclick for the image will send to prodDetails page 
+      // on that page, will run an onload function that uses the clicked element
+      // and generates a page w blown up image and prod details
+      prodImg.addEventListener("click", function () {
+         window.location = "prodDetails.html";
+      })
    }
 }
 
 // onchange event for the select dropdown
 var select = document.getElementById("productSelect");
 select.addEventListener("change", function () {
-   let prodImg = document.getElementsByClassName("productImg");
+   let products = document.getElementsByClassName("productDiv");
    let productSelect = document.getElementById("productSelect").value;
-   for (let i = 0; i < prodImg.length; i++) {
-      if (prodImg[i].className == "productImg " + productSelect.trim()) {
-         console.log(prodImg[i].className)
-      }
+   for (let i = 0; i < products.length; i++) {
+      
    }
 })
+
