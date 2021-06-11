@@ -58,6 +58,6 @@ select.addEventListener("change", function () {
    }
 })
 
-function displayProducts() {
+function displayProduct() {
    console.log(clickedProd);
 }
