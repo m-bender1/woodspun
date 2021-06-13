@@ -208,5 +208,5 @@ footer {
    display: flex;
    flex-direction: row;
    align-items: center;
-   justify-items: space-around;
+   justify-content: space-around;
 }
