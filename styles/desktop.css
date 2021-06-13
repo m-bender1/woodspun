@@ -168,7 +168,9 @@ p {
 .prodDetail {
    display: grid;
    grid-template-columns: 1fr 1fr;
-   margin-top: 8vh;
+   gap: 0;
+   margin: 0;
+   padding: 8vh 5vw;
 }
 
 #image img {
