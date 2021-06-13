@@ -49,25 +49,28 @@ function generateProducts(a) {
 }
 
 // onchange event for the select dropdown
-function filterProducts () {
+function filterProducts() {
    // let products = document.getElementsByClassName("productDiv");
    let productSelect = document.getElementById("productSelect").value;
 
    for (let i = 0; i < myArr.products.length; i++) {
       // gets element matching with matching id
       let e = document.getElementById(myArr.products[i].uniqueID);
-      
+
       if (productSelect == myArr.products[i].productType) {
-         console.log(e);
+         e.classList.remove("disabled");
       }
-   }   
+      else {
+         (e.classList.add("disabled"))
+      }
+   }
 }
 
 function displayProduct() {
    let clickedProd = sessionStorage.getItem("clickedProd");
    let prod = JSON.parse(clickedProd);
    console.log(JSON.parse(clickedProd));
-   
+
    // now output to page
    let imgWrap = document.getElementById("image");
    let details = document.getElementById("description");
