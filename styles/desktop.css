@@ -173,6 +173,12 @@ p {
    padding: 8vh 5vw;
 }
 
+#image {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
 #image img {
    height: 25rem;
    width: 25rem;
