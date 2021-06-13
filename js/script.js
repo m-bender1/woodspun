@@ -53,9 +53,9 @@ function generateProducts(a) {
 function filterProducts () {
    let products = document.getElementsByClassName("productDiv");
    let productSelect = document.getElementById("productSelect").value;
-   // for (let i = 0; i < products.length; i++) {
-      
-   // }
+
+   console.log(myArr);
+   
 }
 
 function displayProduct() {
