@@ -207,12 +207,8 @@ footer {
    display: flex;
    flex-direction: row;
    align-items: center;
+   justify-items: center;
 }
-
-footer p {
-   margin-top: 5vh;
-}
-
 footer h3 {
-   margin: 5vh 60vw 5vw 0;
+   margin: 0 60vw;
 }
