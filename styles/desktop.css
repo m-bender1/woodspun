@@ -13,11 +13,9 @@ body {
    height: 5rem;
    min-height: 5rem;
 }
-
 nav {
    margin-right: 1rem;
 }
-
 /* positioning the logo absolute on the left side of the page */
 .logoWrap {
    position: absolute;
@@ -27,7 +25,6 @@ nav {
 .logo {
    font-size: 1.5rem;
 }
-
 /* this will center the titles over the hero image */
 .heroImageDiv {
    display: relative;
@@ -56,6 +53,7 @@ nav {
    font-weight: 700;
 }
 
+
 /* outline effect for button hover */
 button:hover,
 nav > span:hover {
@@ -63,20 +61,19 @@ nav > span:hover {
    outline-offset: -4px;
 }
 
+
 /* Quick link PNGs */
 .penImg,
 .topperImg {
-   max-height: 12rem;
-   max-width: 2rem;
-   min-height: 12rem;
-   min-width: 2rem;
+   max-height: 14rem;
+   max-width: 3rem;
+   min-height: 14rem;
+   min-width: 3rem;
    padding-bottom: 1rem;
 }
-
 .topperImg {
-   min-width: 3rem;
+   min-width: 6rem;
 }
-
 .pens,
 .stoppers {
    font-size: 1.3rem;
@@ -85,18 +82,18 @@ nav > span:hover {
    align-items: center;
    justify-content: center;
 }
-
 /* buttons, 3 wide under hero image */
 .quickLinks {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
    margin: 10rem;
 }
-
 .allProds {
    display: flex;
    align-items: center;
    justify-content: center;
+}
+.allProdsBtn {
    padding: 0.5rem 3rem;
    font-size: 1.5em;
 }
@@ -110,7 +107,6 @@ nav > span:hover {
    justify-content: center;
    margin: 2rem;
 }
-
 .grid-wrapper {
    display: grid;
    margin: 5vh;
@@ -122,7 +118,6 @@ nav > span:hover {
       ". . . "
       ". . . ";
 }
-
 .productDiv {
    display: flex;
    align-items: center;
@@ -133,19 +128,17 @@ nav > span:hover {
    margin: 1.5rem 3rem;
    padding: 2rem;
 }
-
 .productImg {
    width: 8rem;
    height: 8rem;
    border: 1px solid grey;
    margin-bottom: 0.5rem;
 }
-
-.productImg p, .productImg button {
+.productImg p,
+.productImg button {
    padding: 0.5rem;
    margin: 0.5rem;
 }
-
 /* The products page header (h1, p, select) */
 .product-header {
    display: flex;
@@ -162,6 +155,7 @@ nav > span:hover {
 }
 
 
+
 /* product details page  */
 .prodDetail {
    display: grid;
@@ -170,31 +164,26 @@ nav > span:hover {
    margin: 0;
    padding: 10vh 5vw;
 }
-
 #image {
    display: flex;
    align-items: center;
    justify-content: center;
 }
-
 #image img {
    height: 25rem;
    width: 25rem;
    border: thin solid var(--text-content);
 }
-
 #description {
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
 }
-
 #description p {
    font-size: 16pt;
    margin-bottom: 2vh;
 }
-
 #description hr {
    margin: 0.5rem 0 1.5rem 0;
    width: 10rem;
