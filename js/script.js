@@ -93,7 +93,7 @@ function displayProduct() {
       + prod.kitType + "</p><p>" + prod.woodType + "</p>";
 }
 
-function quickLinkFilterVariable(type) {
+function quickLinkFilter(type) {
    // will set a sessionstorage variable based on link clicked, then filter accordingly 
    // clear any existing storage first
    sessionStorage.removeItem("filter");
