@@ -53,14 +53,15 @@ function generateProducts(a) {
 function filterProducts () {
    // let products = document.getElementsByClassName("productDiv");
    let productSelect = document.getElementById("productSelect").value;
-   
-   for (let i = 0; i < myArr.products.length; i++) {
-      let uID = "item" + i;
-      // && myArr.products[i].uniqueID == document.getElementById("uID").id
-      if (myArr.products[i].productType == productSelect.trim()) {
-         console.log(myArr.products[i].productName);
-      }
-   }   
+   console.log(productSelect.trim())
+
+   // for (let i = 0; i < myArr.products.length; i++) {
+   //    let uID = "item" + i;
+   //    // && myArr.products[i].uniqueID == document.getElementById("uID").id
+   //    if (myArr.products[i].productType == productSelect.trim()) {
+   //       console.log(myArr.products[i].productName);
+   //    }
+   // }   
 }
 
 function displayProduct() {
