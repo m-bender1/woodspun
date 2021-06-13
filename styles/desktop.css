@@ -66,9 +66,9 @@ nav > span:hover {
 .penImg,
 .stopperImg {
    max-height: 14rem;
-   max-width: 1.5rem;
+   max-width: 1.75rem;
    min-height: 14rem;
-   min-width: 1.5rem;
+   min-width: 1.75rem;
    padding-bottom: 1rem;
 }
 .penImg,
