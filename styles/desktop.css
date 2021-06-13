@@ -84,10 +84,8 @@ nav > span:hover {
 
 /* buttons, 3 wide under hero image */
 .quickLinks {
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: center;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
 }
 
 .quickLinks button {
