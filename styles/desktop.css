@@ -21,7 +21,7 @@ nav {
 /* positioning the logo absolute on the left side of the page */
 .logoWrap {
    position: absolute;
-   top: 3.5vh;
+   top: 2rem;
    left: 2vw;
 }
 .logo {
