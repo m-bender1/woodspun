@@ -168,11 +168,11 @@ p {
 .prodDetail {
    display: grid;
    grid-template-columns: 1fr 1fr;
-   margin-top: 5vh;
+   margin-top: 8vh;
 }
 
 #image {
-   margin: 0 15vw;
+   margin: 0 20vw;
 }
 
 #image img {
