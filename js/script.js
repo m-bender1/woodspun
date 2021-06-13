@@ -56,7 +56,8 @@ function filterProducts () {
    
    for (let i = 0; i < myArr.length; i++) {
       let uID = "item" + i;
-      if (myArr.products[i].productType == productSelect.trim() && myArr.products[i].uniqueID == document.getElementById("uID").id) {
+      // && myArr.products[i].uniqueID == document.getElementById("uID").id
+      if (myArr.products[i].productType == productSelect.trim()) {
          console.log(myArr.products[i].productName);
       }
    }   
