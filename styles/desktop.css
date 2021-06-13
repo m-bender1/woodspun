@@ -183,7 +183,7 @@ p {
 
 #description {
    display: flex;
-   margin: 7rem 4rem;
+   margin: 7rem 2rem;
    flex-direction: column;
    align-items: center;
    justify-content: center;
