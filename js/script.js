@@ -92,3 +92,29 @@ function displayProduct() {
    details.innerHTML = "<h2>" + prod.productName + "</h2><hr>" + "<p>$" + prod.productPrice + "</p><p>"
       + prod.kitType + "</p><p>" + prod.woodType + "</p>";
 }
+
+function quickLinkFilterVariable(type) {
+   // will set a sessionstorage variable based on link clicked, then filter accordingly 
+   // clear any existing storage first
+   sessionStorage.removeItem("filter");
+   if (type == "stopper") {
+      sessionStorage.setItem("filter", "stopper");
+   }
+   else {
+      sessionStorage.setItem("filter", "pen");
+   }
+   // move to productDetail page 
+   window.location = "products.html";
+}
+
+function setFilter() {
+   if (typeof sessionStorage.getItem("filter") == undefined) {
+      console.log("test");
+   }
+   else if (sessionStorage.getItem("filter") == "pen") {
+      document.getElementById("productSelect").value = "Pens";
+   }
+   else if (sessionStorage.getItem("filter") == "stopper") {
+      document.getElementById("productSelect").value = "Wine Stoppers";
+   }
+}
