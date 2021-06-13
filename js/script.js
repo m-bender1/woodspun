@@ -57,12 +57,22 @@ function filterProducts() {
       // gets element matching with matching id
       let e = document.getElementById(myArr.products[i].uniqueID);
 
-      if (productSelect == myArr.products[i].productType) {
+      if (productSelect == "All") {
+         // give all products proper classes
          e.classList.remove("disabled");
+         e.classList.add("productDiv");
+      }
+      else if (productSelect == myArr.products[i].productType) {
+         // disabled class is overwritten by productDiv styling
+         // have to add and remove that as well
+         e.classList.remove("disabled");
+         (e.classList.add("productDiv"));
       }
       else {
-         (e.classList.add("disabled"))
+         (e.classList.add("disabled"));
+         (e.classList.remove("productDiv"));
       }
+
    }
 }
 
