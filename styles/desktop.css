@@ -10,8 +10,8 @@ body {
    flex-direction: row;
    align-items: center;
    justify-content: flex-end;
-   height: 10vh;
-   min-height: 10vh;
+   height: 10rem;
+   min-height: 10rem;
 }
 
 nav {
@@ -23,7 +23,6 @@ nav {
    position: absolute;
    top: 3.5vh;
    left: 2vw;
-   min-height: 10vh;
 }
 .logo {
    font-size: 1.5rem;
