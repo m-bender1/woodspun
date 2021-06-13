@@ -118,4 +118,6 @@ function setFilter() {
       document.getElementById("productSelect").value = "Wine Stoppers";
    }
    filterProducts();
+   //remove the filter so reload allows all products to show
+   sessionStorage.removeItem("filter");
 }
