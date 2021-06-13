@@ -171,7 +171,7 @@ p {
 }
 
 #image {
-   margin: 8rem 4rem 0 8rem;
+   margin: 5rem 2.5rem 0 8rem;
 }
 
 #image img {
@@ -182,10 +182,13 @@ p {
 
 #description {
    display: flex;
-   margin: 7rem 0;
    flex-direction: column;
    align-items: center;
    justify-content: center;
+}
+
+#description p {
+   font-size: 16pt;
 }
 
 #description hr {
