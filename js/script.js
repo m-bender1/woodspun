@@ -51,11 +51,15 @@ function generateProducts(a) {
 
 // onchange event for the select dropdown
 function filterProducts () {
-   let products = document.getElementsByClassName("productDiv");
+   // let products = document.getElementsByClassName("productDiv");
    let productSelect = document.getElementById("productSelect").value;
-
-   console.log(myArr);
    
+   for (let i = 0; i < myArr.length; i++) {
+      let uID = "item" + i;
+      if (myArr.products[i].productType == productSelect.trim() && myArr.products[i].uniqueID == document.getElementById("uID").id) {
+         console.log(myArr.products[i].productName);
+      }
+   }   
 }
 
 function displayProduct() {
