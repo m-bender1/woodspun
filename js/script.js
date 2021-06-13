@@ -117,4 +117,5 @@ function setFilter() {
    else if (sessionStorage.getItem("filter") == "stopper") {
       document.getElementById("productSelect").value = "Wine Stoppers";
    }
+   filterProducts();
 }
