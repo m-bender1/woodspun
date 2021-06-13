@@ -25,7 +25,6 @@ function generateProducts(a) {
 
       // append the img and p tags to proddiv and then proddiv to grid wrapper
       prodDiv.classList.add("productDiv");
-      prodDiv.classList.add(prodType);
       prodDiv.id = a.products[i].uniqueID;
       // add img src and class
       prodImg.src = a.products[i].imageUrl;
@@ -53,15 +52,16 @@ function generateProducts(a) {
 function filterProducts () {
    // let products = document.getElementsByClassName("productDiv");
    let productSelect = document.getElementById("productSelect").value;
-   console.log(productSelect.trim())
 
-   // for (let i = 0; i < myArr.products.length; i++) {
-   //    let uID = "item" + i;
-   //    // && myArr.products[i].uniqueID == document.getElementById("uID").id
-   //    if (myArr.products[i].productType == productSelect.trim()) {
-   //       console.log(myArr.products[i].productName);
-   //    }
-   // }   
+   for (let i = 0; i < myArr.products.length; i++) {
+      // gets element matching with matching id
+      let uID = "item" + i;
+      let e = document.getElementById(uID);
+      // && myArr.products[i].uniqueID == document.getElementById("uID").id
+      if (myArr.products[i].productType == productSelect && myArr.products[i].uniqueID == e) {
+         console.log(myArr.products[i].productName);
+      }
+   }   
 }
 
 function displayProduct() {
