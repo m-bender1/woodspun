@@ -168,10 +168,11 @@ p {
 .prodDetail {
    display: grid;
    grid-template-columns: 1fr 1fr;
+   margin-top: 5vh;
 }
 
 #image {
-   margin: 5rem 0 0 15vw;
+   margin: 0 15vw;
 }
 
 #image img {
@@ -184,8 +185,7 @@ p {
    display: flex;
    flex-direction: column;
    align-items: center;
-   justify-content: flex-end;
-   margin-top: 3rem;
+   justify-content: center;
 }
 
 #description p {
