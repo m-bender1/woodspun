@@ -4,7 +4,7 @@
          "productType": "Pens",
          "uniqueID": "item0",
          "_comment1": "Note, productType must match the select dropdown on page (ie Pens, Pendants...)",
-         "_comment2": "each item must contain a uniqueID --> *** ID STARTS AT 0 ***",
+         "_comment2": "each item must contain a uniqueID (can be whatever, just used a filler id in test data)",
          "productName": "Hard Maple Streamline Pen",
          "kitType": "Streamline Twist Chrome",
          "woodType": "Hard Maple",

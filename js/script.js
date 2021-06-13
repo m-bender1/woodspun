@@ -55,8 +55,7 @@ function filterProducts () {
 
    for (let i = 0; i < myArr.products.length; i++) {
       // gets element matching with matching id
-      let uID = "item" + i;
-      let e = document.getElementById(uID);
+      let e = document.getElementById(myArr.products[i].uniqueID);
       //  && myArr.products[i].uniqueID == e
       if (myArr.products[i].uniqueID == e) {
          console.log(myArr.products[i].productName);
