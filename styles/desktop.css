@@ -196,3 +196,12 @@ nav > span:hover {
    width: 10rem;
    border-top: thin solid var(--text-content);
 }
+
+
+/* footer styling */
+footer {
+   min-height: 5rem;
+   background-color: var(--clr-main);
+   color: var(--text-nav);
+   margin-top: 10vh;
+}
