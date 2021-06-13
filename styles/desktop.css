@@ -71,7 +71,14 @@ nav > span:hover {
    min-width: 3rem;
    padding-bottom: 1rem;
 }
-.topperImg {
+.penImg,
+.stopperImg,
+.pens p,
+.stoppers p 
+{
+   cursor: pointer;
+}
+.stopperImg {
    min-width: 6rem;
 }
 .pens,
