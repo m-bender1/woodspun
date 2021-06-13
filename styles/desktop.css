@@ -156,7 +156,7 @@ p {
 }
 /* pusing p and select to the right of screen */
 .product-header h1 {
-   margin-right: 70vw;
+   margin: 0 70vw 0 1rem;
 }
 /* using margins to align p and select better */
 .product-header p {
