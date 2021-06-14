@@ -200,8 +200,6 @@ nav > span:hover {
 
 /* footer styling */
 footer {
-   position: absolute;
-   bottom: 0;
    min-width: 100vw;
    min-height: 5rem;
    background-color: var(--clr-main);
