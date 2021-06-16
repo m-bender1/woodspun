@@ -17,7 +17,9 @@
 }
 nav span {
    /* 1rem=16px */
-   font-size: 14px;
+   font-size: 13px;
+   padding: 0.25rem;
+   margin: 0.25rem;
 }
 nav {
    margin-right: 0.5rem;
