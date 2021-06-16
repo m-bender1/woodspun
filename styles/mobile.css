@@ -36,7 +36,7 @@ nav {
    display: relative;
    text-align: center;
    width: 100vw;
-   min-height: 12rem;
+   min-height: 15rem;
 }
 .heroImage {
    width: 100vw;
@@ -46,9 +46,9 @@ nav {
 }
 .title,
 .subtitle {
-   position: absolute;
-   top: 15vh;
-   left: 50vw;
+   display: flex;
+   align-items: center;
+   justify-content: center;
    font-size: 3rem;
    text-shadow: -2px 3px #00000081;
 }
