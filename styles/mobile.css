@@ -66,25 +66,18 @@ nav > span:active {
 /* Quick link PNGs */
 .penImg,
 .stopperImg {
-   max-height: 14rem;
-   max-width: 1.75rem;
-   min-height: 14rem;
-   min-width: 1.75rem;
+   max-height: 8rem;
+   max-width: 0.5rem;
+   min-height: 8rem;
+   min-width: 0.5rem;
    padding-bottom: 1rem;
 }
-.penImg,
-.stopperImg,
-.pens p,
-.stoppers p 
-{
-   cursor: pointer;
-}
 .stopperImg {
-   min-width: 6rem;
+   min-width: 4rem;
 }
 .pens,
 .stoppers {
-   font-size: 1.3rem;
+   font-size: 0.75rem;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -104,7 +97,7 @@ nav > span:active {
 }
 .allProdsBtn {
    padding: 0.3rem 0.5rem;
-   font-size: 1rem;
+   font-size: 0.75rem;
 }
 
 
