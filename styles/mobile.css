@@ -143,6 +143,10 @@ nav > span:active {
 .product-header p {
    margin: 0.5rem 2rem 0 0;
 }
+.product-header select {
+   /* hide filtering on mobile */
+   display: none;
+}
 
 /* product details page  */
 .prodDetail {
