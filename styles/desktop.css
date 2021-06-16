@@ -5,7 +5,7 @@
 }
 
 /* Disable the homepage about us button on desktop */
-.aboutUs {
+#aboutUsBtn {
    display: none;
 }
 
