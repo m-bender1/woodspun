@@ -54,7 +54,7 @@ nav {
    text-shadow: -2px 3px #00000081;
 }
 .subtitle {
-   top: 35vh;
+   top: 20vh;
    font-size: 0.5em;
    font-weight: 600;
 }
@@ -160,8 +160,9 @@ nav > span:active {
 /* product details page  */
 .prodDetail {
    display: grid;
-   grid-template-columns: 1fr 1fr;
-   gap: 0;
+   grid-template-columns: 1fr;
+   grid-template-rows: 1fr;
+   gap: 0.3rem;
    margin: 0;
    padding: 10vh 5vw;
 }
@@ -171,8 +172,8 @@ nav > span:active {
    justify-content: center;
 }
 #image img {
-   height: 25rem;
-   width: 25rem;
+   height: 10rem;
+   width: 10rem;
    border: thin solid var(--text-content);
 }
 #description {
@@ -181,13 +182,17 @@ nav > span:active {
    align-items: center;
    justify-content: center;
 }
+#description h2 {
+   /* changing to h3 fontsize for mobile */
+   font-size: 1.125rem;
+}
 #description p {
-   font-size: 16pt;
-   margin-bottom: 2vh;
+   font-size: 0.875rem;
+   margin-bottom: 1rem;
 }
 #description hr {
    margin: 0.5rem 0 1.5rem 0;
-   width: 10rem;
+   width: 6rem;
    border-top: thin solid var(--text-content);
 }
 
