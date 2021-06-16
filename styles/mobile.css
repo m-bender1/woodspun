@@ -32,6 +32,7 @@ nav {
 }
 .logo {
    font-size: 1rem;
+   margin: 0.25rem;
 }
 /* this will center the titles over the hero image */
 .heroImageDiv {
