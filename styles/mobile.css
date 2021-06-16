@@ -50,12 +50,12 @@ nav {
    left: 50%;
    transform: translate(-50%, -50%);
    text-align: center;
-   font-size: 3rem;
+   font-size: 2.5rem;
    text-shadow: -2px 3px #00000081;
 }
 .subtitle {
-   top: 25vh;
-   font-size: 1.5rem;
+   top: 35%;
+   font-size: 1rem;
    font-weight: 600;
 }
 /* outline effect for button hover */
