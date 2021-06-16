@@ -1,4 +1,4 @@
-.wrapper {
+.wrapper, body {
    height: 100%;
    width: 100%;
    overflow-x: hidden;
@@ -72,9 +72,6 @@ nav > span:active {
 }
 /* buttons, 3 wide under hero image */
 .quickLinks {
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   gap: 0;
    margin: 2rem 0.5rem;
 }
 .allProds {
@@ -188,7 +185,6 @@ nav > span:active {
 /* footer styling */
 footer {
    position: absolute;
-   bottom: 0;
    width: 100%;
    height: 5rem;
    margin-top: 15vh;
