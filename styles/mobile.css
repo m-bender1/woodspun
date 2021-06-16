@@ -72,14 +72,16 @@ nav > span:active {
 }
 /* buttons, 3 wide under hero image */
 .quickLinks {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 0;
    margin: 2rem 0.5rem;
 }
 .allProds {
    display: flex;
    align-items: center;
-   justify-content: center;
+   justify-content: space-evenly;
    flex-direction: column;
-   margin: 1rem;
 }
 .allProdsBtn {
    padding: 2vh 5vw;
