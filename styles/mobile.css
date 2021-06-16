@@ -46,7 +46,7 @@ nav {
 .title,
 .subtitle {
    position: absolute;
-   top: 50%;
+   top: 35%;
    left: 50%;
    transform: translate(-50%, -50%);
    text-align: center;
@@ -54,7 +54,7 @@ nav {
    text-shadow: -2px 3px #00000081;
 }
 .subtitle {
-   top: 35%;
+   top: 50%;
    font-size: 1rem;
    font-weight: 600;
 }
