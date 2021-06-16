@@ -1,0 +1,220 @@
+.wrapper {
+   height: 100%;
+   width: 100%;
+   overflow-x: hidden;
+}
+
+/* HERO AND NAV STYLING */
+
+/* move the nav links to the left of the nav */
+.navBar {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: flex-end;
+   height: 5rem;
+   min-height: 5rem;
+}
+nav {
+   margin-right: 1rem;
+}
+/* positioning the logo absolute on the left side of the page */
+.logoWrap {
+   position: absolute;
+   top: 2rem;
+   left: 2vw;
+}
+.logo {
+   font-size: 1.5rem;
+}
+/* this will center the titles over the hero image */
+.heroImageDiv {
+   display: relative;
+   text-align: center;
+   width: 100vw;
+   min-height: 45vh;
+}
+.heroImage {
+   width: 100vw;
+   height: 45vh;
+   min-height: 45vh;
+   object-fit: cover;
+}
+.title,
+.subtitle {
+   position: absolute;
+   top: 25vh;
+   left: 50vw;
+   transform: translate(-50%, -50%);
+   font-size: 2.5em;
+   text-shadow: -2px 3px #00000081;
+}
+.subtitle {
+   top: 35vh;
+   font-size: 1.5em;
+   font-weight: 700;
+}
+
+
+/* outline effect for button hover */
+button:hover,
+nav > span:hover {
+   outline: 1px solid var(--text-nav);
+   outline-offset: -4px;
+}
+
+
+/* Quick link PNGs */
+.penImg,
+.stopperImg {
+   max-height: 14rem;
+   max-width: 1.75rem;
+   min-height: 14rem;
+   min-width: 1.75rem;
+   padding-bottom: 1rem;
+}
+.penImg,
+.stopperImg,
+.pens p,
+.stoppers p 
+{
+   cursor: pointer;
+}
+.stopperImg {
+   min-width: 6rem;
+}
+.pens,
+.stoppers {
+   font-size: 1.3rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+/* buttons, 3 wide under hero image */
+.quickLinks {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   margin: 10rem;
+}
+.allProds {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.allProdsBtn {
+   padding: 0.5rem 3rem;
+   font-size: 1.5em;
+}
+
+
+/* for products grid */
+.flex-wrapper {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   margin: 2rem;
+}
+.grid-wrapper {
+   display: grid;
+   margin: 5vh;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   gap: 2vh 2vh;
+   grid-template-areas:
+      ". ."
+      ". ."
+      ". .";
+}
+.productDiv {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   width: 15rem;
+   border: thin solid black;
+   margin: 1.5rem 3rem;
+   padding: 2rem;
+}
+.productImg {
+   width: 8rem;
+   height: 8rem;
+   border: 1px solid grey;
+   margin-bottom: 0.5rem;
+}
+.productImg p,
+.productImg button {
+   padding: 0.5rem;
+   margin: 0.5rem;
+}
+/* The products page header (h1, p, select) */
+.product-header {
+   display: flex;
+   flex-direction: row;
+   margin: 1rem;
+}
+/* pusing p and select to the right of screen */
+.product-header h1 {
+   margin: 0 70vw 0 1rem;
+}
+/* using margins to align p and select better */
+.product-header p {
+   margin: 0.5rem 2rem 0 0;
+}
+
+
+
+/* product details page  */
+.prodDetail {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 0;
+   margin: 0;
+   padding: 10vh 5vw;
+}
+#image {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+#image img {
+   height: 25rem;
+   width: 25rem;
+   border: thin solid var(--text-content);
+}
+#description {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+#description p {
+   font-size: 16pt;
+   margin-bottom: 2vh;
+}
+#description hr {
+   margin: 0.5rem 0 1.5rem 0;
+   width: 10rem;
+   border-top: thin solid var(--text-content);
+}
+
+
+/* footer styling */
+footer {
+   position: absolute;
+   width:100%;
+   height: 5rem;
+   margin-top: 15vh;
+   background-color: var(--clr-main);
+   color: var(--text-nav);
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.aboutContent, .aboutTitle {
+   margin: 2rem;
+   padding: 1rem;
+}
