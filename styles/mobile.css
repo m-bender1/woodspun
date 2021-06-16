@@ -47,15 +47,15 @@ nav {
 .title,
 .subtitle {
    position: absolute;
-   top: 15vh;
+   top: 25vh;
    left: 50vw;
    transform: translate(-50%, -50%);
-   font-size: 1.5rem;
+   font-size: 2rem;
    text-shadow: -2px 3px #00000081;
 }
 .subtitle {
-   top: 20vh;
-   font-size: 0.5em;
+   top: 30vh;
+   font-size: 1.5rem;
    font-weight: 600;
 }
 /* outline effect for button hover */
