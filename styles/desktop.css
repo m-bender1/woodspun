@@ -4,8 +4,12 @@
    overflow-x: hidden;
 }
 
-/* HERO AND NAV STYLING */
+/* Disable the homepage about us button on desktop */
+.aboutUs {
+   display: none;
+}
 
+/* HERO AND NAV STYLING */
 /* move the nav links to the left of the nav */
 .navBar {
    display: flex;
