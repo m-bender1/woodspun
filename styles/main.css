@@ -2,7 +2,7 @@
 
 /* import fonts */
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap");
 
 * {
    margin: 0;
@@ -13,7 +13,7 @@
    --clr-main: #285319;
    --text-nav: #e7e4e4;
    --text-content: #575757;
-   --font-main-text: 'Nanum Gothic', sans-serif;
+   --font-main-text: "Nanum Gothic", sans-serif;
    --font-logo: "Josefin Slab", serif;
 }
 
@@ -52,7 +52,8 @@ nav a {
    color: var(--text-content);
 }
 
-.title, .subtitle {
+.title,
+.subtitle {
    color: var(--text-nav);
 }
 
@@ -68,4 +69,9 @@ button {
 
 .disabled {
    display: none;
+}
+
+footer {
+   background-color: var(--clr-main);
+   color: var(--text-nav);
 }
