@@ -33,8 +33,7 @@ nav {
 }
 /* this will center the titles over the hero image */
 .heroImageDiv {
-   display: flex;
-   align-items: center;
+   position: relative;
    justify-content: flex-start;
    flex-direction: column;
    width: 100vw;
