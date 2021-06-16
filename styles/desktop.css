@@ -213,3 +213,8 @@ footer {
    align-items: center;
    justify-content: space-around;
 }
+
+.aboutContent {
+   margin: 2rem;
+   padding: 1rem;
+}
