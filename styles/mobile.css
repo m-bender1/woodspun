@@ -34,8 +34,6 @@ nav {
 /* this will center the titles over the hero image */
 .heroImageDiv {
    position: relative;
-   justify-content: flex-start;
-   flex-direction: column;
    width: 100vw;
    min-height: 15rem;
 }
@@ -47,6 +45,10 @@ nav {
 }
 .title,
 .subtitle {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
    text-align: center;
    font-size: 3rem;
    text-shadow: -2px 3px #00000081;
