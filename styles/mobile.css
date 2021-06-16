@@ -33,18 +33,18 @@ nav {
    display: relative;
    text-align: center;
    width: 100vw;
-   min-height: 45vh;
+   min-height: 12rem;
 }
 .heroImage {
    width: 100vw;
-   height: 10rem;
-   min-height: 10rem;
+   height: 12rem;
+   min-height: 12rem;
    object-fit: cover;
 }
 .title,
 .subtitle {
    position: absolute;
-   top: 25vh;
+   top: 15vh;
    left: 50vw;
    transform: translate(-50%, -50%);
    font-size: 1.5rem;
