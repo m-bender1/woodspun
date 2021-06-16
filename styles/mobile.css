@@ -15,7 +15,9 @@
    height: 5rem;
    min-height: 5rem;
 }
-
+nav span {
+   
+}
 nav {
    margin-right: 0.5rem;
 }
