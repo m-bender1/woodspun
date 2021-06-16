@@ -16,7 +16,8 @@
    min-height: 5rem;
 }
 nav span {
-   
+   /* 1rem=16px */
+   font-size: 14px;
 }
 nav {
    margin-right: 0.5rem;
@@ -54,7 +55,7 @@ nav {
 }
 .subtitle {
    top: 35vh;
-   font-size: .5em;
+   font-size: 0.5em;
    font-weight: 600;
 }
 /* outline effect for button hover */
@@ -63,7 +64,6 @@ nav > span:active {
    outline: 1px solid var(--text-nav);
    outline-offset: -4px;
 }
-
 
 /* Quick link PNGs */
 .penImg,
@@ -87,10 +87,10 @@ nav > span:active {
 }
 /* buttons, 3 wide under hero image */
 .quickLinks {
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: center;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 0.3rem;
+   margin: 0.5rem;
 }
 .allProds {
    display: flex;
@@ -101,7 +101,6 @@ nav > span:active {
    padding: 2vh 5vw;
    font-size: 0.75rem;
 }
-
 
 /* for products grid */
 .flex-wrapper {
@@ -158,8 +157,6 @@ nav > span:active {
    margin: 0.5rem 2rem 0 0;
 }
 
-
-
 /* product details page  */
 .prodDetail {
    display: grid;
@@ -194,11 +191,10 @@ nav > span:active {
    border-top: thin solid var(--text-content);
 }
 
-
 /* footer styling */
 footer {
    position: absolute;
-   width:100%;
+   width: 100%;
    height: 5rem;
    margin-top: 15vh;
    background-color: var(--clr-main);
@@ -212,9 +208,9 @@ footer p {
    font-size: 0.5rem;
 }
 
-
 /* about page */
-.aboutContent, .aboutTitle {
+.aboutContent,
+.aboutTitle {
    margin: 2rem;
    padding: 1rem;
 }
