@@ -184,7 +184,6 @@ nav > span:active {
 /* footer styling */
 footer {
    position: absolute;
-   bottom: 0;
    width: 100%;
    height: 5rem;
    margin: 15vh 0 0 0;
