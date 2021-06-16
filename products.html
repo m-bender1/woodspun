@@ -5,11 +5,13 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="shortcut icon" href="#" />
-   <title>Woodspun - Products</title>
-   <link rel="stylesheet" href="styles/main.css" />
+   <link rel="shortcut icon" href="#" /> <!-- this removes the favicon 404 error -->
+   <link rel="stylesheet" href="styles/main.css" /> <!-- main styling -->
+   <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 600px)">
+   <link rel="stylesheet" href="styles/tablet.css" media="screen and (min-width: 601px) and (max-width: 1024px)">
    <link rel="stylesheet" href="styles/desktop.css" media="screen and (min-width: 1025px) and (max-width: 1768px)">
-	<link rel="stylesheet" href="styles/desktop.css" media="screen and (min-width: 1768px)">
+   <link rel="stylesheet" href="styles/large_desktop.css" media="screen and (min-width: 1768px)">
+   <title>Woodspun - Products</title>
 </head>
 
 <body onload="setFilter()">
