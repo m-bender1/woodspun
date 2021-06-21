@@ -84,7 +84,6 @@ nav > span:active {
    flex-direction: column;
 }
 .allProdsBtn {
-   margin: 2rem 0;
    padding: 2vh 5vw;
    font-size: 1rem;
 }
