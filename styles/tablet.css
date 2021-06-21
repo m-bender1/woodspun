@@ -1,6 +1,6 @@
 .wrapper, body {
    height: 100vh;
-   width: 100vw;
+   width: 100%;
    overflow-x: hidden;
 }
 
@@ -100,7 +100,7 @@ nav > span:active {
 }
 .grid-wrapper {
    display: grid;
-   margin: 2vh;
+   margin: 3rem;
    grid-template-columns: 1fr 1fr;
    grid-template-rows: 1fr 1fr;
    gap: 0;
@@ -115,9 +115,9 @@ nav > span:active {
    justify-content: center;
    text-align: center;
    flex-direction: column;
-   width: 11rem;
+   width: 10rem;
    border: thin solid black;
-   margin: 1.5rem 3rem;
+   margin: 1.5rem 2rem;
    padding: 2rem;
 }
 .productImg {
@@ -165,8 +165,8 @@ nav > span:active {
    justify-content: center;
 }
 #image img {
-   height: 11rem;
-   width: 11rem;
+   height: 13rem;
+   width: 13rem;
    border: thin solid var(--text-content);
 }
 #description {
