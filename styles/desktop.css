@@ -125,7 +125,7 @@ nav > span:hover {
    margin: 5vh;
    grid-template-columns: 1fr 1fr 1fr;
    grid-template-rows: 1fr 1fr 1fr;
-   gap: 2vh 2vw;
+   gap: 2vh 0.5vw;
    grid-template-areas:
       ". . . "
       ". . . "
