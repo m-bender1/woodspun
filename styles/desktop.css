@@ -1,4 +1,13 @@
-.wrapper, body {
+html {
+   height: 100%;
+   width: 100%;
+   margin: 0%;
+   padding: 0%;
+   overflow-x: hidden;
+}
+
+.wrapper,
+body {
    height: 100vh;
    width: 100%;
    overflow-x: visible;
@@ -59,14 +68,12 @@ nav {
    font-weight: 700;
 }
 
-
 /* outline effect for button hover */
 button:hover,
 nav > span:hover {
    outline: 1px solid var(--text-nav);
    outline-offset: -4px;
 }
-
 
 /* Quick link PNGs */
 .penImg,
@@ -80,8 +87,7 @@ nav > span:hover {
 .penImg,
 .stopperImg,
 .pens p,
-.stoppers p 
-{
+.stoppers p {
    cursor: pointer;
 }
 .stopperImg {
@@ -110,7 +116,6 @@ nav > span:hover {
    padding: 0.5rem 3rem;
    font-size: 1.5em;
 }
-
 
 /* for products grid */
 .flex-wrapper {
@@ -167,8 +172,6 @@ nav > span:hover {
    margin: 0.5rem 2rem 0 0;
 }
 
-
-
 /* product details page  */
 .prodDetail {
    display: grid;
@@ -203,11 +206,10 @@ nav > span:hover {
    border-top: thin solid var(--text-content);
 }
 
-
 /* footer styling */
 footer {
    position: absolute;
-   width:100%;
+   width: 100%;
    height: 5rem;
    background-color: var(--clr-main);
    color: var(--text-nav);
