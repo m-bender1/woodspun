@@ -136,9 +136,9 @@ nav > span:hover {
    align-items: center;
    justify-content: center;
    flex-direction: column;
-   width: 15rem;
+   width: 25vw;
    border: thin solid black;
-   margin: 1.5rem;
+   margin: 1.5rem 1rem;
    padding: 2rem;
 }
 .productImg {
