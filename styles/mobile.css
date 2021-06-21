@@ -208,7 +208,9 @@ footer p {
    margin: 2rem;
    padding: 1rem;
 }
-
+.aboutContent {
+   margin: 0.5rem;
+}
 /* remove filtering on mobile */
 #productSelect, .product-header p {
    display: none;

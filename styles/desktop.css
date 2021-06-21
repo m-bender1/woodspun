@@ -218,7 +218,12 @@ footer {
    justify-content: space-around;
 }
 
-.aboutContent, .aboutTitle {
+/* about page */
+.aboutContent,
+.aboutTitle {
    margin: 2rem;
    padding: 1rem;
+}
+.aboutContent {
+   margin: 0.5rem;
 }
