@@ -17,33 +17,31 @@
 </head>
 
 <body onload="setFilter()">
-   <div class="wrapper">
-      <div class="navBar">
-         <div class="logoWrap">
-            <h3 class="logo">WoodSpun</h3>
-         </div>
-         <nav>
-            <!-- spans for border around the links -->
-            <span><a href="index.html">Home</a></span>
-            <span><a href="products.html">Products</a></span>
-            <span><a href="about.html">About</a></span>
-         </nav>
+   <div class="navBar">
+      <div class="logoWrap">
+         <h3 class="logo">WoodSpun</h3>
       </div>
+      <nav>
+         <!-- spans for border around the links -->
+         <span><a href="index.html">Home</a></span>
+         <span><a href="products.html">Products</a></span>
+         <span><a href="about.html">About</a></span>
+      </nav>
+   </div>
 
-      <div class="main-wrapper">
-         <div class="product-header">
-            <h1 id="productH1">Products</h1>
-            <p>Filter: </p>
-            <select id="productSelect" onchange="filterProducts()">
-               <option selected>All</option>
-               <option>Pens</option>
-               <option>Wine Stoppers</option>
-               <option>Pendants</option>
-            </select>
-         </div>
-         <div class="flex-wrapper">
-            <div class="grid-wrapper"></div>
-         </div>
+   <div class="main-wrapper">
+      <div class="product-header">
+         <h1 id="productH1">Products</h1>
+         <p>Filter: </p>
+         <select id="productSelect" onchange="filterProducts()">
+            <option selected>All</option>
+            <option>Pens</option>
+            <option>Wine Stoppers</option>
+            <option>Pendants</option>
+         </select>
+      </div>
+      <div class="flex-wrapper">
+         <div class="grid-wrapper"></div>
       </div>
    </div>
    <footer>
