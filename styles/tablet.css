@@ -9,6 +9,7 @@
 /* move the nav links to the left of the nav */
 .navBar {
    display: flex;
+   display: -webkit-inline-flex;
    flex-direction: row;
    align-items: center;
    justify-content: flex-end;
@@ -22,7 +23,7 @@ nav span {
    margin: 0.25rem;
 }
 nav {
-   margin-right: 0.5rem;
+   margin-right: 1rem;
 }
 /* positioning the logo absolute on the left side of the page */
 .logoWrap {
