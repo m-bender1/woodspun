@@ -69,50 +69,25 @@ nav > span:active {
    outline-offset: -4px;
 }
 
-/* Quick link PNGs */
-.penImg,
-.stopperImg {
-   max-height: 14rem;
-   max-width: 1.75rem;
-   min-height: 14rem;
-   min-width: 1.75rem;
-   padding-bottom: 1rem;
-}
-.penImg,
-.stopperImg,
-.pens p,
-.stoppers p 
-{
-   cursor: pointer;
-}
-.stopperImg {
-   min-width: 6rem;
-}
+/* Disable product quicklinks on mobile */
 .pens,
 .stoppers {
-   font-size: 1.3rem;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
+   display: none;
 }
 /* buttons, 3 wide under hero image */
 .quickLinks {
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   margin: 10rem;
+   margin: 3.5rem 0.5rem;
 }
 .allProds {
    display: flex;
    align-items: center;
    justify-content: center;
+   flex-direction: column;
 }
 .allProdsBtn {
-   padding: 0.5rem 3rem;
-   font-size: 1.5em;
-}
-#aboutUsBtn {
-   display: none;
+   margin: 2rem 0;
+   padding: 2vh 5vw;
+   font-size: 1rem;
 }
 
 /* for products grid */
