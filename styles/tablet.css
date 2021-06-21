@@ -111,7 +111,7 @@ nav > span:active {
    padding: 0.5rem 3rem;
    font-size: 1.5em;
 }
-.aboutUsBtn {
+#aboutUsBtn {
    display: none;
 }
 
