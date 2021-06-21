@@ -17,7 +17,7 @@
 }
 nav span {
    /* 1rem=16px */
-   font-size: 13px;
+   font-size: 14px;
    padding: 0.25rem;
    margin: 0.25rem;
 }
@@ -211,4 +211,9 @@ footer p {
 .aboutTitle {
    margin: 2rem;
    padding: 1rem;
+}
+
+/* remove filtering on mobile */
+#productSelect, .product-header p {
+   display: none;
 }

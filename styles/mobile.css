@@ -144,10 +144,6 @@ nav > span:active {
 .product-header p {
    margin: 0.5rem 2rem 0 0;
 }
-.product-header select {
-   /* hide filtering on mobile */
-   display: none;
-}
 
 /* product details page  */
 .prodDetail {
@@ -211,4 +207,9 @@ footer p {
 .aboutTitle {
    margin: 2rem;
    padding: 1rem;
+}
+
+/* remove filtering on mobile */
+#productSelect, .product-header p {
+   display: none;
 }
