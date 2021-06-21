@@ -202,12 +202,17 @@ footer p {
    font-size: 0.5rem;
 }
 
+
 /* about page */
-.aboutContent,
+.aboutContent {
+   margin: 0 2rem;
+   padding: 0 1rem;
+}
 .aboutTitle {
    margin: 2rem 2rem 1rem 2rem;
    padding: 1rem;
 }
+
 /* remove filtering on mobile */
 #productSelect, .product-header p {
    display: none;
