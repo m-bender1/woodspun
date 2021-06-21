@@ -100,13 +100,13 @@ nav > span:active {
 .grid-wrapper {
    display: grid;
    margin: 2vh;
-   grid-template-columns: 1fr;
-   grid-template-rows: 1fr;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
    gap: 0;
    grid-template-areas:
-      "."
-      "."
-      ".";
+      ". ."
+      ". ."
+      ". .";
 }
 .productDiv {
    display: flex;
