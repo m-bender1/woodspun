@@ -115,7 +115,7 @@ nav > span:active {
    justify-content: center;
    text-align: center;
    flex-direction: column;
-   width: 10rem;
+   width: 30vw;
    border: thin solid black;
    margin: 1.5rem 2.125rem;
    padding: 2rem;
