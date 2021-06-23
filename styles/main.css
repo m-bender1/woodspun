@@ -30,7 +30,7 @@ body {
 
 /* Ecwid cart btn */
 .ec-cart-widget {
-   stroke: var(--text-nav);
+   color: var(--text-nav);
 }
 
 .navBar {
