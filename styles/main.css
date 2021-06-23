@@ -98,3 +98,7 @@ footer p {
    align-items: center;
    justify-content: center;
 }
+
+.abtImgDiv img {
+   height: 25vh;
+}
