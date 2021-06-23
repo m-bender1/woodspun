@@ -184,21 +184,6 @@ nav > span:active {
    border-top: thin solid var(--text-content);
 }
 
-/* footer styling */
-footer {
-   margin: auto;
-   width: 100%;
-   height: 5rem;
-   padding:0;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-} 
-footer p {
-   margin-top: 0.25rem;
-   font-size: 0.5rem;
-}
 
 /* about page */
 .aboutContent {

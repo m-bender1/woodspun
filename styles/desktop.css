@@ -192,19 +192,6 @@ nav > span:hover {
    border-top: thin solid var(--text-content);
 }
 
-/* footer styling */
-footer {
-   margin: auto;
-   width: 100%;
-   height: 5rem;
-   background-color: var(--clr-main);
-   color: var(--text-nav);
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: space-around;
-}
-
 /* about page */
 .aboutContent {
    margin: 0 2rem;
