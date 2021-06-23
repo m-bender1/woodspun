@@ -91,3 +91,10 @@ footer p {
    margin-top: 0.3rem;
    font-size: 0.75rem;
 }
+
+
+.abtImgDiv {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
