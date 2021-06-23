@@ -196,6 +196,7 @@ nav > span:hover {
 .aboutContent {
    margin: 0 2rem;
    padding: 0 1rem;
+   font-size: 2rem;
 }
 .aboutTitle {
    margin: 2rem 2rem 1rem 2rem;
