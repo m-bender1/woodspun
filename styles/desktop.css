@@ -202,6 +202,7 @@ nav > span:hover {
    padding: 1rem;
 }
 
+/* footer */
 footer {
    flex-direction: row;
    justify-content: space-evenly;
