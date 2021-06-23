@@ -27,6 +27,12 @@ body {
 }
 
 /* NAV STYLING */
+
+/* Ecwid cart btn */
+.ec-cart-widget {
+   stroke: var(--text-nav);
+}
+
 .navBar {
    min-height: 10vh;
    min-width: 100%;
@@ -104,3 +110,4 @@ footer p {
    width: 35vw;
    margin-top: 5vh;
 }
+
