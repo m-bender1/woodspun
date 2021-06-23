@@ -206,7 +206,7 @@ footer {
    flex-direction: row;
    justify-content: space-evenly;
 }
+
 footer p {
-   display: flex;
-   flex-direction: column;
+   font-size: 1rem;
 }
