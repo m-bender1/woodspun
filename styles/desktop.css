@@ -204,4 +204,5 @@ nav > span:hover {
 
 footer {
    flex-direction: row;
+   justify-content: space-evenly;
 }
