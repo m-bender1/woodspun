@@ -16,9 +16,6 @@ nav span {
    padding: 0.25rem;
    margin: 0.25rem;
 }
-nav {
-   margin-right: 1rem;
-}
 /* positioning the logo absolute on the left side of the page */
 .logoWrap {
    position: absolute;
