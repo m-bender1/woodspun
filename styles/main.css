@@ -33,6 +33,9 @@ body {
    color: var(--text-nav);
    stroke: var(--text-nav);
 }
+html#ecwid_html body#ecwid_body [class^='ec-minicart'] {
+   color: var(--text-nav);
+}
 
 .navBar {
    min-height: 10vh;
