@@ -60,7 +60,7 @@ nav {
    margin-right: 1rem;
 }
 
-nav svg  {
+#cartSVG  {
    height: 2rem;
    width: 2rem;
    fill: var(--text-nav);
