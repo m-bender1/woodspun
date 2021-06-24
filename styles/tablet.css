@@ -1,24 +1,11 @@
 /* HERO AND NAV STYLING */
-
-/* move the nav links to the left of the nav */
-.navBar {
-   display: flex;
-   display: -webkit-inline-flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: flex-end;
-   height: 5rem;
-   min-height: 5rem;
-}
 nav span {
    /* 1rem=16px */
    font-size: 14px;
    padding: 0.25rem;
    margin: 0.25rem;
 }
-nav {
-   margin-right: 1rem;
-}
+
 /* positioning the logo absolute on the left side of the page */
 .logoWrap {
    position: absolute;

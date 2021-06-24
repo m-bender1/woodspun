@@ -28,9 +28,16 @@ body {
 
 /* NAV STYLING */
 .navBar {
-   min-height: 10vh;
+   min-height:5rem;
    min-width: 100%;
    background: var(--clr-main);
+   /* move the nav links to the left of the nav */
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: flex-end;
+   height: 5rem;
+   min-height: 5rem;
 }
 
 nav span {
@@ -43,6 +50,20 @@ nav span {
 nav a {
    text-decoration: none;
    color: var(--text-nav);
+}
+
+nav {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   margin-right: 1rem;
+}
+
+nav svg  {
+   height: 3rem;
+   width: 3rem;
+   fill: var(--text-nav);
 }
 
 .logo {
