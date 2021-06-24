@@ -29,7 +29,7 @@ body {
 /* NAV STYLING */
 
 /* Ecwid cart btn */
-.ec-cart-widget {
+#ecwid_body > div.navBar > nav > div.ec-cart-widget > div > div > div.ec-minicart__icon > svgt {
    color: var(--text-nav);
 }
 
