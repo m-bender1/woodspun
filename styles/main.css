@@ -27,18 +27,11 @@ body {
 }
 
 /* NAV STYLING */
-
-/* Ecwid cart btn */
-.icon-default {
+html#ecwid_html body#ecwid_body .ec-minicart__icon {
+   stroke: var(--text-nav);
    color: var(--text-nav);
-   stroke: var(--text-nav);
+   background: var(--text-nav);
 }
-/*Button color*/
-html#ecwid_html body#ecwid_body .ec-minicart__icon .icon-default path[stroke], html#ecwid_html body#ecwid_body .ec-minicart__icon .icon-default circle[stroke] {
-   stroke: var(--text-nav);
-   transition: stroke .2s ease 0s;
-}
-
 .navBar {
    min-height: 10vh;
    min-width: 100%;
