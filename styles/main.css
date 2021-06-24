@@ -34,8 +34,9 @@ body {
    stroke: var(--text-nav);
 }
 /*Button color*/
-.form-control--primary.form-control--flexible.details-product-purchase__checkout .form-control__button {
-background: var(--text-nav);
+html#ecwid_html body#ecwid_body .ec-minicart__icon .icon-default path[stroke], html#ecwid_html body#ecwid_body .ec-minicart__icon .icon-default circle[stroke] {
+   stroke: white;
+   transition: stroke .2s ease 0s;
 }
 
 .navBar {
