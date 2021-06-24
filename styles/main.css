@@ -33,8 +33,9 @@ body {
    color: var(--text-nav);
    stroke: var(--text-nav);
 }
-html#ecwid_html body#ecwid_body [class^='ec-minicart'] {
-   color: var(--text-nav);
+/*Button color*/
+.form-control--primary.form-control--flexible.details-product-purchase__checkout .form-control__button {
+background: var(--text-nav);
 }
 
 .navBar {
