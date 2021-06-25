@@ -115,7 +115,7 @@ function displayProduct() {
    let descriptionParagraph = document.createElement("p");
 
    title.textContent = prod.productName;
-   descriptionParagraph.textContent = "$" + prod.productPrice + " " + prod.productDescription;
+   descriptionParagraph.textContent = "$" + prod.productPrice + "<br>" + prod.productDescription;
 
    // img src and alt text
    pImg.src = prod.imageUrl;
