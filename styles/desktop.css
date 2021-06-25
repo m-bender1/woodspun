@@ -140,7 +140,7 @@ nav > span:hover {
 /* filter drop down styling */
 .selectWrap {
    border: 1px solid var(--text-content);
-   padding: 0 5px 5px;
+   padding: 0 0.5rem 0.5rem;
    width: fit-content;
    background-color: var(--clr-main);
    display: flex;
@@ -151,14 +151,13 @@ nav > span:hover {
    font-size: 10px;
    text-transform: uppercase;
    color: var(--text-nav);
-   padding: 2px 8px 0;
+   padding: 0.125rem 0.5rem 0;
 }
 #productSelect {
    background-color: var(--clr-main);
-   border: 0px;
 }
 #productSelect option {
-   text-align: center;
+   color: var(--text-nav);
 }
 
 /* product details page  */
