@@ -108,6 +108,7 @@ button {
 /* Cart button styling */
 .addToCartBtn {
    padding: 0.5rem;
+   margin: 0.5rem 0;
 }
 .addToCartBtn:hover {
    outline: 1px solid var(--text-nav);
