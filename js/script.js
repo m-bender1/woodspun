@@ -111,13 +111,19 @@ function displayProduct() {
    let imgWrap = document.getElementById("image");
    let description = document.getElementById("description");
    let pImg = document.createElement("img");
+   let title = document.createElement("h2");
+   let descriptionParagraph = document.createElement("p");
+
+   title.textContent = prod.productName;
+   descriptionParagraph.textContent = "$" + prod.productPrice + " " + prod.productDescription;
+
    // img src and alt text
    pImg.src = prod.imageUrl;
    pImg.alt = prod.imageAlt;
    imgWrap.append(pImg);
 
-   let descriptionText = "<h2>" + prod.productName + "</h2><hr>" + "<p>$" + prod.productPrice + "</p><p>" + prod.productDescription + "</p>";
-   description.append(descriptionText);
+   description.append(title)
+   description.append(descriptionParagraph);
    description.append(addToCartBtn);
 }
 
