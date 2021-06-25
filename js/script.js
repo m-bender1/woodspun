@@ -162,9 +162,6 @@ function setFilter() {
 
 function displayCart() {
    for (let i = 0; i < sessionStorage.length; i++) {
-      let cartItem = JSON.parse(sessionStorage.getItem(("item" + i)));
-      if (cartItem !== null) {
-         console.log(cartItem.uniqueID);
-      }
+      console.log(JSON.parse(sessionStorage.getItem(("item" + i))));
    }
 }
