@@ -42,7 +42,7 @@
          "productName": "Ebony/Chrome Memory Pendant",
          "productPrice": "25.00",
          "productDescription": "Chrome memory pendant made with ebony wood. Bottom is threaded to allow opening container.",
-         "imageUrl": "resources/product_images/hard-maple-chrome-stopper.jpg",
+         "imageUrl": "resources/product_images/ebony-chrome-pendant.jpg",
          "imageAlt": "Product image for the ebony chrome memory pendant"
       }
    ]
