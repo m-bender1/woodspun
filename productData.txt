@@ -1,15 +1,6 @@
 {
    "products": [
       {
-         "example_productType": "Pens",
-         "example_uniqueID": "item0",
-         "example_productName": "Ebony Chrome Twist Pen",
-         "example_productPrice": "25.00",
-         "example_productDescription": "Chrome roundtop twist pen, made with ebony wood.",
-         "example_imageUrl": "resources/product_images/productimageurl.jpg",
-         "example_imageAlt": "Product image for ebony chrome twist pen"
-      },
-      {
          "productType": "Pens",
          "uniqueID": "item0",
          "productName": "Ebony/Chrome Twist Pen",
