@@ -36,7 +36,7 @@ nav span {
    transform: translate(-50%, -50%);
    text-align: center;
    font-size: 2.5rem;
-   text-shadow: -2px 3px #00000081;
+   text-shadow: -1.5px 2.5px #00000081;
 }
 .subtitle {
    top: 55%;
