@@ -129,7 +129,6 @@ nav > span:hover {
    position: relative;
    display: flex;
    flex-direction: row;
-   justify-content: space-evenly;
    margin: 1rem;
 }
 .product-header h1 {
@@ -145,6 +144,8 @@ nav > span:hover {
    display: flex;
    flex-direction: column;
    align-content: center;
+   position: absolute;
+   right: 1rem;
 }
 .selectWrap label {
    font-size: 10px;
