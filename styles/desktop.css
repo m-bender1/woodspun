@@ -142,7 +142,7 @@ nav > span:hover {
    border: 1px solid var(--text-content);
    padding: 0 5px 5px;
    width: fit-content;
-   background-color: var(--text-nav);
+   background-color: var(--clr-main);
    display: flex;
    flex-direction: column;
    align-content: center;
@@ -150,11 +150,11 @@ nav > span:hover {
 .selectWrap label {
    font-size: 10px;
    text-transform: uppercase;
-   color: #777;
+   color: var(--text-nav);
    padding: 2px 8px 0;
 }
 #productSelect {
-   background-color: var(--text-nav);
+   background-color: var(--clr-main);
    border: 0px;
 }
 #productSelect option {
