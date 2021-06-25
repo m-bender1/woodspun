@@ -99,10 +99,10 @@ button {
 
 /* productImages, standard across devices */
 .productImg {
-   height: 9rem;
-   width: 6.1625rem;
+   height: 9.5rem;
+   width: 7.1625rem;
    border: 1px solid grey;
-   margin-bottom: 0.5rem;
+   margin-bottom: 0.75rem;
 }
 
 /* Cart button styling */
