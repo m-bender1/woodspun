@@ -21,14 +21,13 @@ function generateProducts(a) {
       let prodImg = document.createElement("img");
       let prodPrice = document.createElement("p");
       let prodName = document.createElement("p");
-      let prodType = a.products[i].productType;
 
       // append the img and p tags to proddiv and then proddiv to grid wrapper
       prodDiv.classList.add("productDiv");
       prodDiv.id = a.products[i].uniqueID;
       // add img src and class
       prodImg.src = a.products[i].imageUrl;
-      prodImg.classList.add("productImg")
+      prodImg.classList.add("productImg");
       prodPrice.innerHTML = "$" + a.products[i].productPrice
       prodName.innerHTML = "<b>" + a.products[i].productName + "</b>";
       prodDiv.appendChild(prodImg);
@@ -87,10 +86,10 @@ function displayProduct() {
 
    let pImg = document.createElement("img");
    pImg.src = prod.imageUrl;
+   pImg.alt = prod.imageAlt;
    imgWrap.append(pImg);
 
-   details.innerHTML = "<h2>" + prod.productName + "</h2><hr>" + "<p>$" + prod.productPrice + "</p><p>"
-      + prod.kitType + "</p><p>" + prod.woodType + "</p>";
+   details.innerHTML = "<h2>" + prod.productName + "</h2><hr>" + "<p>$" + prod.productPrice + "</p><p>" + prod.productDescription + "</p>";
 }
 
 function quickLinkFilter(type) {
