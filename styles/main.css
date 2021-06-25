@@ -60,12 +60,6 @@ nav {
    margin-right: 1rem;
 }
 
-#cartSVG  {
-   height: 2rem;
-   width: 2rem;
-   fill: var(--text-nav);
-}
-
 .logo {
    font-family: var(--font-logo);
    color: var(--text-nav);
