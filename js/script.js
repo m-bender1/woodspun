@@ -162,7 +162,7 @@ function displayCart() {
    for (let i = 0; i < sessionStorage.length; i++) {
       let cartItem = sessionStorage.getItem(("item" + i));
       if (cartItem !== null) {
-         console.log(cartItem.productName);
+         console.log(cartItem.uniqueID);
       }
    }
 }
