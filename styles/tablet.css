@@ -100,12 +100,7 @@ nav > span:active {
    margin: 1.5rem 2.125rem;
    padding: 2rem;
 }
-.productImg {
-   width: 8rem;
-   height: 8rem;
-   border: 1px solid grey;
-   margin-bottom: 0.5rem;
-}
+
 .productImg p,
 .productImg button {
    padding: 0.5rem;

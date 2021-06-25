@@ -92,8 +92,26 @@ button {
    text-align: center;
 }
 
+/* for product filtering, etc */
 .disabled {
    display: none;
+}
+
+/* productImages, standard across devices */
+.productImg {
+   height: 9rem;
+   width: 6.1625rem;
+   border: 1px solid grey;
+   margin-bottom: 0.5rem;
+}
+
+/* Cart button styling */
+.addToCartBtn {
+   padding: 0.5rem;
+}
+.addToCartBtn:hover {
+   outline: 1px solid var(--text-nav);
+   outline-offset: -4px;
 }
 
 footer {
@@ -125,3 +143,4 @@ footer p {
    width: 35vw;
    margin-top: 5vh;
 }
+

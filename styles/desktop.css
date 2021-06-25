@@ -119,12 +119,6 @@ nav > span:hover {
    padding: 2rem;
    white-space: nowrap;
 }
-.productImg {
-   height: 9rem;
-   width: 6.1625rem;
-   border: 1px solid grey;
-   margin-bottom: 0.5rem;
-}
 .productImg p,
 .productImg button {
    padding: 0.5rem;
