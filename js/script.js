@@ -136,7 +136,7 @@ function quickLinkFilter(type) {
 
 function setFilter() {
    if (typeof sessionStorage.getItem("filter") == undefined) {
-      console.log("test");
+      document.getElementById("productSelect").value = "All";
    }
    else if (sessionStorage.getItem("filter") == "pen") {
       document.getElementById("productSelect").value = "Pens";
@@ -151,4 +151,5 @@ function setFilter() {
 
 function displayCart() {
    console.log(sessionStorage.length);
+   console.log(sessionStore.)
 }
