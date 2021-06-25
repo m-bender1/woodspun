@@ -97,7 +97,6 @@ nav > span:active {
    text-align: center;
    flex-direction: column;
    width: 70vw;
-   border: thin solid black;
    margin: 1.5rem 3rem;
    padding: 2rem;
 }
