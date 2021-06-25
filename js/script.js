@@ -116,8 +116,9 @@ function displayProduct() {
    pImg.alt = prod.imageAlt;
    imgWrap.append(pImg);
 
+   let descriptionText = "<h2>" + prod.productName + "</h2><hr>" + "<p>$" + prod.productPrice + "</p><p>" + prod.productDescription + "</p>";
+   description.append(descriptionText);
    description.append(addToCartBtn);
-   description.innerHTML = "<h2>" + prod.productName + "</h2><hr>" + "<p>$" + prod.productPrice + "</p><p>" + prod.productDescription + "</p>";
 }
 
 function quickLinkFilter(type) {
