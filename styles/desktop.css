@@ -119,8 +119,8 @@ nav > span:hover {
    padding: 2rem;
 }
 .productImg {
-   width: 8rem;
-   height: 8rem;
+   width: 9rem;
+   height: 6rem;
    border: 1px solid grey;
    margin-bottom: 0.5rem;
 }
@@ -158,8 +158,8 @@ nav > span:hover {
    justify-content: center;
 }
 #image img {
-   height: 25rem;
-   width: 25rem;
+   height: 26rem;
+   width: 20rem;
    border: thin solid var(--text-content);
 }
 #description {
