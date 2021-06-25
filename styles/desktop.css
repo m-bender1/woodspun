@@ -190,7 +190,7 @@ nav > span:hover {
 }
 #description p {
    font-size: 16pt;
-   margin-bottom: 2vh;
+   margin: 1.5rem 0;
 }
 #description hr {
    margin: 0.5rem 0 1.5rem 0;
