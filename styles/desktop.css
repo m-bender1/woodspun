@@ -134,12 +134,6 @@ nav > span:hover {
 .product-header h1 {
    justify-self: flex-start;
 }
-/* pushing p and select to the right of screen */
-.product-header h1,
-.product-header label {
-   margin: 0 1rem;
-}
-
 /* filter drop down styling */
 .selectWrap {
    border: 1px solid var(--text-content);
