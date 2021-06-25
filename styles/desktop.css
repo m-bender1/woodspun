@@ -117,10 +117,11 @@ nav > span:hover {
    width: 20vw;
    margin: 1.5rem 1rem;
    padding: 2rem;
+   white-space: nowrap;
 }
 .productImg {
-   width: 9rem;
-   height: 6rem;
+   width: 6rem;
+   height: 9rem;
    border: 1px solid grey;
    margin-bottom: 0.5rem;
 }
