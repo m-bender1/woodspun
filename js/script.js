@@ -159,5 +159,9 @@ function setFilter() {
 }
 
 function displayCart() {
-   console.log(myArr.length);
+   for (let i = 0; i < sessionStorage.length; i++) {
+      if (sessionStorage.getItem("item" + i) !== null) {
+         console.log(sessionStorage.getItem("item" + i));
+      }
+   }
 }
