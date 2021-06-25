@@ -99,8 +99,8 @@ button {
 
 /* productImages, standard across devices */
 .productImg {
-   height: 11rem;
-   width: 8.125rem;
+   height: 15rem;
+   width: 12rem;
    border: 1px solid grey;
    margin-bottom: 0.75rem;
 }
