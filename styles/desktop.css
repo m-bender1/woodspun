@@ -128,15 +128,12 @@ nav > span:hover {
 .product-header {
    display: flex;
    flex-direction: row;
+   justify-content: space-evenly;
    margin: 1rem;
 }
 /* pushing p and select to the right of screen */
-.product-header h1 {
-   margin: 0 1rem;
-}
-/* using margins to align p and select better */
+.product-header h1,
 .product-header p {
-   align-self: flex-end;
    margin: 0 1rem;
 }
 
