@@ -151,7 +151,7 @@ nav > span:hover {
    font-size: 10px;
    text-transform: uppercase;
    color: var(--text-nav);
-   padding: 0.125rem 0.5rem 0;
+   padding: 0.125rem 0.5rem;
 }
 #productSelect {
    background-color: var(--clr-main);
