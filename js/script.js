@@ -145,3 +145,7 @@ function setFilter() {
    //remove the filter so reload allows all products to show
    sessionStorage.removeItem("filter");
 }
+
+function displayCart() {
+   console.log(sessionStorage.length);
+}
