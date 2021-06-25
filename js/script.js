@@ -58,7 +58,8 @@ function displayProducts(a) {
 
       addToCartBtn.addEventListener("click", function () {
          // pass this products data to local storage with items id as var name
-         sessionStorage.setItem(a.products[i].uniqueID, a.products[i]);
+         let cartItem = JSON.stringify(a.products[i]);
+         sessionStorage.setItem(a.products[i].uniqueID, cartItem);
          alert("Product added to cart.");
       })
    }
@@ -103,8 +104,8 @@ function displayProduct() {
    addToCartBtn.classList.add("addToCartBtn");
    addToCartBtn.addEventListener("click", function () {
       // pass this products data to local storage with items id as var name
-      // need to re-stringify the prod object
-      sessionStorage.setItem(prod.uniqueID, JSON.stringify(prod));
+      // need to re-stringify the prod object, will used clickedProd
+      sessionStorage.setItem(prod.uniqueID, clickedProd);
       alert("Product added to cart.");
    })
 
