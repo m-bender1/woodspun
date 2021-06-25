@@ -131,6 +131,9 @@ nav > span:hover {
    justify-content: space-evenly;
    margin: 1rem;
 }
+.product-header h1 {
+   justify-self: flex-start;
+}
 /* pushing p and select to the right of screen */
 .product-header h1,
 .product-header label {
