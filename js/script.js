@@ -160,8 +160,9 @@ function setFilter() {
 
 function displayCart() {
    for (let i = 0; i < sessionStorage.length; i++) {
-      if (sessionStorage.getItem("item" + i) !== null) {
-         console.log(JSON.parse(sessionStorage.getItem(("item" + i))));
+      let cartItem = sessionStorage.getItem(("item" + i));
+      if (cartItem !== null) {
+         console.log(JSON.parse(cartItem));
       }
    }
 }
