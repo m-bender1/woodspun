@@ -112,10 +112,12 @@ function displayProduct() {
    let description = document.getElementById("description");
    let pImg = document.createElement("img");
    let title = document.createElement("h2");
+   let price = document.createElement("p");
    let descriptionParagraph = document.createElement("p");
 
    title.textContent = prod.productName;
-   descriptionParagraph.textContent = "$" + prod.productPrice + "<br>" + prod.productDescription;
+   price.textContent = "$" + prod.productPrice;
+   descriptionParagraph.textContent = prod.productDescription;
 
    // img src and alt text
    pImg.src = prod.imageUrl;
