@@ -21,18 +21,27 @@ function generateProducts(a) {
       let prodImg = document.createElement("img");
       let prodPrice = document.createElement("p");
       let prodName = document.createElement("p");
+      let addToCartBtn = document.createElement("button");
 
       // append the img and p tags to proddiv and then proddiv to grid wrapper
       prodDiv.classList.add("productDiv");
       prodDiv.id = a.products[i].uniqueID;
-      // add img src and class
+      // add to cart button
+      addToCartBtn.innerHTML = "Add To Cart";
+      addToCartBtn.classList.add("addToCartBtn");
+
+      // add img src, alt text and class
       prodImg.src = a.products[i].imageUrl;
+      prodImg.alt = a.products[i].imageAlt;
       prodImg.classList.add("productImg");
       prodPrice.innerHTML = "$" + a.products[i].productPrice
       prodName.innerHTML = "<b>" + a.products[i].productName + "</b>";
+
+      // append the img + details + button to productDiv
       prodDiv.appendChild(prodImg);
       prodDiv.appendChild(prodName);
       prodDiv.appendChild(prodPrice);
+      prodDiv.appendChild(addToCartBtn);
       wrapper[0].append(prodDiv);
 
       prodImg.addEventListener("click", function () {
@@ -43,6 +52,11 @@ function generateProducts(a) {
          sessionStorage.setItem("clickedProd", data);
          // move to productDetail page 
          window.location = "productDetails.html";
+      })
+
+      addToCartBtn.addEventListener("click", function () {
+         // pass this products data to local storage with items id as var name
+         sessionStorage.setItem(a.products[i].uniqueID, a.products[i]);
       })
    }
 }
@@ -78,17 +92,26 @@ function filterProducts() {
 function displayProduct() {
    let clickedProd = sessionStorage.getItem("clickedProd");
    let prod = JSON.parse(clickedProd);
-   console.log(JSON.parse(clickedProd));
+   let addToCartBtn = document.createElement("button");
+
+   // add to cart button + event listener
+   addToCartBtn.innerHTML = "Add To Cart";
+   addToCartBtn.classList.add("addToCartBtn");
+   addToCartBtn.addEventListener("click", function () {
+      // pass this products data to local storage with items id as var name
+      sessionStorage.setItem(prod.uniqueID, prod);
+   })
 
    // now output to page
    let imgWrap = document.getElementById("image");
    let details = document.getElementById("description");
-
    let pImg = document.createElement("img");
+   // img src and alt text
    pImg.src = prod.imageUrl;
    pImg.alt = prod.imageAlt;
    imgWrap.append(pImg);
 
+   details.appendChild(addToCartBtn);
    details.innerHTML = "<h2>" + prod.productName + "</h2><hr>" + "<p>$" + prod.productPrice + "</p><p>" + prod.productDescription + "</p>";
 }
 
