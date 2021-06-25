@@ -132,11 +132,12 @@ nav > span:hover {
 }
 /* pushing p and select to the right of screen */
 .product-header h1 {
-   margin: 0 70vw 0 1rem;
+   margin: 0 1rem;
 }
 /* using margins to align p and select better */
 .product-header p {
-   margin: 0.5rem 2rem 0 0;
+   align-self: flex-end;
+   margin: 0 1rem;
 }
 
 /* product details page  */
