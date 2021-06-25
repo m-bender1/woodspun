@@ -159,6 +159,10 @@ nav > span:hover {
 #productSelect option {
    color: var(--text-nav);
 }
+#productSelect option:focus {
+   outline: none;
+}
+
 
 /* product details page  */
 .prodDetail {
