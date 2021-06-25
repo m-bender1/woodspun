@@ -116,11 +116,7 @@ nav > span:active {
 .product-header h1 {
    margin: 0 70vw 0 1rem;
 }
-/* using margins to align p and select better */
-.product-header p {
-   margin: 0.5rem 2rem 0 0;
-}
-.product-header select {
+.product-header select, .product-header label {
    /* hide filtering on mobile */
    display: none;
 }
