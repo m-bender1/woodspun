@@ -137,6 +137,26 @@ nav > span:hover {
    margin: 0 1rem;
 }
 
+/* filter drop down styling */
+.selectWrap {
+   border: 1px solid #777;
+   border-radius: 4px;
+   margin-bottom: 10px;
+   padding: 0 5px 5px;
+   width: 200px;
+   background-color: #ebebeb;
+}
+.selectWrap label {
+   font-size: 10px;
+   text-transform: uppercase;
+   color: #777;
+   padding: 2px 8px 0;
+}
+#productSelect {
+   background-color: #ebebeb;
+   border: 0px;
+}
+
 /* product details page  */
 .prodDetail {
    display: grid;
