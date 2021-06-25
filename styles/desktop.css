@@ -133,7 +133,7 @@ nav > span:hover {
 }
 /* pushing p and select to the right of screen */
 .product-header h1,
-.product-header p {
+.product-header label {
    margin: 0 1rem;
 }
 
