@@ -159,5 +159,5 @@ function setFilter() {
 }
 
 function displayCart() {
-   console.log(sessionStorage.length);
+   console.log(myArr.length);
 }
