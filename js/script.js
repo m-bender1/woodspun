@@ -57,6 +57,7 @@ function generateProducts(a) {
       addToCartBtn.addEventListener("click", function () {
          // pass this products data to local storage with items id as var name
          sessionStorage.setItem(a.products[i].uniqueID, a.products[i]);
+         alert("Product added to cart.");
       })
    }
 }
@@ -100,6 +101,7 @@ function displayProduct() {
    addToCartBtn.addEventListener("click", function () {
       // pass this products data to local storage with items id as var name
       sessionStorage.setItem(prod.uniqueID, prod);
+      alert("Product added to cart.");
    })
 
    // now output to page
