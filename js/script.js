@@ -116,7 +116,7 @@ function displayProduct() {
    pImg.alt = prod.imageAlt;
    imgWrap.append(pImg);
 
-   details.appendChild(addToCartBtn);
+   details.append(addToCartBtn);
    details.innerHTML = "<h2>" + prod.productName + "</h2><hr>" + "<p>$" + prod.productPrice + "</p><p>" + prod.productDescription + "</p>";
 }
 
