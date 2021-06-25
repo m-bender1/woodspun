@@ -157,6 +157,9 @@ nav > span:hover {
    background-color: var(--text-nav);
    border: 0px;
 }
+#productSelect option {
+   text-align: center;
+}
 
 /* product details page  */
 .prodDetail {
