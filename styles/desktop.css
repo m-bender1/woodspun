@@ -139,12 +139,13 @@ nav > span:hover {
 
 /* filter drop down styling */
 .selectWrap {
-   border: 1px solid #777;
-   border-radius: 4px;
-   margin-bottom: 10px;
+   border: 1px solid var(--text-content);
    padding: 0 5px 5px;
-   width: 200px;
-   background-color: #ebebeb;
+   width: fit-content;
+   background-color: var(--text-nav);
+   display: flex;
+   flex-direction: column;
+   align-content: center;
 }
 .selectWrap label {
    font-size: 10px;
@@ -153,7 +154,7 @@ nav > span:hover {
    padding: 2px 8px 0;
 }
 #productSelect {
-   background-color: #ebebeb;
+   background-color: var(--text-nav);
    border: 0px;
 }
 
