@@ -138,7 +138,7 @@ nav > span:hover {
 /* filter drop down styling */
 .selectWrap {
    border: 1px solid var(--text-content);
-   padding: 0.5rem;
+   padding: 0.25rem;
    width: fit-content;
    background-color: var(--clr-main);
    display: flex;
