@@ -109,15 +109,15 @@ function displayProduct() {
 
    // now output to page
    let imgWrap = document.getElementById("image");
-   let details = document.getElementById("description");
+   let description = document.getElementById("description");
    let pImg = document.createElement("img");
    // img src and alt text
    pImg.src = prod.imageUrl;
    pImg.alt = prod.imageAlt;
    imgWrap.append(pImg);
 
-   details.append(addToCartBtn);
-   details.innerHTML = "<h2>" + prod.productName + "</h2><hr>" + "<p>$" + prod.productPrice + "</p><p>" + prod.productDescription + "</p>";
+   description.append(addToCartBtn);
+   description.innerHTML = "<h2>" + prod.productName + "</h2><hr>" + "<p>$" + prod.productPrice + "</p><p>" + prod.productDescription + "</p>";
 }
 
 function quickLinkFilter(type) {
