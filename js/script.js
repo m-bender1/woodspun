@@ -2,17 +2,19 @@ var xmlhttp = new XMLHttpRequest();
 var url = "productData.txt";
 var myArr = [];
 
-xmlhttp.onreadystatechange = function () {
-   if (this.readyState == 4 && this.status == 200) {
-      // sets array to data in json file
-      myArr = JSON.parse(this.responseText);
-      generateProducts(myArr);
-   }
-};
-xmlhttp.open("GET", url, true);
-xmlhttp.send();
+function loadProducts() {
+   xmlhttp.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+         // sets array to data in json file
+         myArr = JSON.parse(this.responseText);
+         displayProducts(myArr);
+      }
+   };
+   xmlhttp.open("GET", url, true);
+   xmlhttp.send();
+}
 
-function generateProducts(a) {
+function displayProducts(a) {
    // get the wrapper div
    let wrapper = document.getElementsByClassName("grid-wrapper");
    for (let i = 0; i < a.products.length; i++) {
@@ -60,6 +62,7 @@ function generateProducts(a) {
          alert("Product added to cart.");
       })
    }
+   setFilter();
 }
 
 // onchange event for the select dropdown
