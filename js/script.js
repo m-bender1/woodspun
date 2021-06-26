@@ -198,6 +198,7 @@ function displayCart() {
          itemDesc.textContent = parsedCartItem.productDescription
          itemImg.src = parsedCartItem.imageUrl;
          itemImg.alt = parsedCartItem.imageAlt;
+         itemImg.classList.add("cartImg");
 
 
          // append the cart item to the parent div 

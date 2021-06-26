@@ -161,7 +161,7 @@ footer p {
    grid-template-columns: 1fr 1fr;
 }
 
-#cartImg {
+.cartImg {
    height: 10rem;
    width: 8rem;
    border: thin solid var(--text-content);
