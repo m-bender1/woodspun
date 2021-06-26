@@ -57,10 +57,8 @@ function displayProducts(a) {
       })
 
       addToCartBtn.addEventListener("click", function () {
-         // pass this products data to local storage with items id as var name
-         let cartItem = JSON.stringify(a.products[i]);
-         sessionStorage.setItem(a.products[i].uniqueID, cartItem);
-         alert("Product added to cart.");
+         // calling the add to cart function
+         addToCart(a.products[i]);
       })
    }
    setFilter();
@@ -97,16 +95,14 @@ function filterProducts() {
 function displayProduct() {
    let clickedProd = sessionStorage.getItem("clickedProd");
    let prod = JSON.parse(clickedProd);
+   console.log(prod);
    let addToCartBtn = document.createElement("button");
 
    // add to cart button + event listener
    addToCartBtn.innerHTML = "Add To Cart";
    addToCartBtn.classList.add("addToCartBtn");
    addToCartBtn.addEventListener("click", function () {
-      // pass this products data to local storage with items id as var name
-      // need to re-stringify the prod object, will used clickedProd
-      sessionStorage.setItem(prod.uniqueID, clickedProd);
-      alert("Product added to cart.");
+      // addToCart(clickedProd);
    })
 
    // now output to page
@@ -158,6 +154,18 @@ function setFilter() {
    filterProducts();
    //remove the filter so reload allows all products to show
    sessionStorage.removeItem("filter");
+}
+
+// takes full product object as parameter (a.products[i]) 
+function addToCart(p) {
+   // pass this products data to local storage with items id as var name
+   // using localstorage so the cart is saved in browser until explicitly deleted (removed from cart by client)
+   let cartItem = JSON.stringify(p);
+   // ensure the item isn't already in the cart
+   if (localStorage.getItem(p.uniqueID == null)) {
+      localStorage.setItem(p.uniqueID, cartItem);
+      alert(p.productName + " added to cart.");
+   }
 }
 
 function displayCart() {
