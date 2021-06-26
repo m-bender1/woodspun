@@ -185,6 +185,12 @@ function displayCart() {
          let itemPrice = document.createElement("label");
          let itemDesc = document.createElement("p");
 
+
+         // div ids
+         cartItemDiv.id = "cartItemDiv";
+         cartItemImgDiv.id = "cartItemImgDiv";
+         cartItemContentDiv.id = "cartItemContentDiv";
+
          // add content to the elements
          // title
          itemTitle.textContent = parsedCartItem.productName;

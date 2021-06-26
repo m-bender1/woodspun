@@ -150,14 +150,15 @@ footer p {
    padding: 0.5rem;
 }
 
-#cartProductsDiv {
+#cartProductsDiv, #cartTotalDiv {
    display: flex;
    flex-direction: column;
+   padding: 0.5rem;
 }
 
-#cartTotalDiv {
-   display: flex;
-   flex-direction: column;
+#cartItemDiv {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
 }
 
 #cartImg {
