@@ -1,6 +1,6 @@
-var xmlhttp = new XMLHttpRequest();
-var url = "productData.txt";
-var myArr = [];
+const xmlhttp = new XMLHttpRequest();
+const url = "productData.txt";
+const myArr = [];
 
 function loadProducts() {
    xmlhttp.onreadystatechange = function () {
@@ -168,5 +168,12 @@ function addToCart(p) {
 }
 
 function displayCart() {
-   console.log(localStorage.length);
+   for (let i = 0; i < localStorage.length; i++) {
+      let itemID = "item" + i;
+      let cartItem = localStorage.getItem(itemID);
+      let parsedCartItem = JSON.parse(cartItem);
+      if (parsedCartItem !== null) {
+         console.log(parsedCartItem.productName);
+      }
+   }
 }
