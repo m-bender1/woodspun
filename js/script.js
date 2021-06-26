@@ -191,7 +191,7 @@ function displayCart() {
          itemPrice.textContent = "$" + parsedCartItem.productPrice;
          itemDesc.textContent = parsedCartItem.productDescription
          itemImg.src = parsedCartItem.imageUrl;
-         itemImg.alt = imageAlt;
+         itemImg.alt = parsedCartItem.imageAlt;
 
 
          // append the cart item to the parent div 
@@ -203,7 +203,7 @@ function displayCart() {
 
          // append prod img to div
          cartItemImgDiv.append(itemImg);
-         
+
          //append content to item content div
          cartItemContentDiv.append(itemTitle);
          cartItemContentDiv.append(itemPrice);
