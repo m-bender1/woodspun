@@ -91,7 +91,7 @@ button {
 .productImg {
    height: 15rem;
    width: 12rem;
-   border: 1px solid grey;
+   border: 1px solid var(--text-content);
    margin-bottom: 0.75rem;
 }
 
@@ -158,4 +158,10 @@ footer p {
 #cartTotalDiv {
    display: flex;
    flex-direction: column;
+}
+
+#cartImg {
+   height: 10rem;
+   width: 8rem;
+   border: thin solid var(--text-content);
 }
