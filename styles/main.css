@@ -152,8 +152,10 @@ footer p {
 
 #cartProductsDiv {
    background-color: red;
+   height: 100%;
 }
 
 #cartTotalDiv {
    background-color: blue;
+   height: 100%;
 }
