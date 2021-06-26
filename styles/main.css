@@ -158,7 +158,8 @@ footer p {
 
 #cartItemDiv {
    display: grid;
-   grid-template-columns: 1fr 1fr;
+   grid-template-columns: 0.5fr 1.5fr;
+   gap: 0;
 }
 
 .cartImg {
