@@ -102,7 +102,7 @@ function displayProduct() {
    addToCartBtn.innerHTML = "Add To Cart";
    addToCartBtn.classList.add("addToCartBtn");
    addToCartBtn.addEventListener("click", function () {
-      // addToCart(clickedProd);
+      addToCart(prod);
    })
 
    // now output to page
