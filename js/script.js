@@ -95,7 +95,6 @@ function filterProducts() {
 function displayProduct() {
    let clickedProd = sessionStorage.getItem("clickedProd");
    let prod = JSON.parse(clickedProd);
-   console.log(prod);
    let addToCartBtn = document.createElement("button");
 
    // add to cart button + event listener
@@ -162,14 +161,12 @@ function addToCart(p) {
    // using localstorage so the cart is saved in browser until explicitly deleted (removed from cart by client)
    let cartItem = JSON.stringify(p);
    // ensure the item isn't already in the cart
-   if (localStorage.getItem(p.uniqueID == null)) {
+   if (localStorage.getItem(p.uniqueID) == null) {
       localStorage.setItem(p.uniqueID, cartItem);
       alert(p.productName + " added to cart.");
    }
 }
 
 function displayCart() {
-   for (let i = 0; i < sessionStorage.length; i++) {
-      console.log(JSON.parse(sessionStorage.getItem(("item" + i))));
-   }
+   console.log(localStorage.length);
 }
