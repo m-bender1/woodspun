@@ -168,6 +168,9 @@ function addToCart(p) {
 }
 
 function displayCart() {
+   // get cart page elements
+   let cartProductsDiv = document.getElementById("cartProductsDiv");
+   let cartTotalDiv = document.getElementById("cartTotalDiv");
    for (let i = 0; i < localStorage.length; i++) {
       let itemID = "item" + i;
       let cartItem = localStorage.getItem(itemID);
