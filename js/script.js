@@ -176,7 +176,38 @@ function displayCart() {
       let cartItem = localStorage.getItem(itemID);
       let parsedCartItem = JSON.parse(cartItem);
       if (parsedCartItem !== null) {
-         console.log(parsedCartItem.productName);
+         // create cart item div
+         let cartItemDiv = document.createElement("div");
+         let cartItemImgDiv = document.createElement("div");
+         let cartItemContentDiv = document.createElement("div");
+         let itemTitle = document.createElement("h3");
+         let itemImg = document.createElement("img");
+         let itemPrice = document.createElement("label");
+         let itemDesc = document.createElement("p");
+
+         // add content to the elements
+         // title
+         itemTitle.textContent = parsedCartItem.productName;
+         itemPrice.textContent = "$" + parsedCartItem.productPrice;
+         itemDesc.textContent = parsedCartItem.productDescription
+         itemImg.src = parsedCartItem.imageUrl;
+         itemImg.alt = imageAlt;
+
+
+         // append the cart item to the parent div 
+         cartProductsDiv.append(cartItemDiv);
+
+         // append the child divs to the cart item div
+         cartItemDiv.append(cartItemImgDiv);
+         cartItemDiv.append(cartItemContentDiv);
+
+         // append prod img to div
+         cartItemImgDiv.append(itemImg);
+         
+         //append content to item content div
+         cartItemContentDiv.append(itemTitle);
+         cartItemContentDiv.append(itemPrice);
+         cartItemContentDiv.append(itemDesc);
       }
    }
 }
