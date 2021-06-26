@@ -66,6 +66,7 @@ nav {
    font-weight: 700;
 }
 
+
 /* HERO AND TITLE */
 .title {
    color: var(--text-content);
@@ -84,11 +85,6 @@ button {
    color: var(--text-nav);
    cursor: pointer;
    text-align: center;
-}
-
-/* for product filtering, etc */
-.disabled {
-   display: none;
 }
 
 /* productImages, standard across devices */
@@ -127,6 +123,7 @@ footer p {
 }
 
 
+/* ABOUT PAGE IMAGE */
 .abtImgDiv {
    display: flex;
    align-items: center;
@@ -139,3 +136,24 @@ footer p {
    margin-top: 5vh;
 }
 
+/* DISABLED -- class for product filtering, etc */
+.disabled {
+   display: none;
+}
+
+/* CART STYLING */
+.cartDiv {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 0 3vw;
+   margin: 1rem;
+   padding: 0.5rem;
+}
+
+#cartProductsDiv {
+   background-color: red;
+}
+
+#cartTotalDiv {
+   background-color: blue;
+}
