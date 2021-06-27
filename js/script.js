@@ -244,7 +244,7 @@ function generateTotal(priceArr, subE, shipE, totalE) {
       subtotal += priceArr[i];
       total = subtotal + shipping;
    }
-   subE.textContent = "Subtotal: " + subtotal.toFixed(2);
-   shipE.textContent = "Shipping: " + shipping.toFixed(2);
-   totalE.textContent = "Total: " + total.toFixed(2);
+   subE.textContent = "Subtotal: $" + subtotal.toFixed(2);
+   shipE.textContent = "Shipping: $" + shipping.toFixed(2);
+   totalE.textContent = "Total: $" + total.toFixed(2);
 }
