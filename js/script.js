@@ -229,6 +229,14 @@ function displayCart() {
          let shippingCost = document.getElementById("cartShippingCost");
          let totalCost = document.getElementById("cartTotal");
          generateTotal(cartItemPriceArray, subtotalCost, shippingCost, totalCost);
+      
+         // remove btn onclick 
+         removeBtn.addEventListener("click", function () {
+            sessionStorage.removeItem(parsedCartItem.uniqueID);
+         })
+         clearCartBtn.addEventListener("click", function () {
+            sessionStorage.clear();
+         })
       }
    }
 }
