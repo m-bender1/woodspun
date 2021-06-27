@@ -65,7 +65,7 @@ nav {
    position: absolute;
    left: 1rem;
    padding: 0;
-   font-size: 0;
+   object-fit: cover;
 }
 
 /* HERO AND TITLE */
