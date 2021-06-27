@@ -94,6 +94,10 @@ button {
    border: 1px solid var(--text-content);
    margin-bottom: 0.75rem;
 }
+.productImg:hover {
+   outline: 1px solid var(--text-content);
+   outline-offset: 4px;
+}
 
 /* Cart button styling */
 .addToCartBtn {
