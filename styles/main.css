@@ -64,8 +64,8 @@ nav {
    transform: scale(500%);
    position: absolute;
    left: 1rem;
-   height: 0;
-   width: 0;
+   height: 1rem;
+   width: 1rem;
    justify-self: center;
 }
 
