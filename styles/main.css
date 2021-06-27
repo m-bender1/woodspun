@@ -177,7 +177,7 @@ footer p {
 #cartSubtotal,
 #cartShippingCost,
 #cartTotal {
-   padding: 0.75rem;
+   padding: 0.5rem;
 }
 #cartTotal {
    padding-top: 1rem;
