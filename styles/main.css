@@ -28,14 +28,15 @@ body {
 
 /* NAV STYLING */
 .navBar {
+   min-width: 100%;
+   background: var(--text-nav);
    /* move the nav links to the left of the nav */
-   display: grid;
-   grid-template-columns: 1.55fr 0.45fr;
-   gap: 0;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: flex-end;
    height: 5rem;
    min-height: 5rem;
-   min-width: 100%;
-   /* background: var(--clr-main); */
 }
 
 nav span {
@@ -43,12 +44,11 @@ nav span {
    border-bottom: 1px solid var(--text-content);
    padding: 0.5em;
    margin: 0.5em;
-   color: var(--text-content);
 }
 
 nav a {
    text-decoration: none;
-   color: var(--text-nav);
+   color: var(--text-content);
 }
 
 nav {
