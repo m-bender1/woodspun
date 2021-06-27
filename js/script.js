@@ -241,10 +241,10 @@ function generateTotal(priceArr, subE, shipE, totalE) {
    let shipping = 3.50;
    let total;
    for (let i = 0; i < priceArr.length; i++) {
-      subtotal += parseFloat(priceArr[i]);
+      subtotal += priceArr[i];
       total = subtotal + shipping;
    }
-   subE.textContent = "Subtotal: $" + subtotal;
-   shipE.textContent = "Shipping: $" + shipping;
-   totalE.textContent = "Total: $" + total;
+   subE.innerHTML = "Subtotal: $" + subtotal;
+   shipE.innerHTML = "Shipping: $" + shipping;
+   totalE.innerHTML = "Total: $" + total;
 }
