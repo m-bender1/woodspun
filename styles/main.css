@@ -28,7 +28,7 @@ body {
 
 /* NAV STYLING */
 .navBar {
-   min-height:5rem;
+   min-height: 5rem;
    min-width: 100%;
    background: var(--clr-main);
    /* move the nav links to the left of the nav */
@@ -65,7 +65,6 @@ nav {
    color: var(--text-nav);
    font-weight: 700;
 }
-
 
 /* HERO AND TITLE */
 .title {
@@ -123,7 +122,6 @@ footer p {
    font-size: 0.75rem;
 }
 
-
 /* ABOUT PAGE IMAGE */
 .abtImgDiv {
    display: flex;
@@ -152,7 +150,8 @@ footer p {
    padding: 0.5rem;
 }
 
-#cartProductsDiv, #cartTotalDiv {
+#cartProductsDiv,
+#cartTotalDiv {
    display: flex;
    flex-direction: column;
    padding: 0.5rem;
@@ -174,3 +173,10 @@ footer p {
    align-items: center;
    justify-content: center;
 }
+
+#cartSubtotal,
+#cartShippingCost,
+#cartTotal {
+   padding: 1rem;
+}
+
