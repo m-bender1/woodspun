@@ -62,6 +62,8 @@ nav {
 
 .logoWrap {
    position: relative;
+   height: fit-content;
+   width: fit-content;
 }
 
 .logo {
