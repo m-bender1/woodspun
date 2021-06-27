@@ -223,7 +223,7 @@ function displayCart() {
          cartItemContentDiv.append(removeBtn);
 
          // onclick functions for the cart
-         cartItemPriceArray.push(parsedCartItem.productPrice)
+         cartItemPriceArray.push(Number(parsedCartItem.productPrice));
          // get totals div child elements
          let subtotalCost = document.getElementById("cartSubtotal");
          let shippingCost = document.getElementById("cartShippingCost");
