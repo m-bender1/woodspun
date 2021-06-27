@@ -170,7 +170,7 @@ footer p {
    border: thin solid var(--text-content);
 }
 
-.cartTotalDiv {
+#cartTotalDiv {
    align-items: center;
    justify-content: center;
 }
