@@ -181,14 +181,14 @@ function displayCart() {
    refreshCartBtn.id = "refreshBtn"
    cartProductsDiv.append(clearCartBtn);
    cartProductsDiv.append(refreshCartBtn);
-
-   for (let i = 0; i < localStorage.length; i++) {
-      // empty cart
-      if (localStorage.length == 0) {
-         alert("Cart is empty.");
-      }
-      else {
-         // cart with products
+   
+   // empty cart
+   if (localStorage.length == 0) {
+      alert("Cart is empty.");
+   }
+   // cart w/ products
+   else {
+      for (let i = 0; i < localStorage.length; i++) {
          let itemID = "item" + i;
          let cartItem = localStorage.getItem(itemID);
          let parsedCartItem = JSON.parse(cartItem);
