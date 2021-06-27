@@ -128,10 +128,10 @@ nav > span:hover {
 }
 /* filter drop down styling */
 .selectWrap {
-   border: 1px solid var(--text-content);
+   border: 1px solid var(--text-nav);
    padding: 0.25rem;
    width: fit-content;
-   background-color: var(--clr-main);
+   background-color: var(--text-content);
    display: flex;
    flex-direction: column;
    position: absolute;
@@ -144,7 +144,7 @@ nav > span:hover {
    padding: 0.125rem 0;
 }
 #productSelect {
-   background-color: var(--clr-main);
+   background-color: var(--text-content);
    color: var(--text-nav);
 }
 #productSelect option {
