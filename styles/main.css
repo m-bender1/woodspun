@@ -195,5 +195,5 @@ footer p {
 #clearCartBtn, #refreshBtn {
    width: fit-content;
    padding: 0.25rem;
-   margin: 0.5rem;
+   margin: 0.5rem 0;
 }
