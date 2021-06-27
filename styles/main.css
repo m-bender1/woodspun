@@ -64,7 +64,6 @@ nav {
    transform: scale(75%);
    position: absolute;
    left: 1rem;
-   padding: 0;
    object-fit: cover;
 }
 
