@@ -165,6 +165,9 @@ function addToCart(p) {
       localStorage.setItem(p.uniqueID, cartItem);
       alert(p.productName + " added to cart.");
    }
+   if (localStorage.getItem(p.uniqueID) !== null) {
+      alert(p.productName + " is already in cart.");
+   }
 }
 
 function displayCart() {
