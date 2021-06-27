@@ -28,16 +28,14 @@ body {
 
 /* NAV STYLING */
 .navBar {
-   min-height: 5rem;
-   min-width: 100%;
-   background: var(--clr-main);
    /* move the nav links to the left of the nav */
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: flex-end;
+   display: grid;
+   grid-template-columns: 1.55fr 0.45fr;
+   gap: 0;
    height: 5rem;
    min-height: 5rem;
+   min-width: 100%;
+   /* background: var(--clr-main); */
 }
 
 nav span {
@@ -62,9 +60,6 @@ nav {
 
 .logo {
    transform: scale(75%);
-   position: absolute;
-   top: 1rem;
-   left: 1rem;
 }
 
 /* HERO AND TITLE */
