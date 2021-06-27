@@ -136,8 +136,8 @@ footer p {
 }
 
 .abtImgDiv img {
-   width: 50vw;
-   height: auto;
+   height: 25vh;
+   width: auto;
 }
 
 /* DISABLED -- class for product filtering, etc */
