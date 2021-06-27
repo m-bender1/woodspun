@@ -245,7 +245,7 @@ function displayCart() {
             localStorage.clear();
          })
          refreshCartBtn.addEventListener("click", function () {
-            window.reload();
+            location.reload();
          })
       }
    }
