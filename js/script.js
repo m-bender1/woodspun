@@ -173,10 +173,8 @@ function displayCart() {
    let cartItemPriceArray = [];
    let clearCartBtn = document.createElement("button");
    let refreshCartBtn = document.createElement("button");
-   let removeBtn = document.createElement("button");
-
-   removeBtn.id = "cartRemoveBtn";
-   removeBtn.textContent = "Remove";
+   
+   // cart buttons (not in product divs)
    clearCartBtn.textContent = "Clear Cart";
    clearCartBtn.id = "clearCartBtn";
    refreshCartBtn.textContent = "Refresh";
@@ -197,6 +195,7 @@ function displayCart() {
          let itemImg = document.createElement("img");
          let itemPrice = document.createElement("label");
          let itemDesc = document.createElement("p");
+         let removeBtn = document.createElement("button");
 
          // div ids
          cartItemDiv.id = "cartItemDiv";
@@ -211,6 +210,8 @@ function displayCart() {
          itemImg.src = parsedCartItem.imageUrl;
          itemImg.alt = parsedCartItem.imageAlt;
          itemImg.classList.add("cartImg");
+         removeBtn.id = "cartRemoveBtn";
+         removeBtn.textContent = "Remove";
 
          // append the cart item to the parent div 
          cartProductsDiv.append(cartItemDiv);
