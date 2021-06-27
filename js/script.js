@@ -232,11 +232,11 @@ function displayCart() {
       
          // remove btn onclick 
          removeBtn.addEventListener("click", function () {
-            sessionStorage.removeItem(parsedCartItem.uniqueID);
+            localStorage.removeItem(parsedCartItem.uniqueID);
             alert(parsedCartItem.productName + " item removed.")
          })
          clearCartBtn.addEventListener("click", function () {
-            sessionStorage.clear();
+            localStorage.clear();
          })
       }
    }
