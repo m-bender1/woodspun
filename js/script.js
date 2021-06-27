@@ -186,6 +186,7 @@ function displayCart() {
          let itemDesc = document.createElement("p");
          let removeBtn = document.createElement("button");
          let clearCartBtn = document.createElement("button");
+         let refreshCartBtn = document.createElement("button");
 
          // div ids
          cartItemDiv.id = "cartItemDiv";
@@ -204,11 +205,11 @@ function displayCart() {
          removeBtn.textContent = "Remove";
          clearCartBtn.textContent = "Clear Cart";
          clearCartBtn.id = "clearCartBtn";
+         refreshCartBtn.textContent = "Refresh";
+         refreshCartBtn.id = "refreshBtn"
 
          // append the cart item to the parent div 
          cartProductsDiv.append(cartItemDiv);
-         cartProductsDiv.append(clearCartBtn);
-
          // append the child divs to the cart item div
          cartItemDiv.append(cartItemImgDiv);
          cartItemDiv.append(cartItemContentDiv);
@@ -238,8 +239,13 @@ function displayCart() {
          clearCartBtn.addEventListener("click", function () {
             localStorage.clear();
          })
+         refreshCartBtn.addEventListener("click", function () {
+            window.reload();
+         })
       }
    }
+   cartProductsDiv.append(clearCartBtn);
+   cartProductsDiv.append(refreshCartBtn);
 }
 
 function generateTotal(priceArr, subE, shipE, totalE) {
