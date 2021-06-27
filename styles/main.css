@@ -145,7 +145,7 @@ footer p {
 .cartDiv {
    display: grid;
    grid-template-columns: 1fr 1fr;
-   gap: 0 3vw;
+   gap: 2rem;
    margin: 1rem;
    padding: 0.5rem;
 }
