@@ -40,9 +40,10 @@ body {
 
 nav span {
    /* 'button' styling for nav */
-   border: 1px solid var(--text-nav);
+   border: 1px solid var(--text-content);
    padding: 0.5em;
    margin: 0.5em;
+   color: var(--text-content);
 }
 
 nav a {
