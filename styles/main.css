@@ -169,3 +169,8 @@ footer p {
    width: 8rem;
    border: thin solid var(--text-content);
 }
+
+.cartTotalDiv {
+   align-items: center;
+   justify-content: center;
+}
