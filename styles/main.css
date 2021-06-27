@@ -38,6 +38,7 @@ body {
    justify-content: flex-end;
    height: 5rem;
    min-height: 5rem;
+   position: relative;
 }
 
 nav span {
@@ -53,7 +54,6 @@ nav a {
 }
 
 nav {
-   position: relative;
    display: flex;
    flex-direction: row;
    align-items: center;
