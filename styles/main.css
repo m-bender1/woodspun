@@ -144,7 +144,7 @@ footer p {
 /* added here bc only mobile will be different */
 .cartDiv {
    display: grid;
-   grid-template-columns: 1fr 1fr;
+   grid-template-columns: 1.35fr 0.65fr;
    gap: 2rem 2rem;
    margin: 1rem;
    padding: 0.5rem;
