@@ -233,7 +233,7 @@ function displayCart() {
    }
 }
 
-function generateTotal(priceArr, sub, ship, total) {
+function generateTotal(priceArr, subE, shipE, totalE) {
    // gets prices from arr passed in param, generates
    // totals from that
    let subtotal;
@@ -243,7 +243,7 @@ function generateTotal(priceArr, sub, ship, total) {
       subtotal += priceArr[i];
       total = subtotal + shipping;
    }
-   sub.textContent = subtotal;
-   ship.textContent = shipping;
-   total.textContent = total;
+   subE.textContent = subtotal;
+   shipE.textContent = shipping;
+   totalE.textContent = total;
 }
