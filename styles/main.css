@@ -61,10 +61,13 @@ nav {
 }
 
 .logoWrap {
-   margin: 0 0.25rem;
+   position: relative;
+}
+
+.logo {
    position: absolute;
-   top: 0;
-   left: 0;
+   top: 1rem;
+   left: 1rem;
 }
 
 /* HERO AND TITLE */
