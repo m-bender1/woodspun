@@ -236,6 +236,7 @@ function displayCart() {
 function generateTotal(priceArr, subE, shipE, totalE) {
    // gets prices from arr passed in param, generates
    // totals from that
+   console.log(priceArr)
    let subtotal;
    let shipping = 3.50;
    let total;
