@@ -142,6 +142,7 @@ footer p {
 }
 
 /* CART STYLING */
+/* added here bc only mobile will be different */
 .cartDiv {
    display: grid;
    grid-template-columns: 1fr 1fr;

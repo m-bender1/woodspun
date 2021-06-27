@@ -212,7 +212,6 @@ function displayCart() {
          // append the child divs to the cart item div
          cartItemDiv.append(cartItemImgDiv);
          cartItemDiv.append(cartItemContentDiv);
-         cartItemDiv.append(removeBtn);
 
          // append prod img to div
          cartItemImgDiv.append(itemImg);
@@ -221,6 +220,7 @@ function displayCart() {
          cartItemContentDiv.append(itemTitle);
          cartItemContentDiv.append(itemPrice);
          cartItemContentDiv.append(itemDesc);
+         cartItemContentDiv.append(removeBtn);
 
          // onclick functions for the cart
          generateTotal(cartItemPriceArray);
