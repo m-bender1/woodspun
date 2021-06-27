@@ -64,7 +64,8 @@ nav {
    transform: scale(75%);
    position: absolute;
    left: 1rem;
-   display: block;
+   padding: 0;
+   font-size: 0;
 }
 
 /* HERO AND TITLE */
