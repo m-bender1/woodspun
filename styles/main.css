@@ -61,6 +61,8 @@ nav {
 
 .logo {
    transform: scale(75%);
+   position: absolute;
+   left: 1rem;
 }
 
 /* HERO AND TITLE */
