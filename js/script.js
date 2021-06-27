@@ -171,6 +171,7 @@ function displayCart() {
    // get cart page elements
    let cartProductsDiv = document.getElementById("cartProductsDiv");
    let cartTotalDiv = document.getElementById("cartTotalDiv");
+   let cartItemPriceArray = [];
    for (let i = 0; i < localStorage.length; i++) {
       let itemID = "item" + i;
       let cartItem = localStorage.getItem(itemID);
@@ -184,7 +185,8 @@ function displayCart() {
          let itemImg = document.createElement("img");
          let itemPrice = document.createElement("label");
          let itemDesc = document.createElement("p");
-
+         let removeBtn = document.createElement("button");
+         let clearCartBtn = document.createElement("button");
 
          // div ids
          cartItemDiv.id = "cartItemDiv";
@@ -199,7 +201,10 @@ function displayCart() {
          itemImg.src = parsedCartItem.imageUrl;
          itemImg.alt = parsedCartItem.imageAlt;
          itemImg.classList.add("cartImg");
-
+         removeBtn.id = "cartRemoveBtn";
+         removeBtn.textContent = "Remove";
+         clearCartBtn.textContent = "Clear Cart";
+         clearCartBtn.id = "clearCartBtn"
 
          // append the cart item to the parent div 
          cartProductsDiv.append(cartItemDiv);
@@ -207,6 +212,7 @@ function displayCart() {
          // append the child divs to the cart item div
          cartItemDiv.append(cartItemImgDiv);
          cartItemDiv.append(cartItemContentDiv);
+         cartItemDiv.append(removeBtn);
 
          // append prod img to div
          cartItemImgDiv.append(itemImg);
@@ -215,6 +221,17 @@ function displayCart() {
          cartItemContentDiv.append(itemTitle);
          cartItemContentDiv.append(itemPrice);
          cartItemContentDiv.append(itemDesc);
+
+         // onclick functions for the cart
+         generateTotal(cartItemPriceArray);
       }
    }
+}
+
+function generateTotal(priceArr) {
+   // gets prices from arr passed in param, generates
+   // totals from that
+   let subtotal;
+   let shipping;
+   let total;
 }
