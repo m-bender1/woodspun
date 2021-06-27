@@ -5,13 +5,6 @@ nav span {
    padding: 0.25rem;
    margin: 0.25rem;
 }
-
-/* positioning the logo absolute on the left side of the page */
-.logoWrap {
-   position: absolute;
-   top: 2rem;
-   left: 2vw;
-}
 /* this will center the titles over the hero image */
 .heroImageDiv {
    position: relative;
