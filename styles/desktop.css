@@ -35,7 +35,7 @@
 /* outline effect for button hover */
 button:hover,
 nav > span:hover {
-   outline: 1px solid var(--text-main);
+   outline: 1px solid var(--clr-green);
    outline-offset: -4px;
 }
 
