@@ -35,7 +35,7 @@
 /* outline effect for button hover */
 button:hover,
 nav > span:hover {
-   outline: 1px solid var(--text-content);
+   outline: 1px solid var(--text-main);
    outline-offset: -4px;
 }
 
@@ -128,10 +128,10 @@ nav > span:hover {
 }
 /* filter drop down styling */
 .selectWrap {
-   border: 1px solid var(--text-nav);
+   border: 1px solid var(--clr-white);
    padding: 0.25rem;
    width: fit-content;
-   background-color: var(--text-content);
+   background-color: var(--clr-grey);
    display: flex;
    flex-direction: column;
    position: absolute;
@@ -140,16 +140,16 @@ nav > span:hover {
 .selectWrap label {
    font-size: 10px;
    text-transform: uppercase;
-   color: var(--text-nav);
+   color: var(--clr-white);
    padding: 0.125rem 0;
    text-align: center;
 }
 #productSelect {
-   background-color: var(--text-content);
-   color: var(--text-nav);
+   background-color: var(--clr-grey);
+   color: var(--clr-white);
 }
 #productSelect option {
-   color: var(--text-nav);
+   color: var(--clr-white);
 }
 #productSelect option:focus {
    outline: none;
@@ -172,7 +172,7 @@ nav > span:hover {
 #image img {
    height: 26rem;
    width: 20rem;
-   border: thin solid var(--text-content);
+   border: thin solid var(--clr-grey);
 }
 #description {
    display: flex;
@@ -187,7 +187,7 @@ nav > span:hover {
 #description hr {
    margin: 0.5rem 0 1.5rem 0;
    width: 10rem;
-   border-top: thin solid var(--text-content);
+   border-top: thin solid var(--clr-grey);
 }
 
 /* about page */

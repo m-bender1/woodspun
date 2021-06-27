@@ -10,9 +10,9 @@
 }
 
 :root {
-   --clr-main: #285319;
-   --text-nav: #e7e4e4;
-   --text-content: #575757;
+   --clr-green: #285319;
+   --clr-white: #e7e4e4;
+   --clr-grey: #575757;
    --font-main-text: "Nanum Gothic", sans-serif;
    --font-logo: "Josefin Slab", serif;
 }
@@ -29,7 +29,7 @@ body {
 /* NAV STYLING */
 .navBar {
    min-width: 100%;
-   background: var(--text-nav);
+   background: var(--clr-white);
    /* move the nav links to the left of the nav */
    display: flex;
    flex-direction: row;
@@ -41,14 +41,14 @@ body {
 
 nav span {
    /* 'button' styling for nav */
-   border-bottom: 1px solid var(--text-content);
+   border-bottom: 1px solid var(--clr-grey);
    padding: 0.5em;
    margin: 0.5em;
 }
 
 nav a {
    text-decoration: none;
-   color: var(--text-content);
+   color: var(--clr-grey);
 }
 
 nav {
@@ -70,20 +70,20 @@ nav {
 
 /* HERO AND TITLE */
 .title {
-   color: var(--text-content);
+   color: var(--clr-grey);
 }
 
 .title,
 .subtitle {
-   color: var(--text-nav);
+   color: var(--clr-white);
 }
 
 button {
-   background: var(--clr-main);
+   background: var(--clr-green);
    display: inline-block;
    border: none;
    text-decoration: none;
-   color: var(--text-nav);
+   color: var(--clr-white);
    cursor: pointer;
    text-align: center;
    padding: 0.5rem;
@@ -93,11 +93,11 @@ button {
 .productImg {
    height: 15rem;
    width: 12rem;
-   border: 1px solid var(--text-content);
+   border: 1px solid var(--clr-grey);
    margin-bottom: 0.75rem;
 }
 .productImg:hover {
-   outline: 1px solid var(--text-content);
+   outline: 1px solid var(--clr-grey);
    outline-offset: 4px;
 }
 
@@ -107,13 +107,13 @@ button {
    margin: 0.5rem 0;
 }
 .addToCartBtn:hover {
-   outline: 1px solid var(--text-nav);
+   outline: 1px solid var(--clr-white);
    outline-offset: -4px;
 }
 
 footer {
-   background-color: var(--clr-main);
-   color: var(--text-nav);
+   background-color: var(--clr-white);
+   color: var(--clr-grey);
    margin: auto;
    margin-bottom: -3rem;
    width: 100%;
@@ -172,7 +172,7 @@ footer p {
 .cartImg {
    height: 11rem;
    width: 8rem;
-   border: thin solid var(--text-content);
+   border: thin solid var(--clr-grey);
 }
 
 #cartTotalDiv {

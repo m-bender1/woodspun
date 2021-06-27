@@ -36,7 +36,7 @@ nav span {
 /* outline effect for button hover */
 button:active,
 nav > span:active {
-   outline: 1px solid var(--text-nav);
+   outline: 1px solid var(--clr-white);
    outline-offset: -4px;
 }
 
@@ -128,7 +128,7 @@ nav > span:active {
 #image img {
    height: 13rem;
    width: 13rem;
-   border: thin solid var(--text-content);
+   border: thin solid var(--clr-grey);
 }
 #description {
    display: flex;
@@ -148,7 +148,7 @@ nav > span:active {
 #description hr {
    margin: 0.5rem 0 1.5rem 0;
    width: 6rem;
-   border-top: thin solid var(--text-content);
+   border-top: thin solid var(--clr-grey);
 }
 
 
