@@ -61,15 +61,13 @@ nav {
 }
 
 .logoWrap {
-   position: relative;
-   height: fit-content;
-   width: fit-content;
+   align-self: center;
+   justify-self: flex-start;
 }
 
 .logo {
-   position: absolute;
-   top: 1rem;
-   left: 1rem;
+   height: 50%;
+   width: 50%;
 }
 
 /* HERO AND TITLE */
