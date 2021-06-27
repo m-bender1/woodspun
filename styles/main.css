@@ -135,10 +135,6 @@ footer p {
    justify-content: center;
 }
 
-.abtImgDiv img {
-   margin-top: 3rem;
-}
-
 /* DISABLED -- class for product filtering, etc */
 .disabled {
    display: none;
