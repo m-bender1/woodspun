@@ -12,10 +12,6 @@ nav span {
    top: 2rem;
    left: 2vw;
 }
-.logo {
-   font-size: 1rem;
-   margin: 0.25rem;
-}
 /* this will center the titles over the hero image */
 .heroImageDiv {
    position: relative;
