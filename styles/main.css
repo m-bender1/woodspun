@@ -171,6 +171,7 @@ footer p {
 
 #cartTotalDiv {
    justify-content: center;
+   margin: 2rem 0;
 }
 
 #cartSubtotal,
