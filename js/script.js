@@ -223,15 +223,27 @@ function displayCart() {
          cartItemContentDiv.append(removeBtn);
 
          // onclick functions for the cart
-         generateTotal(cartItemPriceArray);
+         cartItemPriceArray.push(parsedCartItem.productPrice)
+         // get totals div child elements
+         let subtotalCost = document.getElementById("cartSubtotal");
+         let shippingCost = document.getElementById("cartShippingCost");
+         let totalCost = document.getElementById("cartTotal");
+         generateTotal(cartItemPriceArray, subtotalCost, shippingCost, totalCost);
       }
    }
 }
 
-function generateTotal(priceArr) {
+function generateTotal(priceArr, sub, ship, total) {
    // gets prices from arr passed in param, generates
    // totals from that
    let subtotal;
-   let shipping;
+   let shipping = 3.50;
    let total;
+   for (let i = 0; i < priceArr.length; i++) {
+      subtotal += priceArr[i];
+      total = subtotal + shipping;
+   }
+   sub.textContent = subtotal;
+   ship.textContent = shipping;
+   total.textContent = total;
 }
