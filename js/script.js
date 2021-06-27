@@ -237,13 +237,14 @@ function generateTotal(priceArr, subE, shipE, totalE) {
    // gets prices from arr passed in param, generates
    // totals from that
    console.log(priceArr)
-   let subtotal;
+   let subtotal = 0.00;
    let shipping = 3.50;
-   let total;
+   let total = 0.00;
    for (let i = 0; i < priceArr.length; i++) {
       subtotal += priceArr[i];
       total = subtotal + shipping;
    }
+
    subE.innerHTML = "Subtotal: $" + subtotal;
    shipE.innerHTML = "Shipping: $" + shipping;
    totalE.innerHTML = "Total: $" + total;
