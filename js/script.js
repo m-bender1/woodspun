@@ -171,6 +171,18 @@ function displayCart() {
    // get cart page elements
    let cartProductsDiv = document.getElementById("cartProductsDiv");
    let cartItemPriceArray = [];
+   let clearCartBtn = document.createElement("button");
+   let refreshCartBtn = document.createElement("button");
+
+   removeBtn.id = "cartRemoveBtn";
+   removeBtn.textContent = "Remove";
+   clearCartBtn.textContent = "Clear Cart";
+   clearCartBtn.id = "clearCartBtn";
+   refreshCartBtn.textContent = "Refresh";
+   refreshCartBtn.id = "refreshBtn"
+   cartProductsDiv.append(clearCartBtn);
+   cartProductsDiv.append(refreshCartBtn);
+   
    for (let i = 0; i < localStorage.length; i++) {
       let itemID = "item" + i;
       let cartItem = localStorage.getItem(itemID);
@@ -185,8 +197,6 @@ function displayCart() {
          let itemPrice = document.createElement("label");
          let itemDesc = document.createElement("p");
          let removeBtn = document.createElement("button");
-         let clearCartBtn = document.createElement("button");
-         let refreshCartBtn = document.createElement("button");
 
          // div ids
          cartItemDiv.id = "cartItemDiv";
@@ -201,12 +211,6 @@ function displayCart() {
          itemImg.src = parsedCartItem.imageUrl;
          itemImg.alt = parsedCartItem.imageAlt;
          itemImg.classList.add("cartImg");
-         removeBtn.id = "cartRemoveBtn";
-         removeBtn.textContent = "Remove";
-         clearCartBtn.textContent = "Clear Cart";
-         clearCartBtn.id = "clearCartBtn";
-         refreshCartBtn.textContent = "Refresh";
-         refreshCartBtn.id = "refreshBtn"
 
          // append the cart item to the parent div 
          cartProductsDiv.append(cartItemDiv);
@@ -244,8 +248,6 @@ function displayCart() {
          })
       }
    }
-   cartProductsDiv.append(clearCartBtn);
-   cartProductsDiv.append(refreshCartBtn);
 }
 
 function generateTotal(priceArr, subE, shipE, totalE) {
