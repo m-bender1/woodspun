@@ -168,8 +168,13 @@ footer p {
    gap: 0;
 }
 
-#cartItemDiv > h3, p, label {
-   padding: 0.25rem 0;
+#cartItemDiv label {
+   margin-bottom: 0.5rem;
+}
+
+#cartItemDiv h3,
+#cartItemDiv p {
+   margin: 0.25rem 0;
 }
 
 .cartImg {
