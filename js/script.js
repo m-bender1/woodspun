@@ -249,3 +249,9 @@ function generateTotal(priceArr, subE, shipE, totalE) {
    shipE.innerHTML = "Shipping: $" + shipping.toFixed(2);
    totalE.innerHTML = "Total: $" + total.toFixed(2);
 }
+
+
+// nav logo onclick home function
+document.getElementsByClassName("logo")[0].addEventListener("click", function () {
+   window.location = "index.html";
+})
