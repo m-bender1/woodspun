@@ -24,13 +24,12 @@ body {
    display: flex;
    flex-direction: column;
    overflow-x: hidden;
-   background: var(--text-nav);
 }
 
 /* NAV STYLING */
 .navBar {
    min-width: 100%;
-   background: var(--text-content);
+   background: var(--text-nav);
    /* move the nav links to the left of the nav */
    display: flex;
    flex-direction: row;
@@ -42,14 +41,14 @@ body {
 
 nav span {
    /* 'button' styling for nav */
-   border-bottom: 1px solid var(--text-nav);
+   border-bottom: 1px solid var(--text-content);
    padding: 0.5em;
    margin: 0.5em;
 }
 
 nav a {
    text-decoration: none;
-   color: var(--text-nav);
+   color: var(--text-content);
 }
 
 nav {
