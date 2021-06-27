@@ -60,10 +60,12 @@ nav {
    margin-right: 1rem;
 }
 
-
 .logo {
-   height: 50%;
-   width: 50%;
+   height: 75%;
+   width: 75%;
+   position: absolute;
+   top: 1rem;
+   left: 1rem;
 }
 
 /* HERO AND TITLE */
