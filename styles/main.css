@@ -61,10 +61,9 @@ nav {
 }
 
 .logo {
-   transform: scale(500%);
    position: absolute;
-   left: 1rem;
-   height: 1rem;
+   left: 5rem;
+   height: 5rem;
    width: 1rem;
    justify-self: center;
 }
