@@ -121,8 +121,8 @@ nav > span:active {
    justify-content: center;
 }
 #image img {
-   height: 11rem;
-   width: 11rem;
+   height: 16rem;
+   width: 13rem;
    border: thin solid var(--clr-grey);
 }
 #description {
