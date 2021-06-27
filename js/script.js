@@ -241,7 +241,7 @@ function generateTotal(priceArr, subE, shipE, totalE) {
    let shipping = 3.50;
    let total;
    for (let i = 0; i < priceArr.length; i++) {
-      subtotal += priceArr[i];
+      subtotal += parseFloat(priceArr[i]);
       total = subtotal + shipping;
    }
    subE.textContent = "Subtotal: $" + subtotal;
