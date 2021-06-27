@@ -170,7 +170,6 @@ function addToCart(p) {
 function displayCart() {
    // get cart page elements
    let cartProductsDiv = document.getElementById("cartProductsDiv");
-   let cartTotalDiv = document.getElementById("cartTotalDiv");
    let cartItemPriceArray = [];
    for (let i = 0; i < localStorage.length; i++) {
       let itemID = "item" + i;
@@ -204,10 +203,11 @@ function displayCart() {
          removeBtn.id = "cartRemoveBtn";
          removeBtn.textContent = "Remove";
          clearCartBtn.textContent = "Clear Cart";
-         clearCartBtn.id = "clearCartBtn"
+         clearCartBtn.id = "clearCartBtn";
 
          // append the cart item to the parent div 
          cartProductsDiv.append(cartItemDiv);
+         cartProductsDiv.append(clearCartBtn);
 
          // append the child divs to the cart item div
          cartItemDiv.append(cartItemImgDiv);
