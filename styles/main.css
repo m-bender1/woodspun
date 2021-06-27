@@ -61,11 +61,11 @@ nav {
 }
 
 .logo {
-   transform: scale(250%);
+   transform: scale(300%);
    position: absolute;
    left: 1rem;
-   height: 5rem;
-   width: 5rem;
+   height: fit-content;
+   width: fit-content;
 }
 
 /* HERO AND TITLE */
