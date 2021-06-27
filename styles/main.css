@@ -62,8 +62,8 @@ nav {
 
 .logo {
    position: absolute;
-   left: 0; 
-   top: 0;
+   left: -5rem; 
+   top: -5rem;
    height: 10rem;
    width: 12rem;
    justify-self: center;
