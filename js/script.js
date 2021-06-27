@@ -173,6 +173,7 @@ function displayCart() {
    let cartItemPriceArray = [];
    let clearCartBtn = document.createElement("button");
    let refreshCartBtn = document.createElement("button");
+   let removeBtn = document.createElement("button");
 
    removeBtn.id = "cartRemoveBtn";
    removeBtn.textContent = "Remove";
@@ -196,7 +197,6 @@ function displayCart() {
          let itemImg = document.createElement("img");
          let itemPrice = document.createElement("label");
          let itemDesc = document.createElement("p");
-         let removeBtn = document.createElement("button");
 
          // div ids
          cartItemDiv.id = "cartItemDiv";
