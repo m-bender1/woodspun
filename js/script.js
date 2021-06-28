@@ -160,7 +160,7 @@ function addToCart(p) {
    // pass this products data to local storage with items id as var name
    // using localstorage so the cart is saved in browser until explicitly deleted (removed from cart by client)
    let cartItem = JSON.stringify(p);
-   console.log(parsedCartItem);
+   console.log(p);
    // ensure the item isn't already in the cart
    if (localStorage.getItem(p.uniqueID) == null) {
       localStorage.setItem(p.uniqueID, cartItem);
@@ -206,7 +206,7 @@ function displayCart() {
          let itemID = "item" + i;
          let cartItem = localStorage.getItem(itemID);
          let parsedCartItem = JSON.parse(cartItem);
-         console.log(cartItem)
+         console.log(parsedCartItem)
          if (parsedCartItem !== null) {
             // create cart item div
             let cartItemDiv = document.createElement("div");
