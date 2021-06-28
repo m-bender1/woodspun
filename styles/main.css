@@ -111,29 +111,12 @@ button {
    outline-offset: -4px;
 }
 
-footer {
-   background-color: var(--clr-white);
-   color: var(--clr-grey);
-   margin: auto;
-   margin-bottom: -3rem;
-   width: 100%;
-   height: 5rem;
-   display: flex;
-   flex-direction: row;
-   align-content: center;
-   justify-content: space-between;
-}
-footer p {
-   font-size: 0.75rem;
-}
-
 /* ABOUT PAGE IMAGE */
 .abtImgDiv {
    display: flex;
    align-items: center;
    justify-content: center;
 }
-
 .abtImgDiv img {
    height: 20rem;
    width: auto;
@@ -211,4 +194,21 @@ footer p {
 }
 #clearCartBtn {
    margin-top: 1.125rem;
+}
+
+/* Footer styling - same for tablet and desktop */
+footer {
+   background-color: var(--clr-white);
+   color: var(--clr-grey);
+   margin: auto;
+   margin-bottom: -3rem;
+   width: 100%;
+   height: 5rem;
+   display: flex;
+   flex-direction: row;
+   align-content: center;
+   justify-content: space-between;
+}
+footer p {
+   font-size: 0.75rem;
 }
