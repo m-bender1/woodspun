@@ -157,7 +157,7 @@ nav > span:active {
    padding: 1rem;
 }
 .abtFooter {
-   margin-bottom: 10rem;
+   margin-bottom: -10rem;
 }
 
 /* remove filtering on mobile */
