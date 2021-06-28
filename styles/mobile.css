@@ -232,3 +232,10 @@ nav > span:active {
    padding: 0.25rem;
    margin: 0.5rem 0;
 }
+
+
+/* Mobile footer */
+footer {
+   /* just needs to change to flex direction: column */
+   flex-direction: column;
+}
