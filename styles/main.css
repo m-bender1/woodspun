@@ -130,15 +130,13 @@ button {
 /* CART STYLING */
 /* added here bc only mobile will be different */
 .cartDiv {
-   display: grid;
-   grid-template-columns: 1.35fr 0.65fr;
-   gap: 2rem 2rem;
-   margin: 1rem;
-   padding: 0.5rem;
+   display: flex;
+   flex-direction: column;
 }
 
 #cartHeader {
    display: flex;
+   flex-direction: row;
    margin: 1rem;
    padding: 1rem;
 }
