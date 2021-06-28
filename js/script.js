@@ -206,7 +206,8 @@ function displayCart() {
    }
    // cart w/ products
    else {
-      for (let i = 0; i < products.length; i++) {
+      let productArray = sessionStorage.getItem("prodArr");
+      for (let i = 0; i < productArray.length; i++) {
          let itemID = "item" + i;
          let cartItem = localStorage.getItem(itemID);
          let parsedCartItem = JSON.parse(cartItem);
