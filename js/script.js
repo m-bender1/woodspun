@@ -188,23 +188,29 @@ function displayCart() {
       let cartItemPriceArray = [];
       let clearCartBtn = document.createElement("button");
       let refreshCartBtn = document.createElement("button");
-
       // cart total element
       let cartSubtotalP = document.createElement("p");
       let cartShippingP = document.createElement("p");
       let cartTotalH3 = document.createElement("h3");
-
       cartSubtotalP.id = "cartSubtotal";
       cartShippingP = "cartShippingCost";
       cartTotalH3 = "cartTotal";
+      // append to totals div
+      let cartTotalDiv = document.getElementById("cartTotalDiv");
+      cartTotalDiv.append(cartSubtotalP);
+      cartTotalDiv.append(cartShippingP);
+      cartTotalDiv.append(cartTotalH3);
 
       // cart buttons (not in product divs)
       clearCartBtn.textContent = "Clear Cart";
       clearCartBtn.id = "clearCartBtn";
       refreshCartBtn.textContent = "Refresh";
-      refreshCartBtn.id = "refreshBtn"
+      refreshCartBtn.id = "refreshBtn";
       cartProductsDiv.append(clearCartBtn);
       cartProductsDiv.append(refreshCartBtn);
+
+      // append cost totals elements to cart header
+      cartHeader.append()
 
       // clear all cart items button
       clearCartBtn.addEventListener("click", function () {
