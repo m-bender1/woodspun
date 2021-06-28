@@ -65,6 +65,7 @@ nav {
    height: 5rem;
    width: 6rem;
    justify-self: center;
+   cursor: pointer;
 }
 
 /* HERO AND TITLE */
