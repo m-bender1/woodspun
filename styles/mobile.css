@@ -156,6 +156,9 @@ nav > span:active {
    margin: 2rem 2rem 1rem 2rem;
    padding: 1rem;
 }
+.abtFooter {
+   margin-bottom: 10rem;
+}
 
 /* remove filtering on mobile */
 #productSelect,
