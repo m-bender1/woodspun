@@ -254,6 +254,7 @@ function displayCart() {
             })
             clearCartBtn.addEventListener("click", function () {
                localStorage.clear();
+               alert("Your cart has been cleared.");
             })
             refreshCartBtn.addEventListener("click", function () {
                location.reload();
