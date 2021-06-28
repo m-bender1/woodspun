@@ -148,6 +148,10 @@ button {
    flex-direction: column;
    padding: 0.5rem;
 }
+#cartProductsDiv {
+   align-items: center;
+   justify-content: center;
+}
 
 #cartItemDiv {
    display: grid;
