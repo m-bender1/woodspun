@@ -205,8 +205,6 @@ footer {
    height: 5rem;
    display: flex;
    flex-direction: row;
-   align-content: center;
-   justify-content: space-between;
 }
 footer p {
    font-size: 0.75rem;
