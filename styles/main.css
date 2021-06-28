@@ -119,8 +119,8 @@ footer {
    height: 5rem;
    display: flex;
    flex-direction: row;
-   align-items: center;
-   justify-content: space-evenly;
+   align-content: space-evenly;
+   justify-content: center;
 }
 footer p {
    margin-top: 0.3rem;
