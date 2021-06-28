@@ -202,12 +202,7 @@ nav > span:hover {
    padding: 1rem;
 }
 
-/* footer */
-footer {
-   flex-direction: row;
-   justify-content: space-evenly;
-}
-
+/* larger font size on desktop */
 footer p {
    font-size: 1rem;
 }
