@@ -193,6 +193,7 @@ function displayCart() {
    else {
       for (let i = 0; i < localStorage.length; i++) {
          let itemID = "item" + i;
+         console.log(itemID);
          let cartItem = localStorage.getItem(itemID);
          let parsedCartItem = JSON.parse(cartItem);
          if (parsedCartItem !== null) {
