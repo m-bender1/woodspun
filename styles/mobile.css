@@ -238,6 +238,4 @@ nav > span:active {
 footer {
    /* just needs to change to flex direction: column */
    flex-direction: column;
-   height: fit-content;
-   padding: 0.5rem;
 }
