@@ -176,42 +176,43 @@ function addToCart(p) {
 }
 
 function displayCart() {
-   // get cart page elements
-   let cartProductsDiv = document.getElementById("cartProductsDiv");
-   let cartItemPriceArray = [];
-   let clearCartBtn = document.createElement("button");
-   let refreshCartBtn = document.createElement("button");
-
-   // cart buttons (not in product divs)
-   clearCartBtn.textContent = "Clear Cart";
-   clearCartBtn.id = "clearCartBtn";
-   refreshCartBtn.textContent = "Refresh";
-   refreshCartBtn.id = "refreshBtn"
-   cartProductsDiv.append(clearCartBtn);
-   cartProductsDiv.append(refreshCartBtn);
-
-   clearCartBtn.addEventListener("click", function () {
-      localStorage.clear();
-      alert("Your cart has been cleared.");
-   })
-   refreshCartBtn.addEventListener("click", function () {
-      location.reload();
-   })
-   
    // empty cart
    if (localStorage.length == 0) {
-      let itemTitle = document.createElement("h3");
+      let itemTitle = document.createElement("h1");
       itemTitle.textContent = "Cart is empty.";
-      document.getElementById("cartTotalDiv").append(itemTitle);
+      document.getElementById("cartHeader").append(itemTitle);
    }
-   // cart w/ products
    else {
+      let cartProductsDiv = document.getElementById("cartProductsDiv");
+      let cartItemPriceArray = [];
+      let clearCartBtn = document.createElement("button");
+      let refreshCartBtn = document.createElement("button");
+
+      // cart buttons (not in product divs)
+      clearCartBtn.textContent = "Clear Cart";
+      clearCartBtn.id = "clearCartBtn";
+      refreshCartBtn.textContent = "Refresh";
+      refreshCartBtn.id = "refreshBtn"
+      cartProductsDiv.append(clearCartBtn);
+      cartProductsDiv.append(refreshCartBtn);
+
+      // clear all cart items button
+      clearCartBtn.addEventListener("click", function () {
+         localStorage.clear();
+         alert("Your cart has been cleared.");
+      })
+      // refresh cart onlick
+      refreshCartBtn.addEventListener("click", function () {
+         location.reload();
+      })
+
+      // use product array for for loop length
       let productArray = sessionStorage.getItem("prodArr");
       for (let i = 0; i < productArray.length; i++) {
          let itemID = "item" + i;
          let cartItem = localStorage.getItem(itemID);
          let parsedCartItem = JSON.parse(cartItem);
-      
+
          if (parsedCartItem !== null) {
             // create cart item div
             let cartItemDiv = document.createElement("div");
