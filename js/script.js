@@ -1,13 +1,13 @@
 var xmlhttp = new XMLHttpRequest();
 var url = "productData.txt";
-var myArr = [];
+var prodArr = [];
 
 function loadProducts() {
    xmlhttp.onreadystatechange = function () {
       if (this.readyState == 4 && this.status == 200) {
          // sets array to data in json file
-         myArr = JSON.parse(this.responseText);
-         displayProducts(myArr);
+         prodArr = JSON.parse(this.responseText);
+         displayProducts(prodArr);
       }
    };
    xmlhttp.open("GET", url, true);
@@ -69,16 +69,16 @@ function filterProducts() {
    // let products = document.getElementsByClassName("productDiv");
    let productSelect = document.getElementById("productSelect").value;
 
-   for (let i = 0; i < myArr.products.length; i++) {
+   for (let i = 0; i < prodArr.products.length; i++) {
       // gets element matching with matching id
-      let e = document.getElementById(myArr.products[i].uniqueID);
+      let e = document.getElementById(prodArr.products[i].uniqueID);
 
       if (productSelect == "All") {
          // give all products proper classes
          e.classList.remove("disabled");
          e.classList.add("productDiv");
       }
-      else if (productSelect == myArr.products[i].productType) {
+      else if (productSelect == prodArr.products[i].productType) {
          // disabled class is overwritten by productDiv styling
          // have to add and remove that as well
          e.classList.remove("disabled");
@@ -159,13 +159,8 @@ function setFilter() {
 // takes full product object as parameter (a.products[i]) 
 function addToCart(p) {
    // // using this to pass product array to the 
-   // let productDivs = document.getElementsByClassName("productDiv");
-   // let prodArr = [];
-   // for (let i = 0; i < productDivs.length; i++) {
-
-   // }
-   console.log(myArr);
-
+   sessionStorage.removeItem("prodArr");
+   sessionStorage.setItem("prodArr", prodArr);
    // pass this products data to local storage with items id as var name
    // using localstorage so the cart is saved in browser until explicitly deleted (removed from cart by client)
    let cartItem = JSON.stringify(p);
