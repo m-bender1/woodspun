@@ -122,6 +122,7 @@ function displayProduct() {
    imgWrap.append(pImg);
 
    description.append(title)
+   description.append(price);
    description.append(descriptionParagraph);
    description.append(addToCartBtn);
 }
