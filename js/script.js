@@ -183,10 +183,20 @@ function displayCart() {
       document.getElementById("cartHeader").append(itemTitle);
    }
    else {
+      let cartHeader = document.getElementById("cartHeader");
       let cartProductsDiv = document.getElementById("cartProductsDiv");
       let cartItemPriceArray = [];
       let clearCartBtn = document.createElement("button");
       let refreshCartBtn = document.createElement("button");
+
+      // cart total element
+      let cartSubtotalP = document.createElement("p");
+      let cartShippingP = document.createElement("p");
+      let cartTotalH3 = document.createElement("h3");
+
+      cartSubtotalP.id = "cartSubtotal";
+      cartShippingP = "cartShippingCost";
+      cartTotalH3 = "cartTotal";
 
       // cart buttons (not in product divs)
       clearCartBtn.textContent = "Clear Cart";
@@ -286,8 +296,8 @@ function generateTotal(priceArr, subE, shipE, totalE) {
    subE.innerHTML = "Subtotal: $" + subtotal.toFixed(2);
    shipE.innerHTML = "Shipping: $" + shipping.toFixed(2);
    totalE.innerHTML = "Total: $" + total.toFixed(2);
-}
 
+   return total.toFixed(2);
 
 // nav logo onclick home function
 document.getElementById("logo").addEventListener("click", function () {
