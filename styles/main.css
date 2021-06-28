@@ -137,6 +137,12 @@ button {
    padding: 0.5rem;
 }
 
+#cartHeader {
+   display: flex;
+   margin: 1rem;
+   padding: 1rem;
+}
+
 #cartProductsDiv,
 #cartTotalDiv {
    display: flex;
