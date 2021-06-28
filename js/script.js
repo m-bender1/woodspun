@@ -209,7 +209,7 @@ function displayCart() {
          let itemID = "item" + i;
          let cartItem = localStorage.getItem(itemID);
          let parsedCartItem = JSON.parse(cartItem);
-         console.log(parsedCartItem, i)
+         console.log(parsedCartItem, itemID)
          if (parsedCartItem !== null) {
             // create cart item div
             let cartItemDiv = document.createElement("div");
