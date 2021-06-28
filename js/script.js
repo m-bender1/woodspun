@@ -173,6 +173,8 @@ function addToCart(p) {
 }
 
 function displayCart() {
+   console.log(localStorage.length);
+
    // get cart page elements
    let cartProductsDiv = document.getElementById("cartProductsDiv");
    let cartItemPriceArray = [];
