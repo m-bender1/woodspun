@@ -158,6 +158,14 @@ function setFilter() {
 
 // takes full product object as parameter (a.products[i]) 
 function addToCart(p) {
+   // // using this to pass product array to the 
+   // let productDivs = document.getElementsByClassName("productDiv");
+   // let prodArr = [];
+   // for (let i = 0; i < productDivs.length; i++) {
+
+   // }
+   console.log(myArr);
+
    // pass this products data to local storage with items id as var name
    // using localstorage so the cart is saved in browser until explicitly deleted (removed from cart by client)
    let cartItem = JSON.stringify(p);
@@ -203,8 +211,6 @@ function displayCart() {
    }
    // cart w/ products
    else {
-      let products = document.getElementsByClassName("productDiv")
-      console.log(products.length)
       for (let i = 0; i < products.length; i++) {
          let itemID = "item" + i;
          let cartItem = localStorage.getItem(itemID);
