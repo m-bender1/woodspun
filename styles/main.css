@@ -200,7 +200,7 @@ button {
 footer {
    background-color: var(--clr-white);
    color: var(--clr-grey);
-   margin: 2rem 0 -3rem 0;
+   margin: 2rem 0 -5rem 0;
    width: 100%;
    height: 5rem;
    display: flex;
