@@ -185,7 +185,7 @@ function displayCart() {
    refreshCartBtn.id = "refreshBtn"
    cartProductsDiv.append(clearCartBtn);
    cartProductsDiv.append(refreshCartBtn);
-
+   
    // empty cart
    if (localStorage.length == 0) {
       let itemTitle = document.createElement("h3");
@@ -196,71 +196,72 @@ function displayCart() {
    else {
       for (let i = 0; i < localStorage.length; i++) {
          let itemID = "item" + i;
-         console.log(itemID);
-         console.log(localStorage.length, localStorage.getItem(itemID));
          let cartItem = localStorage.getItem(itemID);
          let parsedCartItem = JSON.parse(cartItem);
-         // create cart item div
-         let cartItemDiv = document.createElement("div");
-         let cartItemImgDiv = document.createElement("div");
-         let cartItemContentDiv = document.createElement("div");
-         let itemTitle = document.createElement("h3");
-         let itemImg = document.createElement("img");
-         let itemPrice = document.createElement("label");
-         let itemDesc = document.createElement("p");
-         let removeBtn = document.createElement("button");
+         console.log(parsedCartItem)
+         if (parsedCartItem !== null) {
+            // create cart item div
+            let cartItemDiv = document.createElement("div");
+            let cartItemImgDiv = document.createElement("div");
+            let cartItemContentDiv = document.createElement("div");
+            let itemTitle = document.createElement("h3");
+            let itemImg = document.createElement("img");
+            let itemPrice = document.createElement("label");
+            let itemDesc = document.createElement("p");
+            let removeBtn = document.createElement("button");
 
-         // div ids
-         cartItemDiv.id = "cartItemDiv";
-         cartItemImgDiv.id = "cartItemImgDiv";
-         cartItemContentDiv.id = "cartItemContentDiv";
+            // div ids
+            cartItemDiv.id = "cartItemDiv";
+            cartItemImgDiv.id = "cartItemImgDiv";
+            cartItemContentDiv.id = "cartItemContentDiv";
 
-         // add content to the elements
-         // title
-         itemTitle.textContent = parsedCartItem.productName;
-         itemPrice.textContent = "$" + parsedCartItem.productPrice;
-         itemDesc.textContent = parsedCartItem.productDescription
-         itemImg.src = parsedCartItem.imageUrl;
-         itemImg.alt = parsedCartItem.imageAlt;
-         itemImg.classList.add("cartImg");
-         removeBtn.id = "cartRemoveBtn";
-         removeBtn.textContent = "Remove";
+            // add content to the elements
+            // title
+            itemTitle.textContent = parsedCartItem.productName;
+            itemPrice.textContent = "$" + parsedCartItem.productPrice;
+            itemDesc.textContent = parsedCartItem.productDescription
+            itemImg.src = parsedCartItem.imageUrl;
+            itemImg.alt = parsedCartItem.imageAlt;
+            itemImg.classList.add("cartImg");
+            removeBtn.id = "cartRemoveBtn";
+            removeBtn.textContent = "Remove";
 
-         // append the cart item to the parent div 
-         cartProductsDiv.append(cartItemDiv);
-         // append the child divs to the cart item div
-         cartItemDiv.append(cartItemImgDiv);
-         cartItemDiv.append(cartItemContentDiv);
+            // append the cart item to the parent div 
+            cartProductsDiv.append(cartItemDiv);
+            // append the child divs to the cart item div
+            cartItemDiv.append(cartItemImgDiv);
+            cartItemDiv.append(cartItemContentDiv);
 
-         // append prod img to div
-         cartItemImgDiv.append(itemImg);
+            // append prod img to div
+            cartItemImgDiv.append(itemImg);
 
-         //append content to item content div
-         cartItemContentDiv.append(itemTitle);
-         cartItemContentDiv.append(itemPrice);
-         cartItemContentDiv.append(itemDesc);
-         cartItemContentDiv.append(removeBtn);
+            //append content to item content div
+            cartItemContentDiv.append(itemTitle);
+            cartItemContentDiv.append(itemPrice);
+            cartItemContentDiv.append(itemDesc);
+            cartItemContentDiv.append(removeBtn);
 
-         // onclick functions for the cart
-         cartItemPriceArray.push(Number(parsedCartItem.productPrice));
-         // get totals div child elements
-         let subtotalCost = document.getElementById("cartSubtotal");
-         let shippingCost = document.getElementById("cartShippingCost");
-         let totalCost = document.getElementById("cartTotal");
-         generateTotal(cartItemPriceArray, subtotalCost, shippingCost, totalCost);
+            // onclick functions for the cart
+            cartItemPriceArray.push(Number(parsedCartItem.productPrice));
+            // get totals div child elements
+            let subtotalCost = document.getElementById("cartSubtotal");
+            let shippingCost = document.getElementById("cartShippingCost");
+            let totalCost = document.getElementById("cartTotal");
+            generateTotal(cartItemPriceArray, subtotalCost, shippingCost, totalCost);
 
-         // remove btn onclick 
-         removeBtn.addEventListener("click", function () {
-            localStorage.removeItem(parsedCartItem.uniqueID);
-            alert(parsedCartItem.productName + " item removed.")
-         })
-         clearCartBtn.addEventListener("click", function () {
-            localStorage.clear();
-            alert("Your cart has been cleared.");
-         })
-         refreshCartBtn.addEventListener("click", function () {
-            location.reload();
-         })
+            // remove btn onclick 
+            removeBtn.addEventListener("click", function () {
+               localStorage.removeItem(parsedCartItem.uniqueID);
+               alert(parsedCartItem.productName + " item removed.")
+            })
+            clearCartBtn.addEventListener("click", function () {
+               localStorage.clear();
+               alert("Your cart has been cleared.");
+            })
+            refreshCartBtn.addEventListener("click", function () {
+               location.reload();
+            })
+         }
       }
    }
 }
