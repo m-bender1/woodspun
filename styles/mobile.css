@@ -1,17 +1,7 @@
-/* anything smaller than 350px needs a smaller nav bar */
-@media screen and (max-width: 360px) {
-   nav span {
-         /* 1rem=16px */
-         font-size: 13px;
-         padding: 0.15rem;
-         margin: 0.15rem;
-   }
-}
-
 /* HERO AND NAV STYLING */
 nav span {
    /* 1rem=16px */
-   font-size: 14px;
+   font-size: 13px;
    padding: 0.25rem;
    margin: 0.25rem;
 }
