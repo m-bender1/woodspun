@@ -205,7 +205,8 @@ function displayCart() {
    }
    // cart w/ products
    else {
-      for (let i = 0; i < localStorage.length; i++) {
+      let products = document.getElementsByClassName("productDiv") 
+      for (let i = 0; i < products.length; i++) {
          let itemID = "item" + i;
          let cartItem = localStorage.getItem(itemID);
          let parsedCartItem = JSON.parse(cartItem);
