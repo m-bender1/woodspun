@@ -185,6 +185,14 @@ function displayCart() {
    refreshCartBtn.id = "refreshBtn"
    cartProductsDiv.append(clearCartBtn);
    cartProductsDiv.append(refreshCartBtn);
+
+   clearCartBtn.addEventListener("click", function () {
+      localStorage.clear();
+      alert("Your cart has been cleared.");
+   })
+   refreshCartBtn.addEventListener("click", function () {
+      location.reload();
+   })
    
    // empty cart
    if (localStorage.length == 0) {
@@ -253,13 +261,6 @@ function displayCart() {
             removeBtn.addEventListener("click", function () {
                localStorage.removeItem(parsedCartItem.uniqueID);
                alert(parsedCartItem.productName + " item removed.")
-            })
-            clearCartBtn.addEventListener("click", function () {
-               localStorage.clear();
-               alert("Your cart has been cleared.");
-            })
-            refreshCartBtn.addEventListener("click", function () {
-               location.reload();
             })
          }
       }
