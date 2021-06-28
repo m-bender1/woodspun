@@ -173,8 +173,6 @@ function addToCart(p) {
 }
 
 function displayCart() {
-   console.log(localStorage.length);
-
    // get cart page elements
    let cartProductsDiv = document.getElementById("cartProductsDiv");
    let cartItemPriceArray = [];
@@ -205,7 +203,8 @@ function displayCart() {
    }
    // cart w/ products
    else {
-      let products = document.getElementsByClassName("productDiv") 
+      let products = document.getElementsByClassName("productDiv")
+      console.log(products.length)
       for (let i = 0; i < products.length; i++) {
          let itemID = "item" + i;
          let cartItem = localStorage.getItem(itemID);
@@ -272,9 +271,7 @@ function displayCart() {
 }
 
 function generateTotal(priceArr, subE, shipE, totalE) {
-   // gets prices from arr passed in param, generates
-   // totals from that
-   console.log(priceArr)
+   // gets prices from arr passed in param, generates totals from that
    let subtotal = 0.00;
    let shipping = 3.50;
    let total = 0.00;
