@@ -193,7 +193,7 @@ function displayCart() {
       let cartShippingP = document.createElement("p");
       let cartTotalH3 = document.createElement("h3");
       cartSubtotalP.id = "cartSubtotal";
-      cartShippingP = "cartShippingCost";
+      cartShippingP.id = "cartShippingCost";
       cartTotalH3 = "cartTotal";
       // append to totals div
       let cartTotalDiv = document.getElementById("cartTotalDiv");
