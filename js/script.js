@@ -194,7 +194,7 @@ function displayCart() {
       for (let i = 0; i < localStorage.length; i++) {
          let itemID = "item" + i;
          console.log(itemID);
-         console.log(localStorage.length, localStorage.getItem("item" + i));
+         console.log(localStorage.length, localStorage.getItem(itemID));
          let cartItem = localStorage.getItem(itemID);
          let parsedCartItem = JSON.parse(cartItem);
          if (parsedCartItem !== null) {
