@@ -160,7 +160,7 @@ function setFilter() {
 function addToCart(p) {
    // // using this to pass product array to the 
    localStorage.removeItem("prodArr");
-   localStorage.setItem("prodArr", prodArr);
+   localStorage.setItem("prodArr", JSON.stringify(prodArr));
    // pass this products data to local storage with items id as var name
    // using localstorage so the cart is saved in browser until explicitly deleted (removed from cart by client)
    let cartItem = JSON.stringify(p);
@@ -177,11 +177,22 @@ function addToCart(p) {
 
 function displayCart() {
    // empty cart
-   if (localStorage.length == 0) {
+   // accounting for the add to cart button adding to localstorage length
+   let localSLength;
+   if (localStorage.getItem("prodArr") == null) {
+      localSLength = 0;
+   }
+   else {
+      localSLength = 1;
+   }
+
+   // if cart is empty, display message
+   if (localStorage.length == localSLength) {
       let itemTitle = document.createElement("h1");
       itemTitle.textContent = "Cart is empty.";
       document.getElementById("cartHeader").append(itemTitle);
    }
+   // else, display cart items
    else {
       let cartHeader = document.getElementById("cartHeader");
       let cartProductsDiv = document.getElementById("cartProductsDiv");
