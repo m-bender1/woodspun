@@ -206,8 +206,8 @@ function displayCart() {
       clearCartBtn.id = "clearCartBtn";
       refreshCartBtn.textContent = "Refresh";
       refreshCartBtn.id = "refreshBtn";
-      cartProductsDiv.append(clearCartBtn);
-      cartProductsDiv.append(refreshCartBtn);
+      cartTotalDiv.append(clearCartBtn);
+      cartTotalDiv.append(refreshCartBtn);
 
       // append cost totals elements to cart header
       cartHeader.append()
