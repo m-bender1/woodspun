@@ -11,8 +11,7 @@
 
 :root {
    --clr-green: #285319;
-   --clr-orange: #643500ce;
-   --clr-white: #e7e4e4;
+   --clr-white: #f9feff;
    --clr-grey: #575757;
    --font-main-text: "Nanum Gothic", sans-serif;
    --font-logo: "Josefin Slab", serif;
@@ -30,7 +29,7 @@ body {
 /* NAV STYLING */
 .navBar {
    min-width: 100%;
-   background: var(--clr-orange);
+   background: var(--clr-white);
    /* move the nav links to the left of the nav */
    display: flex;
    flex-direction: row;
