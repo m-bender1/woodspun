@@ -4,6 +4,10 @@
 }
 
 /* HERO AND NAV STYLING */
+.logo {
+   margin: 0 2rem;
+}
+
 /* this will center the titles over the hero image */
 .heroImageDiv {
    display: relative;
