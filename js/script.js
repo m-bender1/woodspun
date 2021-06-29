@@ -176,8 +176,16 @@ function addToCart(p) {
 }
 
 function displayCart() {
-   // empty cart
-   if (localStorage.length == 0) {
+   // need to account for length in localstorage being 1 with prodArr
+   let localSLength;
+   if (localStorage.getItem("prodArr") == null) {
+      localSLength = 0;
+   }
+   else {
+      localSLength = 1;
+   }
+
+   if (localStorage.length == localSLength) {
       let itemTitle = document.createElement("h1");
       itemTitle.textContent = "Cart is empty.";
       document.getElementById("cartHeader").append(itemTitle);
