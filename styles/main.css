@@ -10,7 +10,7 @@
 }
 
 :root {
-   --clr-green: #285319;
+   --clr-green: #055c33;
    --clr-white: #f9feff;
    --clr-grey: #575757;
    --font-main-text: "Nanum Gothic", sans-serif;
@@ -42,7 +42,7 @@ body {
 
 nav span {
    /* 'button' styling for nav */
-   background: var(--clr-green);
+   border-bottom: thin solid var(--clr-green);
    padding: 0.5em;
    margin: 0.5em;
 }
