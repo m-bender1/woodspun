@@ -159,8 +159,8 @@ function setFilter() {
 // takes full product object as parameter (a.products[i]) 
 function addToCart(p) {
    // // using this to pass product array to the 
-   sessionStorage.removeItem("prodArr");
-   sessionStorage.setItem("prodArr", prodArr);
+   localStorage.removeItem("prodArr");
+   localStorage.setItem("prodArr", prodArr);
    // pass this products data to local storage with items id as var name
    // using localstorage so the cart is saved in browser until explicitly deleted (removed from cart by client)
    let cartItem = JSON.stringify(p);
@@ -223,7 +223,7 @@ function displayCart() {
       })
 
       // use product array for for loop length
-      let productArray = sessionStorage.getItem("prodArr");
+      let productArray = localStorage.getItem("prodArr");
       for (let i = 0; i < productArray.length; i++) {
          let itemID = "item" + i;
          let cartItem = localStorage.getItem(itemID);

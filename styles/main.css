@@ -42,14 +42,15 @@ body {
 
 nav span {
    /* 'button' styling for nav */
-   border-bottom: 1px solid var(--clr-green);
+   background: var(--clr-green);
    padding: 0.5em;
    margin: 0.5em;
 }
 
 nav a {
    text-decoration: none;
-   color: var(--clr-green);
+   color: var(--clr-white);
+   font-weight: 600;
 }
 
 nav {
@@ -58,6 +59,7 @@ nav {
    align-items: center;
    justify-content: center;
    margin-right: 1rem;
+   border: bottom;
 }
 
 .logo {
