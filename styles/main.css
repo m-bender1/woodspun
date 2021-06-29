@@ -190,22 +190,16 @@ button {
 #cartTotal {
    padding: 0.35rem;
 }
+
 #cartTotal {
    padding-top: 1rem;
-}
-
-.cartDiv hr {
-   width: 10rem;
 }
 
 #clearCartBtn, #refreshBtn {
    width: fit-content;
    padding: 0.25rem;
-   margin: 0.5rem 1rem;
+   margin: 0.5rem 0;
    align-self: flex-start;
-}
-#clearCartBtn {
-   margin-top: 1.125rem;
 }
 
 /* Footer styling - same for tablet and desktop */
