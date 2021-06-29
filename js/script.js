@@ -178,6 +178,7 @@ function addToCart(p) {
 function displayCart() {
    // empty cart
 <<<<<<< HEAD
+<<<<<<< HEAD
    if (localStorage.length == 0) {
 =======
    // accounting for the add to cart button adding to localstorage length
@@ -192,6 +193,9 @@ function displayCart() {
    // if cart is empty, display message
    if (localStorage.length == localSLength) {
 >>>>>>> parent of 381e201 (Update script.js)
+=======
+   if (localStorage.length == 0) {
+>>>>>>> parent of 2c02c27 (Update script.js)
       let itemTitle = document.createElement("h1");
       itemTitle.textContent = "Cart is empty.";
       document.getElementById("cartHeader").append(itemTitle);
