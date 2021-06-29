@@ -214,6 +214,7 @@ footer {
    display: flex;
    flex-direction: row;
    align-items: center;
+   justify-content: space-evenly;
 }
 footer p {
    font-size: 0.75rem;
