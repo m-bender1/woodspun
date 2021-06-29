@@ -179,7 +179,7 @@ function displayCart() {
    // empty cart
    // accounting for the add to cart button adding to localstorage length
    let localSLength;
-   if (localStorage.getItem("prodArr") == null) {
+   if (JSON.parse(localStorage.getItem("prodArr")) == null) {
       localSLength = 0;
    }
    else {
@@ -234,7 +234,7 @@ function displayCart() {
       })
 
       // use product array for for loop length
-      let productArray = localStorage.getItem("prodArr");
+      let productArray = JSON.parse(localStorage.getItem("prodArr"));
       for (let i = 0; i < productArray.length; i++) {
          let itemID = "item" + i;
          let cartItem = localStorage.getItem(itemID);
