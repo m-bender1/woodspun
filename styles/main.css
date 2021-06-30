@@ -1,5 +1,4 @@
 body {
-   background: #383838;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -10,6 +9,6 @@ body {
 h2,
 p {
    margin: 1rem;
-   color: white;
+   color: rgb(82, 82, 82);
    font-size: larger;
 }
