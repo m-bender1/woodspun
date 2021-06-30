@@ -18,11 +18,13 @@ p {
 img {
    width: 50vw;
    height: auto;
+   margin-top: 15vh;
 }
 
 @media screen and (min-width: 600px) {
    img {
       width: 35vw;
       height: auto;
+      margin-top: 8vh;
    }
 }
