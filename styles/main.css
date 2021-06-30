@@ -1,13 +1,5 @@
 body {
-   height: 100%;
-   width: 100%;
-}
-
-.comingSoon {
    background: #383838;
-   height: 90%;
-   width: 90%;
-   margin: 1rem;
    display: flex;
    flex-direction: column;
    align-items: center;
