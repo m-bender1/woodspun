@@ -1,8 +1,5 @@
 # woodspun
-WoodSpun.ca E-Commerce Site
-
-
-Handmade in Port Stanley, Ontario
+WoodSpun.ca E-Commerce Site — Handmade in Port Stanley, Ontario
 
 
 Built By Matt Bender
