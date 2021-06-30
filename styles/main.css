@@ -19,3 +19,10 @@ img {
    width: 50vw;
    height: auto;
 }
+
+@media screen and (min-width: 600px) {
+   img {
+      width: 35vw;
+      height: auto;
+   }
+}
