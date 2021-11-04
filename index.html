@@ -14,7 +14,7 @@
 	<title>WoodSpun.ca</title>
 </head>
 
-<body>
+<body onload="loadProducts()">
 	<div class="productsArea"></div>
 	<script>
 		var xmlhttp = new XMLHttpRequest();
@@ -51,13 +51,22 @@
 				prodPrice.classList.add("prodPrice")
 				if(prodImg2.src = "") {
 					prodImg1.classList.add("singleImg")
+					prodDiv.appendChild(prodImg1)
 				}
 				else {
 					prodImg1.classList.add("img1")
 					prodImg2.classList.add("img2")
+					prodDiv.appendChild(prodImg1)
+					prodDiv.appendChild(prodImg2)
 				}
+
+				prodDiv.appendChild(prodName)
+				prodDiv.appendChild(prodPrice)
+				prodDiv.appendChild(prodDescription)
+
+				document.getElementById("productsArea").innerHTML = prodDiv
 			}
-		}
+		}	
 	</script>
 </body>
 
