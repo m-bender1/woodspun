@@ -28,7 +28,7 @@ function displayProducts(a) {
       description.innerHTML = a.products[i].productDescription
 
       prodName.classList.add("prodName")
-      prodDescription.classList.add("prodDescription")
+      description.classList.add("prodDescription")
       prodPrice.classList.add("prodPrice")
       if (prodImg2.src = "") {
          prodImg1.classList.add("singleImg")
@@ -43,7 +43,7 @@ function displayProducts(a) {
 
       prodDiv.appendChild(prodName)
       prodDiv.appendChild(prodPrice)
-      prodDiv.appendChild(prodDescription)
+      prodDiv.appendChild(description)
 
       document.getElementById("productsArea").innerHTML = prodDiv
    }
