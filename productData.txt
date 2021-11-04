@@ -6,7 +6,7 @@
          "productPrice": "25.00",
          "productDescription": "Chrome roundtop twist pen, made with ebony wood.",
          "productImage1": "resources/product_images/ebony-chrome-roundtop.jpg",
-         "productImage2": "resources/product_images/ebony-chrome-roundtop.jpg"
+         "productImage2": "resources/product_images/ebony-chrome-pendant.jpg"
       },
       {
          "itemNum": "0",
