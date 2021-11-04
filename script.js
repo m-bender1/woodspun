@@ -45,6 +45,6 @@ function displayProducts(a) {
       prodDiv.appendChild(prodPrice)
       prodDiv.appendChild(description)
 
-      document.getElementById("productsArea").innerHTML = prodDiv
+      document.getElementById("productsArea").appendChild(prodDiv)
    }
 }
