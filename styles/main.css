@@ -13,14 +13,14 @@ body {
 }
 
 .logo {
-   height: 125px;
-   width: auto;
+   height: auto;
+   width: 125px;
 }
 
 .introduction {
    display: flex;
    flex-direction: column;
-   align-content: center;
+   align-items: center;
    justify-content: center;
 }
 
