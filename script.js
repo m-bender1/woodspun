@@ -45,6 +45,9 @@ function displayProducts(a) {
 
       let infoDiv = document.createElement("div")
 
+      imgDiv.classList.add("imgDiv")
+      infoDiv.classList.add("infoDiv")
+
       infoDiv.appendChild(prodName)
       infoDiv.appendChild(prodPrice)
       infoDiv.appendChild(description)
