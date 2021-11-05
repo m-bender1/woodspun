@@ -22,13 +22,18 @@ body {
 
 .prodDiv {
    border-bottom: thin solid grey;
-   margin: 1rem 0 0 2rem;
    font-size: 1.025em;
 }
 
 .infoDiv {
    display: flex;
    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.imgDiv {
+   display: flex;
    justify-content: center;
    align-items: center;
 }

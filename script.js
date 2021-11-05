@@ -20,6 +20,7 @@ function displayProducts(a) {
       let prodDiv = document.createElement("div");
       let prodImg1 = document.createElement("img"), prodImg2 = document.createElement("img");
       let prodPrice = document.createElement("p"), prodName = document.createElement("p"), description = document.createElement("p");
+      let imgDiv = document.createElement("div")
 
       prodName.innerHTML = a.products[i].productName
       prodImg1.src = a.products[i].productImage1
@@ -35,20 +36,19 @@ function displayProducts(a) {
       prodDiv.classList.add("prodDiv")
 
       if (a.products[i].productImage2 == null) {
-         prodDiv.appendChild(prodImg1)
+         imgDiv.appendChild(prodImg1)
       }
       else {
-         prodDiv.appendChild(prodImg1)
-         prodDiv.appendChild(prodImg2)
+         imgDiv.appendChild(prodImg1)
+         imgDiv.appendChild(prodImg2)
       }
 
       let infoDiv = document.createElement("div")
 
-
-
       infoDiv.appendChild(prodName)
       infoDiv.appendChild(prodPrice)
       infoDiv.appendChild(description)
+      prodDiv.appendChild(imgDiv)
       prodDiv.append(infoDiv)
 
       document.getElementById("productsArea").appendChild(prodDiv)
