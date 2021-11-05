@@ -35,6 +35,13 @@
    justify-content: center;
 }
 
+.infoDiv {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
 .prodName {
    font-weight: bold;
 }
