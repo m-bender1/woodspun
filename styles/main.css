@@ -13,6 +13,8 @@
    display: grid;
    grid-template-columns: 1fr 1fr;
    height: 25%;
+   justify-content: space-evenly;
+   align-items: center;
 }
 
 .introduction > div {
