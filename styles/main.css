@@ -12,11 +12,6 @@ body {
    border-radius: 5px;
 }
 
-.logo {
-   height: auto;
-   width: 125px;
-}
-
 .introduction {
    display: flex;
    flex-direction: column;
