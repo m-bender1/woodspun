@@ -17,8 +17,11 @@ body {
    width: auto;
 }
 
-.introduction > div {
-   display: inline;
+.introduction {
+   display: flex;
+   flex-direction: column;
+   align-content: center;
+   justify-content: center;
 }
 
 .prodDiv {
