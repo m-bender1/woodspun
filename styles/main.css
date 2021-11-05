@@ -5,7 +5,7 @@ body {
 }
 
 .prodImg {
-   height: 75vh;
+   height: 45%;
    width: auto;
    margin-right: 2rem;
    border: thin solid grey;
@@ -34,6 +34,7 @@ body {
    font-size: 1.5em;
    display: flex;
    align-items: center;
+   height: auto;
 }
 
 .infoDiv {
