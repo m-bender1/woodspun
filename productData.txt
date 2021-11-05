@@ -13,7 +13,7 @@
          "productName": "Ebony/Chrome Twist Pen",
          "productPrice": "25.00",
          "productDescription": "Chrome roundtop twist pen, made with ebony wood.",
-         "productImage1": "resources/product_images/range Acrylic SnapCap2.jpg",
+         "productImage1": "resources/product_images/Pomelle Sapele Streamline.jpg",
          "productImage2": null
       }
    ]
