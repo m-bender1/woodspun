@@ -55,4 +55,8 @@ body {
    .prodDiv {
       font-size: 1.5em;
    }
+
+   .introduction > div {
+      font-size: 2rem;
+   }
 }
