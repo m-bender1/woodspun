@@ -34,7 +34,7 @@ function displayProducts(a) {
       prodImg2.classList.add("prodImg")
       prodDiv.classList.add("prodDiv")
 
-      if (prodImg2.src == "") {
+      if (prodImg2.src == undefined) {
          prodImg2.classList.add("disable")
       }
 
