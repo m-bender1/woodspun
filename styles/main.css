@@ -23,6 +23,7 @@ body {
 .prodDiv {
    border-bottom: thin solid grey;
    font-size: 1.025em;
+   padding: 0.5rem;
 }
 
 .infoDiv {
@@ -54,6 +55,7 @@ body {
 
    .prodDiv {
       font-size: 1.5em;
+      padding: 2rem;
    }
 
    .introduction > div {
