@@ -30,7 +30,7 @@ body {
 
 .prodDiv {
    border-bottom: thin solid grey;
-   margin: 1rem 0 0 0;
+   margin: 1rem 0 0 1rem;
    font-size: 1.5em;
    display: flex;
    align-items: center;
