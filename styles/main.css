@@ -11,9 +11,13 @@
 
 .introduction {
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr;
    height: 25%;
 }
+
+.introduction > div {
+   display: block;
+} 
 
 .prodDiv {
    background: rgb(177, 177, 177);
