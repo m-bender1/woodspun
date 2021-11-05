@@ -35,6 +35,7 @@ body {
    display: flex;
    align-items: center;
    height: auto;
+   min-width: 50%;
 }
 
 .infoDiv {
