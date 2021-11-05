@@ -36,8 +36,6 @@ function displayProducts(a) {
          prodDiv.appendChild(prodImg1)
       }
       else {
-         prodImg1.classList.add("img1")
-         prodImg2.classList.add("img2")
          prodDiv.appendChild(prodImg1)
          prodDiv.appendChild(prodImg2)
       }

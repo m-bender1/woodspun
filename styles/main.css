@@ -1,7 +1,9 @@
 img {
-   height: 25vh;
-   width: 10vw;
+   height: 30vh;
+   width: auto;
 }
+
+.singleImage
 
 .logo {
    height: 15vh;
