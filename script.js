@@ -35,13 +35,17 @@ function displayProducts(a) {
       prodDiv.classList.add("prodDiv")
 
       if (a.products[i].productImage2 == null) {
-         prodImg2.classList.add("disable")
+         prodDiv.appendChild(prodImg1)
+      }
+      else {
+         prodDiv.appendChild(prodImg1)
+         prodDiv.appendChild(prodImg2)
       }
 
       let infoDiv = document.createElement("div")
-      
-      prodDiv.appendChild(prodImg1)
-      prodDiv.appendChild(prodImg2)
+
+
+
       infoDiv.appendChild(prodName)
       infoDiv.appendChild(prodPrice)
       infoDiv.appendChild(description)
