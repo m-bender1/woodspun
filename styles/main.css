@@ -2,3 +2,8 @@ img {
    height: 25vh;
    width: 10vw;
 }
+
+.logo {
+   height: 15vh;
+   width: auto;
+}
