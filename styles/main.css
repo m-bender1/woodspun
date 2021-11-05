@@ -34,6 +34,10 @@ body {
    align-items: flex-start;
 }
 
+.infoDiv > p {
+   margin: 0; 
+}
+
 .imgDiv {
    display: flex;
    justify-content: center;
