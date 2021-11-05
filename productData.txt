@@ -4,7 +4,7 @@
          "itemNum": "0",
          "productName": "Birdseye Maple Twist Pen",
          "productPrice": "30.00",
-         "productDescription": "Streamline twist pen with blue dyed Birdseye Maple and gun metal hardware (standard cross refill).",
+         "productDescription": "Streamline twist pen with blue dyed Birdseye Maple and gun metal hardware (standard Cross refill).",
          "productImage1": "resources/product_images/Blue Birdseye Streamline.jpg",
          "productImage2": "resources/product_images/Blue Birdseye Streamline2.jpg"
       },
