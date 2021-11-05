@@ -38,11 +38,14 @@ function displayProducts(a) {
          prodImg2.classList.add("disable")
       }
 
+      let infoDiv = document.createElement("div")
+      
       prodDiv.appendChild(prodImg1)
       prodDiv.appendChild(prodImg2)
-      prodDiv.appendChild(prodName)
-      prodDiv.appendChild(prodPrice)
-      prodDiv.appendChild(description)
+      infoDiv.appendChild(prodName)
+      infoDiv.appendChild(prodPrice)
+      infoDiv.appendChild(description)
+      prodDiv.append(infoDiv)
 
       document.getElementById("productsArea").appendChild(prodDiv)
    }
