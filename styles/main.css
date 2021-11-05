@@ -14,7 +14,7 @@
    grid-template-columns: 1fr 1fr;
    height: 25%;
    justify-content: space-evenly;
-   align-content: center;
+   align-items: center;
 }
 
 .introduction > div {
@@ -31,8 +31,7 @@
    margin: 1rem 0 0 0;
    font-size: 1.5em;
    display: flex;
-   align-items: center;
-   justify-content: center;
+   align-items: center;;
 }
 
 .infoDiv {
