@@ -32,6 +32,7 @@ function displayProducts(a) {
       prodPrice.classList.add("prodPrice")
       prodImg1.classList.add("prodImg")
       prodImg2.classList.add("prodImg")
+      prodDiv.classList.add("prodDiv")
 
       if (prodImg2.src == undefined) {
          prodDiv.appendChild(prodImg1)

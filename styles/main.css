@@ -14,3 +14,10 @@
    grid-template-columns: 1fr 1fr 1fr;
    height: 25%;
 }
+
+.prodDiv {
+   background: rgb(177, 177, 177);
+   border: 1px solid grey;
+   border-radius: 5px;
+   filter: drop-shadow(-3px 3px 3px)
+}
