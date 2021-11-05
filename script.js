@@ -24,6 +24,7 @@ function displayProducts(a) {
       prodName.innerHTML = a.products[i].productName
       prodImg1.src = a.products[i].productImage1
       prodImg2.src = a.products[i].productImage2
+      console.log(a.products[i].productImage2)
       prodPrice.innerHTML = "$" + a.products[i].productPrice
       description.innerHTML = a.products[i].productDescription
 
