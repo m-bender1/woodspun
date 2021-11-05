@@ -17,15 +17,8 @@ body {
    width: auto;
 }
 
-.introduction {
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   height: 25%;
-   align-items: center;
-}
-
 .introduction > div {
-   display: block;
+   display: inline;
 }
 
 .prodDiv {
