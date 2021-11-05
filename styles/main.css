@@ -27,6 +27,7 @@ body {
    border-bottom: thin solid grey;
    font-size: 1.025em;
    padding: 0.5rem;
+   margin-bottom: 1rem;
 }
 
 .infoDiv {
