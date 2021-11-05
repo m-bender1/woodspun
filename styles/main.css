@@ -21,7 +21,6 @@ body {
 }
 
 .prodDiv {
-   display: block;
    border-bottom: thin solid grey;
    font-size: 1.025em;
    padding: 0.5rem;
@@ -40,6 +39,7 @@ body {
 
 .imgDiv {
    display: flex;
+   flex-direction: column;
    justify-content: center;
    align-items: center;
 }
