@@ -28,4 +28,9 @@
    height: auto;
    width: fit-content;
    margin: 1rem 0 0 0;
+   font-size: 1.5em;
+}
+
+.prodName {
+   font-weight: bold;
 }
