@@ -38,3 +38,7 @@
 .prodName {
    font-weight: bold;
 }
+
+.disable {
+   display: none;
+}

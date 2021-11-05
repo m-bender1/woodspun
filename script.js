@@ -35,13 +35,11 @@ function displayProducts(a) {
       prodDiv.classList.add("prodDiv")
 
       if (prodImg2.src == "") {
-         prodDiv.appendChild(prodImg1)
-      }
-      else {
-         prodDiv.appendChild(prodImg1)
-         prodDiv.appendChild(prodImg2)
+         prodImg2.classList.add("disable")
       }
 
+      prodDiv.appendChild(prodImg1)
+      prodDiv.appendChild(prodImg2)
       prodDiv.appendChild(prodName)
       prodDiv.appendChild(prodPrice)
       prodDiv.appendChild(description)
