@@ -5,7 +5,7 @@ body {
 }
 
 .prodImg {
-   height: 350px;
+   height: 275px;
    width: auto;
    margin-right: 2rem;
    border: thin solid grey;
@@ -27,7 +27,7 @@ body {
 .prodDiv {
    border-bottom: thin solid grey;
    margin: 1rem 0 0 1rem;
-   font-size: 1.5em;
+   font-size: 1.025em;
 }
 
 .infoDiv {
@@ -43,4 +43,15 @@ body {
 
 .disable {
    display: none;
+}
+
+@media only screen and (min-width: 600px) {
+   .prodImg {
+      height: 400px;
+      width: auto;
+   }
+
+   .prodDiv {
+      font-size: 1.5em;
+   }
 }
