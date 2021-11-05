@@ -27,7 +27,7 @@
    border-radius: 5px;
    filter: drop-shadow(-3px 3px 3px);
    padding: 2rem;
-   width: fit-content;
+   width: 50%;
    margin: 1rem 0 0 0;
    font-size: 1.5em;
 }
