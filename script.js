@@ -24,7 +24,6 @@ function displayProducts(a) {
       prodName.innerHTML = a.products[i].productName
       prodImg1.src = a.products[i].productImage1
       prodImg2.src = a.products[i].productImage2
-      console.log(a.products[i].productImage2)
       prodPrice.innerHTML = "$" + a.products[i].productPrice
       description.innerHTML = a.products[i].productDescription
 
@@ -32,6 +31,7 @@ function displayProducts(a) {
       description.classList.add("prodDescription")
       prodPrice.classList.add("prodPrice")
       if (prodImg2.src = "") {
+         console.log("hello")
          prodImg1.classList.add("singleImg")
          prodDiv.appendChild(prodImg1)
       }
