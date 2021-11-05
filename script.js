@@ -30,7 +30,7 @@ function displayProducts(a) {
       prodName.classList.add("prodName")
       description.classList.add("prodDescription")
       prodPrice.classList.add("prodPrice")
-      if (prodImg2.src = "") {
+      if (prodImg2.src = undefined) {
          console.log("hello")
          prodImg1.classList.add("singleImg")
          prodDiv.appendChild(prodImg1)
