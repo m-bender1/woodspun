@@ -2,9 +2,9 @@
    "products": [
       {
          "itemNum": "0",
-         "productName": "Ebony/Chrome Twist Pen",
-         "productPrice": "25.00",
-         "productDescription": "Chrome roundtop twist pen, made with ebony wood.",
+         "productName": "Birdseye Maple Twist Pen",
+         "productPrice": "30.00",
+         "productDescription": "Streamline twist pen with blue dyed Birdseye Maple and gun metal hardware (standard cross refill).",
          "productImage1": "resources/product_images/Blue Birdseye Streamline.jpg",
          "productImage2": "resources/product_images/Blue Birdseye Streamline2.jpg"
       },
