@@ -14,7 +14,7 @@
          "productPrice": "25.00",
          "productDescription": "Chrome roundtop twist pen, made with ebony wood.",
          "productImage1": "resources/product_images/green-mountain-stopper.jpg",
-         "productImage2": ""
+         "productImage2": null
       }
    ]
 }
