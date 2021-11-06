@@ -33,6 +33,7 @@ body {
 .tagline {
    font-size: 1.5rem;
    font-style: italic;
+   margin: 0.0025rem;
 }
 .instruction {
    font-size: 1.125rem;
