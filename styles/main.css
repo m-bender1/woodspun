@@ -14,7 +14,7 @@ body {
 
 .logo {
    width: auto;
-   height: 200px;
+   height: 150px;
 }
 
 .introduction {
@@ -22,6 +22,12 @@ body {
    flex-direction: column;
    align-items: center;
    padding: 0.5rem;
+}
+
+.introduction > div {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 .tagline {
@@ -84,5 +90,10 @@ body {
 
    .infoDiv {
       align-items: center;
+   }
+
+   .logo {
+      width: auto;
+      height: auto;
    }
 }
