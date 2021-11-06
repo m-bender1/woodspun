@@ -91,7 +91,7 @@ function expandImage(src) {
             document.getElementById("expandedDiv").remove()
             document.getElementById("collapseBtn").remove()
             document.getElementById("expandedImg").remove()
-            document.getElementsByTagName("body")[0].style.overflow = "block"
+            document.getElementsByTagName("body")[0].style.overflow = "auto"
          })
       }
    }
