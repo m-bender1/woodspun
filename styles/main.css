@@ -83,7 +83,7 @@ body {
    left: 50%;
    transform:translate(-50%, -50%);
    height: 85vh;
-   width: 60vw;
+   width: 45vw;
    border: thin solid grey;
    border-radius: 5px;
 }
