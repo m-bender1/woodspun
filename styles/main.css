@@ -87,8 +87,8 @@ body {
    display: flex;
    align-items: center;
    justify-content: center; 
-   overflow-y: hidden;
    filter: blur(0.75rem);
+   z-index: -1;
 }
 #expandedImg {
    position: absolute;
