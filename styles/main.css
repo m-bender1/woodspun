@@ -108,7 +108,7 @@ body {
    top: 10vh;
    right: 35vw;
 }
-#collapseBtn:focus {
+#collapseBtn:hover {
    color: rgb(216, 57, 57);
    font-size: 1.75rem;
 }
