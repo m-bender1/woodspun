@@ -6,7 +6,7 @@
          "productPrice": "25.00",
          "productDescription": "Streamline twist pen with blue dyed Birdseye Maple and gun metal hardware (standard Cross refill).",
          "productImage1": "resources/product_images/Blue Birdseye Streamline.jpg",
-         "productImage": null
+         "productImage2": null
       },
       {
          "itemNum": "0",
@@ -14,7 +14,7 @@
          "productPrice": "30.00",
          "productDescription": "Slimline twist pen with dyed stabilized Maple Burl and antique brass hardware (standard Cross refill).",
          "productImage1": "resources/product_images/Green Burl Slimline.jpg",
-         "productImage": null
+         "productImage2": null
       },
    ]
 }
