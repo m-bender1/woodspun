@@ -56,4 +56,25 @@ function displayProducts(a) {
 
       document.getElementById("productsArea").appendChild(prodDiv)
    }
+
+   // img onclick, expand and attach btn
+   // onlick again, collapse and remove btn
+   let images = document.getElementsByTagName("img");
+   for (let i = 0; i < images.length; i++) {
+      let img = images[i];
+
+      img.addEventListener("click", function () {
+         if (img.src !== "resources/logo/logo.png") {
+            if (img.classList.contains("expandedImg")) {
+               img.classList.remove("expandedImg")
+               img.classList.add("prodImg")
+            } else {
+               img.classList.add("expandedImg")
+               img.classList.remove("prodImg")
+            }
+         }
+      })
+   }
 }
+
+
