@@ -33,7 +33,7 @@ body {
 .tagline {
    font-size: 1.5rem;
    font-style: italic;
-   margin: 0.0025rem;
+   margin: 0.15rem;
 }
 .instruction {
    font-size: 1.125rem;
@@ -84,6 +84,7 @@ body {
 
    .tagline {
       font-size: 2rem;
+      margin: 0.25rem
    }
    .instruction {
       font-size: 1.5rem;
