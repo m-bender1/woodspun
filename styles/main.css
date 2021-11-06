@@ -77,6 +77,13 @@ body {
    display: none;
 }
 
+.expandedImg {
+   height: 85vh;
+   width: 60vw;
+   border: thin solid grey;
+   border-radius: 5px;
+}
+
 @media only screen and (min-width: 600px) {
    .prodImg {
       height: 400px;
