@@ -14,7 +14,7 @@ body {
 
 .logo {
    width: auto;
-   height: 150px;
+   height: 125px;
 }
 
 .introduction {
@@ -22,7 +22,7 @@ body {
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   padding: 0.5rem;
+   padding: 0.25rem;
 }
 
 .introduction > div {
@@ -39,6 +39,7 @@ body {
 }
 .instruction {
    font-size: 1.125rem;
+   margin: 0;
 }
 
 .prodDiv {
@@ -88,7 +89,7 @@ body {
 
    .tagline {
       font-size: 2rem;
-      margin: 0.25rem
+      margin: 0.25rem;
    }
    .instruction {
       font-size: 1.5rem;
@@ -96,6 +97,6 @@ body {
 
    .logo {
       width: auto;
-      height: auto;
+      height: 215px;
    }
 }
