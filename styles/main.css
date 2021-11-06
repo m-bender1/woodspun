@@ -85,7 +85,7 @@ body {
    display: flex;
    align-items: center;
    justify-content: center; 
-   overflow: hidden;
+   overflow-y: hidden;
 }
 #expandedImg {
    position: absolute;
