@@ -100,7 +100,7 @@
          "itemNum": "13",
          "productName": "Walnut Bottle Stopper",
          "productPrice": "27.00",
-         "productDescription": "",
+         "productDescription": " ",
          "productImage1": "resources/product_images/Walnut Bottle Stopper.jpg",
          "productImage2": null
       }
