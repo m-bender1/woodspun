@@ -86,10 +86,11 @@ function expandImage(src) {
          expandedImgDiv.appendChild(collapseBtn)
          document.getElementsByTagName("body")[0].appendChild(expandedImgDiv)
 
+
          collapseBtn.addEventListener("click", function () {
             document.getElementById("expandedDiv").remove()
             document.getElementById("collapseBtn").remove()
-            document.getElementById("newImg").remove()
+            document.getElementById("expandedImg").remove()
          })
       }
    }
