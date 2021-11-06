@@ -100,16 +100,15 @@ body {
    all: unset;
    cursor: pointer;
    color: white;
-   font-size: 0.75rem;
+   font-size: 1.1rem;
    position: absolute;
-   top: 20vh;
+   top: 10vh;
    right: 35vw;
 }
 #collapseBtn:focus {
    color: rgb(216, 57, 57);
-   font-size: 1rem;
+   font-size: 1.75rem;
 }
-
 
 @media only screen and (min-width: 600px) {
    .prodImg {
