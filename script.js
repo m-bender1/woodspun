@@ -22,7 +22,7 @@ function displayProducts(a) {
       let prodPrice = document.createElement("p"), prodName = document.createElement("p"), description = document.createElement("p");
       let imgDiv = document.createElement("div")
 
-      prodName.innerHTML = a.products[i].itemNum + "—" + a.products[i].productName
+      prodName.innerHTML = "Item " + a.products[i].itemNum + " - " + a.products[i].productName
       prodImg1.src = a.products[i].productImage1
       prodImg2.src = a.products[i].productImage2
       prodPrice.innerHTML = "$" + a.products[i].productPrice
