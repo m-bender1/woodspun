@@ -50,7 +50,7 @@ body {
 .infoDiv {
    display: flex;
    flex-direction: column;
-   align-items: flex-start;
+   align-items: center;
 }
 
 .infoDiv > p {
@@ -89,10 +89,6 @@ body {
    }
    .instruction {
       font-size: 1.5rem;
-   }
-
-   .infoDiv {
-      align-items: center;
    }
 
    .logo {
