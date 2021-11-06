@@ -1,6 +1,6 @@
-var xmlhttp = new XMLHttpRequest();
-var url = "productData.txt";
-var prodArr = [];
+const xmlhttp = new XMLHttpRequest();
+const url = "productData.txt";
+const prodArr = [];
 
 function loadProducts() {
    xmlhttp.onreadystatechange = function () {
@@ -24,7 +24,9 @@ function displayProducts(a) {
 
       prodName.innerHTML = "Item " + a.products[i].itemNum + " - " + a.products[i].productName
       prodImg1.src = a.products[i].productImage1
-      prodImg2.src = a.products[i].productImage2
+      if (a.products[i].productImage2 !== null) { // just to avoid 404 error
+         prodImg2.src = a.products[i].productImage2
+      }
       prodPrice.innerHTML = "$" + a.products[i].productPrice
       description.innerHTML = a.products[i].productDescription
 
@@ -41,6 +43,9 @@ function displayProducts(a) {
       else {
          imgDiv.appendChild(prodImg1)
          imgDiv.appendChild(prodImg2)
+         prodImg2.addEventListener("click", function () {
+            expandImage()
+         })
       }
 
       let infoDiv = document.createElement("div")
@@ -54,27 +59,32 @@ function displayProducts(a) {
       prodDiv.appendChild(imgDiv)
       prodDiv.append(infoDiv)
 
+      // prodImg1.addEventListener("click", function () {
+      //    expandImage()
+      // })
+
       document.getElementById("productsArea").appendChild(prodDiv)
-   }
-
-   // img onclick, expand and attach btn
-   // onlick again, collapse and remove btn
-   let images = document.getElementsByTagName("img");
-   for (let i = 0; i < images.length; i++) {
-      let img = images[i];
-
-      img.addEventListener("click", function () {
-         if (img.src !== "resources/logo/logo.png") {
-            if (img.classList.contains("expandedImg")) {
-               img.classList.remove("expandedImg")
-               img.classList.add("prodImg")
-            } else {
-               img.classList.add("expandedImg")
-               img.classList.remove("prodImg")
-            }
-         }
-      })
    }
 }
 
+function expandImage() {
+   const images = document.getElementsByClassName("prodImg")
 
+   for (let i = 0; i < images.length; i++) {
+      const img = images[i]
+      let expandedImgDiv = document.createElement("div")
+      let newImg = document.createElement("img")
+      let collapseBtn = document.createElement("button")
+      newImg.id = "expandedImg"
+      newImg.src = img.src
+      expandedImgDiv.id = "expandedDiv"
+      collapseBtn.id = "collapseBtn"
+      collapseBtn.textContent = "Close"
+
+      collapseBtn.addEventListener("click", function () {
+         document.getElementById("expandedDiv").remove()
+         document.getElementById("collapseBtn").remove()
+         document.getElementById("newImg").remove()
+      })
+   }
+}
