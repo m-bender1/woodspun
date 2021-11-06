@@ -55,6 +55,54 @@
          "productDescription": "Yellow Tarara Cigar twist pen with gold hardware (Parker style ballpoint refill).",
          "productImage1": "resources/product_images/Yellow Tarara Cigar.jpg",
          "productImage2": null
+      },
+      {
+         "itemNum": "8",
+         "productName": "Mushroom Bottle Stopper",
+         "productPrice": "30.00",
+         "productDescription": "Dark Knight resin / dye infused Bottle Stopper.",
+         "productImage1": "resources/product_images/Dark Knight Mushroom.jpg",
+         "productImage2": null
+      },
+      {
+         "itemNum": "9",
+         "productName": "Wine Glass Bottle Stopper",
+         "productPrice": "30.00",
+         "productDescription": "Dark Knight resin / dye infused Bottle Stopper.",
+         "productImage1": "resources/product_images/Dark Knight WineGlass.jpg",
+         "productImage2": null
+      },
+      {
+         "itemNum": "10",
+         "productName": "'Hourglass' Bottle Stopper",
+         "productPrice": "30.00",
+         "productDescription": "Green Mountain resin / dye infused Bottle Stopper.",
+         "productImage1": "resources/product_images/Green Mountain Hourglass.jpg",
+         "productImage2": null
+      },
+      {
+         "itemNum": "11",
+         "productName": "'Shifter' Bottle Stopper",
+         "productPrice": "30.00",
+         "productDescription": "Green Mountain resin / dye infused Bottle Stopper.",
+         "productImage1": "resources/product_images/Green Mountain Shifter.jpg",
+         "productImage2": null
+      },      
+      {
+         "itemNum": "12",
+         "productName": "'Buoy' Bottle Stopper",
+         "productPrice": "30.00",
+         "productDescription": "Terrain Camo resin / dye infused Bottle Stopper.",
+         "productImage1": "resources/product_images/Terrain Camo Buoy2.jpg",
+         "productImage2": null
+      },
+      {
+         "itemNum": "13",
+         "productName": "Walnut Bottle Stopper",
+         "productPrice": "27.00",
+         "productDescription": "",
+         "productImage1": "resources/product_images/Walnut Bottle Stopper.jpg",
+         "productImage2": null
       }
    ]
 }
