@@ -31,6 +31,30 @@
          "productDescription": "Volcanic Flame acrylic Snap Cap rollerball with gun metal hardware (Schmidt 888 rollerball refill).",
          "productImage1": "resources/product_images/Orange Acrylic SnapCap2.jpg",
          "productImage2": null
-      } 
+      },
+      {
+         "itemNum": "5",
+         "productName": "Birdseye Maple Twist Pen",
+         "productPrice": "25.00",
+         "productDescription": "Pink dyed Birdseye Maple Slimline twist pen with gold hardware (standard Cross refill).",
+         "productImage1": "resources/product_images/Pink Birdseye Slimline.jpg",
+         "productImage2": null
+      },
+      {
+         "itemNum": "6",
+         "productName": "Pomelle Sapele Twist Pen",
+         "productPrice": "25.00",
+         "productDescription": "Pomelle Sapele Streamline twist pen with gold hardware (standard Cross refill).",
+         "productImage1": "resources/product_images/Pomelle Sapele Streamline2.jpg",
+         "productImage2": null
+      },
+      {
+         "itemNum": "7",
+         "productName": "Yellow Tarara Cigar Twist Pen",
+         "productPrice": "40.00",
+         "productDescription": "Yellow Tarara Cigar twist pen with gold hardware (Parker style ballpoint refill).",
+         "productImage1": "resources/product_images/Yellow Tarara Cigar.jpg",
+         "productImage2": null
+      }
    ]
 }
