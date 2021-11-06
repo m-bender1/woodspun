@@ -1,6 +1,6 @@
 const xmlhttp = new XMLHttpRequest();
 const url = "productData.txt";
-const prodArr = [];
+var prodArr = [];
 
 function loadProducts() {
    xmlhttp.onreadystatechange = function () {
