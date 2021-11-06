@@ -21,11 +21,7 @@ body {
    display: flex;
    flex-direction: column;
    align-items: center;
-   justify-content: center;
    padding: 0.5rem;
-}
-.introduction > p {
-   text-align: center;
 }
 
 .prodDiv {
@@ -38,7 +34,6 @@ body {
 .infoDiv {
    display: flex;
    flex-direction: column;
-   justify-content: center;
    align-items: flex-start;
 }
 
@@ -81,5 +76,9 @@ body {
 
    .introduction > div {
       font-size: 2rem;
+   }
+
+   .infoDiv {
+      align-items: center;
    }
 }
