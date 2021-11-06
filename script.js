@@ -60,35 +60,37 @@ function displayProducts(a) {
       prodDiv.append(infoDiv)
 
       prodImg1.addEventListener("click", function () {
-         expandImage()
+         expandImage(prodImg1.src)
       })
 
       document.getElementById("productsArea").appendChild(prodDiv)
    }
 }
 
-function expandImage() {
+function expandImage(src) {
    const images = document.getElementsByClassName("prodImg")
 
    for (let i = 0; i < images.length; i++) {
       const img = images[i]
-      let expandedImgDiv = document.createElement("div")
-      let newImg = document.createElement("img")
-      let collapseBtn = document.createElement("button")
-      newImg.id = "expandedImg"
-      newImg.src = img.src
-      expandedImgDiv.id = "expandedDiv"
-      collapseBtn.id = "collapseBtn"
-      collapseBtn.textContent = "Close"
+      if (img.src == src) {
+         let expandedImgDiv = document.createElement("div")
+         let newImg = document.createElement("img")
+         let collapseBtn = document.createElement("button")
+         newImg.id = "expandedImg"
+         newImg.src = img.src
+         expandedImgDiv.id = "expandedDiv"
+         collapseBtn.id = "collapseBtn"
+         collapseBtn.textContent = "Close"
 
-      expandedImgDiv.appendChild(newImg)
-      expandedImgDiv.appendChild(collapseBtn)
-      document.getElementsByTagName("body")[0].appendChild(expandedImgDiv)
+         expandedImgDiv.appendChild(newImg)
+         expandedImgDiv.appendChild(collapseBtn)
+         document.getElementsByTagName("body")[0].appendChild(expandedImgDiv)
 
-      collapseBtn.addEventListener("click", function () {
-         document.getElementById("expandedDiv").remove()
-         document.getElementById("collapseBtn").remove()
-         document.getElementById("newImg").remove()
-      })
+         collapseBtn.addEventListener("click", function () {
+            document.getElementById("expandedDiv").remove()
+            document.getElementById("collapseBtn").remove()
+            document.getElementById("newImg").remove()
+         })
+      }
    }
 }
