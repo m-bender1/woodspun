@@ -103,7 +103,7 @@ body {
    font-size: 0.75rem;
    position: absolute;
    top: 20vh;
-   right: 55vw;
+   right: 35vw;
 }
 #collapseBtn:focus {
    color: rgb(216, 57, 57);
