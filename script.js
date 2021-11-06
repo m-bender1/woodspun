@@ -59,9 +59,9 @@ function displayProducts(a) {
       prodDiv.appendChild(imgDiv)
       prodDiv.append(infoDiv)
 
-      // prodImg1.addEventListener("click", function () {
-      //    expandImage()
-      // })
+      prodImg1.addEventListener("click", function () {
+         expandImage()
+      })
 
       document.getElementById("productsArea").appendChild(prodDiv)
    }
