@@ -15,6 +15,6 @@
          "productDescription": "Slimline twist pen with dyed stabilized Maple Burl and antique brass hardware (standard Cross refill).",
          "productImage1": "resources/product_images/Green Burl Slimline.jpg",
          "productImage2": null
-      },
+      }
    ]
 }
