@@ -85,12 +85,11 @@ function expandImage(src) {
          expandedImgDiv.appendChild(newImg)
          expandedImgDiv.appendChild(collapseBtn)
          document.getElementsByTagName("body")[0].appendChild(expandedImgDiv)
-         document.getElementsByTagName("body")[0].style.overflow = "hidden"
+         document.getElementsByTagName("body")[0].style.overflowY = "hidden"
 
          collapseBtn.addEventListener("click", function () {
             document.getElementById("expandedDiv").remove()
-            document.getElementById("expandedImg").remove()
-            document.getElementsByTagName("body")[0].style.overflow = "initial"
+            document.getElementsByTagName("body")[0].style.overflowY = "scroll"
          })
       }
    }
