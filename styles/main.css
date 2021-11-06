@@ -24,6 +24,14 @@ body {
    padding: 0.5rem;
 }
 
+.tagline {
+   font-size: 1.5rem;
+   font-style: italic;
+}
+.instruction {
+   font-size: 1.125rem;
+}
+
 .prodDiv {
    border-bottom: thin solid grey;
    font-size: 1.025em;
@@ -62,20 +70,16 @@ body {
       width: auto;
    }
 
-   /* .imgDiv {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-   } */
-
    .prodDiv {
       font-size: 1.5em;
       padding: 2rem;
    }
 
-   .introduction > div {
+   .tagline {
       font-size: 2rem;
+   }
+   .instruction {
+      font-size: 1.5rem;
    }
 
    .infoDiv {
