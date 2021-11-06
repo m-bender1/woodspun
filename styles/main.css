@@ -77,16 +77,40 @@ body {
    display: none;
 }
 
-/* .expandedImg {
+
+#expandedDiv {
+   height: 100%;
+   width: 100%;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center; 
+   overflow: hidden;
+}
+#expandedImg {
    position: absolute;
    top: 50%;
    left: 50%;
    transform:translate(-50%, -50%);
    height: 85vh;
-   width: 30vw;
+   width: 40vw;
    border: thin solid grey;
    border-radius: 5px;
-} */
+} 
+#collapseBtn {
+   all: unset;
+   cursor: pointer;
+   color: white;
+   font-size: 0.75rem;
+   position: absolute;
+   top: 20vh;
+   right: 55vw;
+}
+#collapseBtn:focus {
+   color: rgb(216, 57, 57);
+   font-size: 1rem;
+}
+
 
 @media only screen and (min-width: 600px) {
    .prodImg {

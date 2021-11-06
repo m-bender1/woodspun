@@ -81,6 +81,10 @@ function expandImage() {
       collapseBtn.id = "collapseBtn"
       collapseBtn.textContent = "Close"
 
+      expandedImgDiv.appendChild(newImg)
+      expandedImgDiv.appendChild(collapseBtn)
+      document.getElementsByTagName("body")[0].appendChild(expandedImgDiv)
+
       collapseBtn.addEventListener("click", function () {
          document.getElementById("expandedDiv").remove()
          document.getElementById("collapseBtn").remove()
