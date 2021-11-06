@@ -1,21 +1,36 @@
 {
    "products": [
       {
-         "itemNum": "0",
+         "itemNum": "1",
          "productName": "Birdseye Maple Twist Pen",
          "productPrice": "25.00",
-         "productDescription": "Streamline twist pen with blue dyed Birdseye Maple and gun metal hardware (standard Cross refill).",
+         "productDescription": "Blue dyed Birdseye Maple Streamline twist pen with gun metal hardware (standard Cross refill).",
          "productImage1": "resources/product_images/Blue Birdseye Streamline.jpg",
-         "productImage2": "resources/product_images/Blue Birdseye Streamline2.jpg"
+         "productImage2": null
       },
       {
-         "itemNum": "0",
+         "itemNum": "2",
          "productName": "Maple Burl Twist Pen",
-         "productPrice": "30.00",
-         "productDescription": "Slimeline twist pen with dyed stabilized Maple Burl and antique brass hardware (standard Cross refill).",
+         "productPrice": "35.00",
+         "productDescription": "Green dyed stabilized Maple Burl Slimline twist pen with antique brass hardware (standard Cross refill).",
          "productImage1": "resources/product_images/Green Burl Slimline.jpg",
-         "productImage1": "resources/product_images/Green Burl Slimline2.jpg",
          "productImage2": null
-      }
+      },
+      {
+         "itemNum": "3",
+         "productName": "Virage Rollerball",
+         "productPrice": "45.00",
+         "productDescription": "Midnight Forest acrlyic Virage screw cap rollerball with brass hardware (Schmidt 888 rollerball refill).",
+         "productImage1": "resources/product_images/Midnight Forest Acrylic Virage2.jpg",
+         "productImage2": null
+      },
+     {
+         "itemNum": "4",
+         "productName": "Snap Cap Rollerball",
+         "productPrice": "40.00",
+         "productDescription": "Volcanic Flame acrylic Snap Cap rollerball with gun metal hardware (Schmidt 888 rollerball refill).",
+         "productImage1": "resources/product_images/Orange Acrylic SnapCap2.jpg",
+         "productImage2": null
+      } 
    ]
 }
