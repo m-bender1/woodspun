@@ -85,12 +85,13 @@ function expandImage(src) {
          expandedImgDiv.appendChild(newImg)
          expandedImgDiv.appendChild(collapseBtn)
          document.getElementsByTagName("body")[0].appendChild(expandedImgDiv)
-
+         document.getElementsByTagName("body")[0].style.overflow = "hidden"
 
          collapseBtn.addEventListener("click", function () {
             document.getElementById("expandedDiv").remove()
             document.getElementById("collapseBtn").remove()
             document.getElementById("expandedImg").remove()
+            document.getElementsByTagName("body")[0].style.overflow = "hidden"
          })
       }
    }
