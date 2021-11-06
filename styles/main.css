@@ -87,8 +87,7 @@ body {
    display: flex;
    align-items: center;
    justify-content: center; 
-   filter: blur(0.75rem);
-   z-index: -1;
+   backdrop-filter: blur(0.75rem);
 }
 #expandedImg {
    position: absolute;
@@ -99,7 +98,6 @@ body {
    width: 40vw;
    border: thin solid grey;
    border-radius: 5px;
-   z-index: 1;
 } 
 #collapseBtn {
    all: unset;
@@ -109,7 +107,6 @@ body {
    position: absolute;
    top: 10vh;
    right: 35vw;
-   z-index: 2;
 }
 #collapseBtn:focus {
    color: rgb(216, 57, 57);
