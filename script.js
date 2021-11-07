@@ -75,12 +75,9 @@ function expandImage(src) {
       if (img.src == src) {
          let expandedImgDiv = document.createElement("div")
          let newImg = document.createElement("img")
-         let collapseBtn = document.createElement("button")
          newImg.id = "expandedImg"
          newImg.src = img.src
          expandedImgDiv.id = "expandedDiv"
-         collapseBtn.id = "collapseBtn"
-         collapseBtn.textContent = "Close"
 
          // get the clicked on prodDiv
          let imgDiv = img.parentElement
@@ -90,11 +87,6 @@ function expandImage(src) {
          expandedImgDiv.appendChild(collapseBtn)
          prodDiv.appendChild(expandedImgDiv)
          prodDiv.style.overflowY = "hidden"
-
-         collapseBtn.addEventListener("click", function () {
-            expandedImgDiv.remove()
-            prodDiv.style.overflowY = "scroll"
-         })
 
          expandedImgDiv.addEventListener("click", function () {
             if (expandedImgDiv) {

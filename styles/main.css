@@ -95,19 +95,6 @@ body {
    border-radius: 5px;
    object-fit: cover;
 }
-#collapseBtn {
-   all: unset;
-   cursor: pointer;
-   color: white;
-   font-size: 1.1rem;
-   position: absolute;
-   top: 25vh;
-   right: 10vw;
-}
-#collapseBtn:hover {
-   color: rgb(216, 57, 57);
-   font-size: 1.75rem;
-}
 
 @media only screen and (min-width: 600px) {
    .prodImg {
@@ -131,13 +118,6 @@ body {
    .logo {
       width: auto;
       height: 215px;
-   }
-
-   #collapseBtn {
-      font-size: 1.5rem;
-      font-weight: 500;
-      top: 10vh;
-      right: 30vw;
    }
 
    #expandedImg {
