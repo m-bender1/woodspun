@@ -78,7 +78,7 @@ body {
 }
 
 #expandedDiv {
-   position: relative;
+   position: fixed;
    top: 0;
    left: 0;
    height: 100vh;
@@ -89,7 +89,7 @@ body {
    background: rgba(27, 27, 27, 0.6);
 }
 #expandedImg {
-   height: 85vh;
+   max-height: 90vh;
    max-width: 90vw;
    border: thin solid grey;
    border-radius: 5px;
@@ -131,6 +131,11 @@ body {
    .logo {
       width: auto;
       height: 215px;
+   }
+
+   #collapseBtn {
+      font-size: 1.5rem;
+      font-weight: 500;
    }
 
    #expandedImg {
