@@ -84,7 +84,6 @@ function expandImage(src) {
          let prodDiv = imgDiv.parentElement
 
          expandedImgDiv.appendChild(newImg)
-         expandedImgDiv.appendChild(collapseBtn)
          prodDiv.appendChild(expandedImgDiv)
          prodDiv.style.overflowY = "hidden"
 
