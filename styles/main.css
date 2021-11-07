@@ -144,5 +144,6 @@ body {
       height: 85vh;
       width: auto;
       max-width: 85vw;
+      object-fit: cover;
    }
 }
