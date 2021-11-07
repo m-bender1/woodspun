@@ -95,6 +95,11 @@ function expandImage(src) {
             document.getElementById("expandedDiv").remove()
             prodDiv.style.overflowY = "scroll"
          })
+
+         expandedImgDiv.addEventListener("click", function () {
+            document.getElementById("expandedDiv").remove()
+            prodDiv.style.overflowY = "scroll"
+         })
       }
    }
 }
