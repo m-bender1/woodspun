@@ -102,7 +102,7 @@ body {
    font-size: 1.1rem;
    position: absolute;
    top: 10vh;
-   right: 35vw;
+   right: 25vw;
 }
 #collapseBtn:hover {
    color: rgb(216, 57, 57);
