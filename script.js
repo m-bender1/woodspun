@@ -90,8 +90,6 @@ function expandImage(src) {
          expandedImgDiv.appendChild(collapseBtn)
          prodDiv.appendChild(expandedImgDiv)
          prodDiv.style.overflowY = "hidden"
-         expandedImgDiv.style.top = prodDiv.getBoundingClientRect().top
-         expandedImgDiv.style.left = prodDiv.getBoundingClientRect().left
 
          collapseBtn.addEventListener("click", function () {
             document.getElementById("expandedDiv").remove()
