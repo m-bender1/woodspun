@@ -78,7 +78,7 @@ body {
 }
 
 #expandedDiv {
-   position: fixed;
+   position: relative;
    top: 0;
    left: 0;
    height: 100vh;
@@ -86,14 +86,14 @@ body {
    display: flex;
    align-items: center;
    justify-content: center;
-   background: rgba(128, 128, 128, 0.5);
+   background: rgba(27, 27, 27, 0.6);
 }
 #expandedImg {
    height: 85vh;
-   width: auto;
-   max-width: 85vw;
+   max-width: 90vw;
    border: thin solid grey;
    border-radius: 5px;
+   object-fit: cover;
 }
 #collapseBtn {
    all: unset;
