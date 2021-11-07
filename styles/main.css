@@ -78,6 +78,7 @@ body {
 }
 
 #expandedDiv {
+   position: fixed;
    height: 100vh;
    width: 100vw;
    display: flex;
@@ -86,10 +87,6 @@ body {
    background: rgba(128, 128, 128, 0.5);
 }
 #expandedImg {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
    height: 85vh;
    width: 60vw;
    border: thin solid grey;

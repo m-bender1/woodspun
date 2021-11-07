@@ -82,14 +82,20 @@ function expandImage(src) {
          collapseBtn.id = "collapseBtn"
          collapseBtn.textContent = "Close"
 
+         // get the clicked on prodDiv
+         let imgDiv = img.parentElement 
+         let prodDiv = imgDiv.parentElement
+
          expandedImgDiv.appendChild(newImg)
          expandedImgDiv.appendChild(collapseBtn)
-         document.getElementsByTagName("body")[0].appendChild(expandedImgDiv)
-         document.getElementsByTagName("body")[0].style.overflowY = "hidden"
+         prodDiv.appendChild(expandedImgDiv)
+         prodDiv.style.overflowY = "hidden"
+         expandedImgDiv.style.top = prodDiv.getBoundingClientRect().top
+         expandedImgDiv.style.left = prodDiv.getBoundingClientRect().left
 
          collapseBtn.addEventListener("click", function () {
             document.getElementById("expandedDiv").remove()
-            document.getElementsByTagName("body")[0].style.overflowY = "scroll"
+            prodDiv.style.overflowY = "scroll"
          })
       }
    }
