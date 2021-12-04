@@ -1,5 +1,5 @@
 # woodspun
-WoodSpun.ca catalogue — Handmade in Port Stanley, Ontario
+WoodSpun.ca catalogue for Spirit of Christmas 2020.
 
 
 Built By Matt Bender
